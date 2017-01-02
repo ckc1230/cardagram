@@ -1,0 +1,23 @@
+{
+  "name": "fun-ecards",
+  "version": "1.0.0",
+  "description": "### Synopsis",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckc1230/fun-ecards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ckc1230/fun-ecards/issues"
+  },
+  "homepage": "https://github.com/ckc1230/fun-ecards#readme"
+}
