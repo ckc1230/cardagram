@@ -13,7 +13,8 @@ Happy Holidays!!!
 
 ### Installation
 
-
 Yikes, did I run into many issues here. 
 
 ### Process
+
+[Planning Deliverables](Planning-Delivarables.md)
