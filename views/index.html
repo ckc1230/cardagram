@@ -1,1 +1,21 @@
-<h1>HI!!</h1>
+<!DOCTYPE html>
+
+<html lang='en' ng-app='eCardsApp'>
+
+  <head>
+    <title>fun-eCards</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js'></script>
+    <script src='scripts/controllers/ECardsIndexController.js'></script>
+  </head>
+
+  <body>
+    <h1>This is the eCard Site!</h1>
+    <div ng-controller='ECardsIndexController as eCardsCtrl'>
+      <div ng-repeat='ecard in eCardsCtrl.ecards'>
+        <h3>{{ecard.message}}</h3>
+      </div>
+    </div>
+
+  </body>
+
+</html>

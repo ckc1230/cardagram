@@ -14,10 +14,19 @@ app.use(express.static(__dirname + '/public'));
 
 var db = require('./models');
 
-/* ROUTES */ 
+/* HTML ROUTES */ 
 
 app.get('/', function homepage(req, res) {
   res.sendFile(__dirname + '/views/index.html');
+});
+
+/* API ROUTES */ 
+
+app.get('/api/ecards', function indexECards(req, res) {
+  db.ECard.find({}, function(err, allECards) {
+    if (err) { throw err; };
+    res.json(allECards);
+  });
 });
 
 /* SERVER SET UP */ 
