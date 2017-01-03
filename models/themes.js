@@ -5,7 +5,8 @@ var ECard = require('./ecards');
 
 var ThemeSchema = new Schema({
   title: String,
-  image: String
+  image: String,
+  questions: [{ type : Schema.Types.Object, ref: 'Question' }]
 });
 
 var Theme = mongoose.model('Theme', ThemeSchema);
