@@ -13,6 +13,8 @@
     <div ng-controller='ECardsIndexController as eCardsCtrl'>
       <div ng-repeat='ecard in eCardsCtrl.ecards'>
         <h3>{{ecard.message}}</h3>
+        <h5>{{ecard.theme.title}}</h5>
+        <img src={{ecard.theme.image}}>
       </div>
     </div>
 

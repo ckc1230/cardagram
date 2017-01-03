@@ -29,6 +29,13 @@ app.get('/api/ecards', function indexECards(req, res) {
   });
 });
 
+app.get('/api/themes', function indexThemes(req, res) {
+  db.Theme.find({}, function(err, allThemes) {
+    if (err) { throw err; };
+    res.json(allThemes);
+  });
+});
+
 /* SERVER SET UP */ 
 
 app.listen(process.env.PORT || 3000, function() {
