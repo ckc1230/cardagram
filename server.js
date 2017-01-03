@@ -36,6 +36,13 @@ app.get('/api/themes', function indexThemes(req, res) {
   });
 });
 
+app.get('/api/questions', function indexQuestions(req, res) {
+  db.Question.find({}, function(err, allQuestions) {
+    if (err) { throw err; };
+    res.json(allQuestions);
+  });
+});
+
 /* SERVER SET UP */ 
 
 app.listen(process.env.PORT || 3000, function() {
