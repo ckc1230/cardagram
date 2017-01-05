@@ -3,34 +3,24 @@
 <html lang='en' ng-app='eCardsApp'>
 
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>fun-eCards</title>
 
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.js"></script>
+
+    <script type="text/javascript" src="/scripts/app.js"></script>
     <script src='scripts/controllers/ECardsIndexController.js'></script>
 
   </head>
 
   <body>
     <h1>This is the eCard Site!</h1>
-    <div ng-controller='ECardsIndexController as eCardsCtrl'>
-      <div class='theme-img-index' ng-repeat='theme in eCardsCtrl.themes'>
-        <a href='#'><img src={{theme.image}}></a>
-      </div>
-
-      <div>
-        <form ng-submit="eCardsCtrl.createECard()">
-          <label for="repeatSelect"> Theme: </label>
-          <select name="repeatSelect" id="repeatSelect" ng-model="eCardsCtrl.newECard.theme">
-            <option ng-repeat="theme in eCardsCtrl.themes" value="{{theme.title}}">{{theme.title}}</option>
-          </select>
-          <input type="text" class="form-control" placeholder="Your Message" ng-model="eCardsCtrl.newECard.message">
-          <button class="btn" type="submit">SUBMIT</button>
-        </form>
-      </div>
-    </div>
-
+    <div ng-view></div>
   </body>
 
 </html>

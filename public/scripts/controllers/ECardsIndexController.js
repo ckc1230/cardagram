@@ -1,5 +1,5 @@
 angular
-  .module('eCardsApp',[])
+  .module('eCardsApp')
   .controller('ECardsIndexController', ECardsIndexController);
 
 ECardsIndexController.$inject = ['$http'];
