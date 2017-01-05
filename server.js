@@ -29,6 +29,14 @@ app.get('/api/ecards', function indexECards(req, res) {
   });
 });
 
+app.post('/api/ecards', function createECard(req, res) {
+  console.log(req.body);
+  db.ECard.create(req.body, function(err, ecard) {
+    if (err) { throw err; };
+    res.json(ecard);
+  });
+});
+
 app.get('/api/themes', function indexThemes(req, res) {
   db.Theme.find({}, function(err, allThemes) {
     if (err) { throw err; };

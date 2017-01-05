@@ -17,6 +17,14 @@
         <img src={{ecard.theme.image}}>
         <!-- <p>{{ecard.theme.questions}}</p> -->
       </div>
+
+      <div>
+        <form ng-submit="eCardsCtrl.createECard()">
+          <input type="text" class="form-control" placeholder="eCard Theme" ng-model="eCardsCtrl.newECard.theme">
+          <input type="text" class="form-control" placeholder="Your Message" ng-model="eCardsCtrl.newECard.message">
+          <button class="btn" type="submit">SUBMIT</button>
+        </form>
+      </div>
     </div>
 
   </body>
