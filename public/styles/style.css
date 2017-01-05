@@ -1,0 +1,8 @@
+.theme-img-index img {
+  height: 20vh;
+}
+
+.theme-img-index {
+  display: inline-block;
+  margin: 15px;
+}
