@@ -1,0 +1,8 @@
+<h3>{{eCardCtrl.ecard.message}}</h3>
+<div class="theme-img-show">
+	<img src={{eCardCtrl.ecard.theme.image}}>
+</div>
+
+<div ng-repeat="question in eCardCtrl.ecard.theme.questions">
+	<p>{{question.prompt}}</p>
+</div>

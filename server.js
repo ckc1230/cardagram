@@ -20,12 +20,24 @@ app.get('/', function homepage(req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
+app.get('/templates/:name', function templates(req, res) {
+  var name = req.params.name;
+  res.sendFile(__dirname + '/views/templates/' + name + '.html');
+});
+
 /* API ROUTES */ 
 
 app.get('/api/ecards', function indexECards(req, res) {
   db.ECard.find({}, function(err, allECards) {
     if (err) { throw err; };
     res.json(allECards);
+  });
+});
+
+app.get('/api/ecards/:id', function indexECards(req, res) {
+  db.ECard.findById({ _id: req.params.id }, function(err, eCard) {
+    if (err) { throw err; };
+    res.json(eCard);
   });
 });
 
@@ -54,6 +66,10 @@ app.get('/api/questions', function indexQuestions(req, res) {
     res.json(allQuestions);
   });
 });
+
+app.get('*', function homepage(req,res) {
+  res.sendFile(__dirname + '/views/index.html')
+})
 
 /* SERVER SET UP */ 
 
