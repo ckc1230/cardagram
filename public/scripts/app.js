@@ -16,6 +16,11 @@ function config(   $routeProvider,  $locationProvider   ) {
       templateUrl: '/templates/ecard',
       controllerAs: 'eCardCtrl',
       controller: 'ECardsShowController'
+    })
+    .when('/themes/:id/edit', {
+      templateUrl: '/templates/theme_edit',
+      controllerAs: 'themeEditCtrl',
+      controller: 'ThemeEditController'
     });
 
   $locationProvider.html5Mode({
