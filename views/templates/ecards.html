@@ -2,6 +2,12 @@
   <a href='#'><img src={{theme.image}}></a>
 </div>
 
+<div ng-repeat="ecard in eCardsCtrl.ecards">
+	<a href="/ecards/{{ecard._id}}">{{ecard.message}}</a>
+	
+
+</div>
+
 <div>
   <form ng-submit="eCardsCtrl.createECard()">
     <label for="repeatSelect"> Theme: </label>
