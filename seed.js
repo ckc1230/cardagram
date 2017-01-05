@@ -32,7 +32,7 @@ questionList.push({
 })
 
 questionList.push({
-  prompt: "Your superpower is ______ .",
+  prompt: "Your superpower is _____ .",
   response: "",
   image: "http://cdn.skim.gs/image/upload/v1456339293/msi/10-Qualities-SM-Art-Img_afs73h.jpg",
   theme: "Happy Mother's Day!"
@@ -154,6 +154,140 @@ questionList.push({
   theme: "Happy Halloween!"
 })
 
+/* Thanksgiving */
+
+questionList.push({
+  prompt: "Thinking of you on Thanksgiving because _____ .",
+  response: "",
+  image: "http://submar.com/wp-content/uploads/2016/11/Thanksgiving-11.23.16.png",
+  theme: "Happy Thanksgiving!"
+})
+
+questionList.push({
+  prompt: "If you were a Thanksgiving dish, you would have to be _____ .",
+  response: "",
+  image: "http://images.latintimes.com/sites/latintimes.com/files/2015/11/24/thanksgiving-dinner.jpg",
+  theme: "Happy Thanksgiving!"
+})
+
+questionList.push({
+  prompt: "I am grateful for our memory at _____ together.",
+  response: "",
+  image: "http://www.travelpaso.com/sites/pr/files/Thanksgiving-Wine_0.jpg",
+  theme: "Happy Thanksgiving!"
+})
+
+questionList.push({
+  prompt: "Gobble gobble. If you were a turkey, you would be the most _____ turkey of all!",
+  response: "",
+  image: "http://cdn.playbuzz.com/cdn/c630965f-45c7-465c-8967-c4eb240fdc79/b840de25-c9f9-4e93-8904-89ebcc8ab3e5.jpeg",
+  theme: "Happy Thanksgiving!"
+})
+
+questionList.push({
+  prompt: "Nothing says Thanksgiving like the time we _____.",
+  response: "",
+  image: "http://cdn.business2community.com/wp-content/uploads/2014/11/Thanksgiving-Turkey-Cat-Costume.jpg",
+  theme: "Happy Thanksgiving!"
+})
+
+questionList.push({
+  prompt: "You are a cornucopia of _____ .",
+  response: "",
+  image: "http://www.joepaduda.com/wp-content/uploads/2015/10/Cornucopia.png",
+  theme: "Happy Thanksgiving!"
+})
+
+
+/* Presidents' Day */
+
+questionList.push({
+  prompt: "I can picture us hanging out with President _____ .",
+  response: "",
+  image: "http://submar.com/wp-content/uploads/2016/11/Thanksgiving-11.23.16.png",
+  theme: "Happy Presidents' Day!"
+})
+
+questionList.push({
+  prompt: "If you were elected president, your first action would be _____ .",
+  response: "",
+  image: "http://images.latintimes.com/sites/latintimes.com/files/2015/11/24/thanksgiving-dinner.jpg",
+  theme: "Happy Presidents' Day!"
+})
+
+questionList.push({
+  prompt: "Nothing says presidential like the time we _____.",
+  response: "",
+  image: "http://www.travelpaso.com/sites/pr/files/Thanksgiving-Wine_0.jpg",
+  theme: "Happy Presidents' Day!"
+})
+
+questionList.push({
+  prompt: "If we had a sleep-over at the White House, we would _____",
+  response: "",
+  image: "http://cdn.playbuzz.com/cdn/c630965f-45c7-465c-8967-c4eb240fdc79/b840de25-c9f9-4e93-8904-89ebcc8ab3e5.jpeg",
+  theme: "Happy Presidents' Day!"
+})
+
+questionList.push({
+  prompt: "As running mates, our slogan would be _____.",
+  response: "",
+  image: "http://cdn.business2community.com/wp-content/uploads/2014/11/Thanksgiving-Turkey-Cat-Costume.jpg",
+  theme: "Happy Presidents' Day!"
+})
+
+questionList.push({
+  prompt: "I think there should be a national policy to _____ .",
+  response: "",
+  image: "http://www.joepaduda.com/wp-content/uploads/2015/10/Cornucopia.png",
+  theme: "Happy Presidents' Day!"
+})
+
+/* Arbor Day */
+
+questionList.push({
+  prompt: "Trees are _____, just like you!",
+  response: "",
+  image: "http://submar.com/wp-content/uploads/2016/11/Thanksgiving-11.23.16.png",
+  theme: "Happy Arbor Day!"
+})
+
+questionList.push({
+  prompt: "Our favorite memory involving a tree must be _____ .",
+  response: "",
+  image: "http://images.latintimes.com/sites/latintimes.com/files/2015/11/24/thanksgiving-dinner.jpg",
+  theme: "Happy Arbor Day!"
+})
+
+questionList.push({
+  prompt: "If we were a couple of trees, we would be _____.",
+  response: "",
+  image: "http://www.travelpaso.com/sites/pr/files/Thanksgiving-Wine_0.jpg",
+  theme: "Happy Arbor Day!"
+})
+
+questionList.push({
+  prompt: "Arbor day reminds us to care for our planet and environement. It reminds me of the time you took care of me by _____",
+  response: "",
+  image: "http://cdn.playbuzz.com/cdn/c630965f-45c7-465c-8967-c4eb240fdc79/b840de25-c9f9-4e93-8904-89ebcc8ab3e5.jpeg",
+  theme: "Happy Arbor Day!"
+})
+
+questionList.push({
+  prompt: "Just as trees attract birds to call it home, you attract _____ .",
+  response: "",
+  image: "http://cdn.business2community.com/wp-content/uploads/2014/11/Thanksgiving-Turkey-Cat-Costume.jpg",
+  theme: "Happy Arbor Day!"
+})
+
+questionList.push({
+  prompt: "If we were to plant a tree together, we would plant it at _____ .",
+  response: "",
+  image: "http://www.joepaduda.com/wp-content/uploads/2015/10/Cornucopia.png",
+  theme: "Happy Arbor Day!"
+})
+
+
 /* THEMES */
 
 themeList.push({
@@ -179,6 +313,21 @@ themeList.push({
 themeList.push({
   title: "Happy Halloween!",
   image: "http://www.pngmart.com/files/1/Halloween-Border-PNG-Clipart.png"
+});
+
+themeList.push({
+  title: "Happy Thanksgiving!",
+  image: "http://images.clipartpanda.com/thanksgiving-border-clipart-niXLoRGiB.png"
+});
+
+themeList.push({
+  title: "Happy Presidents' Day!",
+  image: "http://www.clipartkid.com/images/480/www-wpclipart-com-page-frames-more-frames-americana-border-png-html-eygBml-clipart.png"
+});
+
+themeList.push({
+  title: "Happy Arbor Day!",
+  image: "http://www.clipartkid.com/images/279/2014-clipartpanda-com-about-terms-vNwyiG-clipart.gif"
 });
 
 /* ECARDS */
