@@ -34,6 +34,13 @@ app.get('/api/ecards', function indexECards(req, res) {
   });
 });
 
+app.get('/api/ecards/:id', function indexECards(req, res) {
+  db.ECard.findById({ _id: req.params.id }, function(err, eCard) {
+    if (err) { throw err; };
+    res.json(eCard);
+  });
+});
+
 app.post('/api/ecards', function createECard(req, res) {
   var newECard = req.body;
   db.Theme.findOne({title: newECard.theme}, function(err, foundTheme) {
