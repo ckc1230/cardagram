@@ -1,20 +1,3 @@
 <div class='theme-img-index' ng-repeat='theme in eCardsCtrl.themes'>
   <a href='/themes/{{theme._id}}/edit'><img src={{theme.image}}></a>
 </div>
-
-<div ng-repeat="ecard in eCardsCtrl.ecards">
-	<a href="/ecards/{{ecard._id}}">{{ecard.message}}</a>
-	
-
-</div>
-
-<div>
-  <form ng-submit="eCardsCtrl.createECard()">
-    <label for="repeatSelect"> Theme: </label>
-    <select name="repeatSelect" id="repeatSelect" ng-model="eCardsCtrl.newECard.theme">
-      <option ng-repeat="theme in eCardsCtrl.themes" value="{{theme.title}}">{{theme.title}}</option>
-    </select>
-    <input type="text" class="form-control" placeholder="Your Message" ng-model="eCardsCtrl.newECard.message">
-    <button class="btn" type="submit">SUBMIT</button>
-  </form>
-</div>

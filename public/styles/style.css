@@ -1,10 +1,20 @@
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.plain-text a {
+	text-decoration: none;
+}
+
 .theme-img-index img {
-  height: 20vh;
+  width: 100%;
 }
 
 .theme-img-index {
   display: inline-block;
   margin: 15px;
+  width: 30%;
 }
 
 .theme-img-show img {
