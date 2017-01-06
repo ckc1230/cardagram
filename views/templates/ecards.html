@@ -1,5 +1,5 @@
 <div class='theme-img-index' ng-repeat='theme in eCardsCtrl.themes'>
-  <a href='#'><img src={{theme.image}}></a>
+  <a href='/themes/{{theme._id}}/edit'><img src={{theme.image}}></a>
 </div>
 
 <div ng-repeat="ecard in eCardsCtrl.ecards">

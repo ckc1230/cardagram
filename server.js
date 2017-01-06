@@ -34,7 +34,7 @@ app.get('/api/ecards', function indexECards(req, res) {
   });
 });
 
-app.get('/api/ecards/:id', function indexECards(req, res) {
+app.get('/api/ecards/:id', function showECard(req, res) {
   db.ECard.findById({ _id: req.params.id }, function(err, eCard) {
     if (err) { throw err; };
     res.json(eCard);
@@ -42,21 +42,27 @@ app.get('/api/ecards/:id', function indexECards(req, res) {
 });
 
 app.post('/api/ecards', function createECard(req, res) {
-  var newECard = req.body;
-  db.Theme.findOne({title: newECard.theme}, function(err, foundTheme) {
-      if (err) { return console.log("Error:",err) };
-      newECard.theme = foundTheme;
-      db.ECard.create(newECard, function(err, ecard) {
-        if (err) { throw err; };
-        res.json(ecard);
-      });
-    });
+  var newECard = {
+    message: req.body.message,
+    theme: req.body.theme
+  }
+  db.ECard.create(newECard, function(err, ecard) {
+    if (err) { throw err; };
+    res.json(ecard);
+  });
 });
 
 app.get('/api/themes', function indexThemes(req, res) {
   db.Theme.find({}, function(err, allThemes) {
     if (err) { throw err; };
     res.json(allThemes);
+  });
+});
+
+app.get('/api/themes/:id', function showTheme(req, res) {
+  db.Theme.findById({ _id: req.params.id }, function(err, theme) {
+    if (err) { throw err; };
+    res.json(theme);
   });
 });
 
