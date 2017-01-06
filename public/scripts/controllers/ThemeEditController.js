@@ -2,9 +2,9 @@ angular
   .module('eCardsApp')
   .controller('ThemeEditController', ThemeEditController);
 
-ThemeEditController.$inject = ['$http', '$routeParams'];
+ThemeEditController.$inject = ['$http', '$routeParams', '$location'];
 
-function ThemeEditController($http, $routeParams) {
+function ThemeEditController($http, $routeParams, $location) {
   var vm = this;
   $http({
     method: 'GET',
@@ -15,7 +15,6 @@ function ThemeEditController($http, $routeParams) {
     console.log('There was an error getting the data', response);
   });
   vm.saveECard = function() {
-    console.log("hi:",vm.theme);
     var newECard = {
       message: vm.theme.message,
       theme: vm.theme
@@ -23,7 +22,7 @@ function ThemeEditController($http, $routeParams) {
     $http
       .post('/api/ecards',newECard)
       .then(function(response) {
-        console.log(response);
+        $location.path('/ecards/'+response.data._id);
     });
   }
 };
