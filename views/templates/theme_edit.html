@@ -3,6 +3,13 @@
 	<img src={{themeEditCtrl.theme.image}}>
 </div>
 
-<div ng-repeat="question in themeEditCtrl.theme.questions">
-	<p>{{question.prompt}}</p>
-</div>
+<form name="question-form">
+  <div ng-repeat="question in themeEditCtrl.theme.questions">
+  	<p>{{question.prompt}}</p>
+    <p>{{question.response}}</p>
+    <input ng-model="question.response">
+  </div>
+  <p><label>Add Your Message:</label></p>
+  <p><textarea ng-model="themeEditCtrl.theme.message"></textarea></p>
+  <input type="submit" ng-click="themeEditCtrl.saveECard()">
+</form>

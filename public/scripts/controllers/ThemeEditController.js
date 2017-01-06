@@ -14,4 +14,16 @@ function ThemeEditController($http, $routeParams) {
   }, function errorCallback(response) {
     console.log('There was an error getting the data', response);
   });
+  vm.saveECard = function() {
+    console.log("hi:",vm.theme);
+    var newECard = {
+      message: vm.theme.message,
+      theme: vm.theme
+    }
+    $http
+      .post('/api/ecards',newECard)
+      .then(function(response) {
+        console.log(response);
+    });
+  }
 };
