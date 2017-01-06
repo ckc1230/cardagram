@@ -9,14 +9,14 @@ var eCardList = [];
 /* Birthday Questions */
 
 questionList.push({
-  prompt: "You're Awesome because _____ .",
+  prompt: "You're Awesome because _____.",
   response: "",
   image: "http://www.kazzledazz.com/wp-content/uploads/2015/02/friendship-cover.jpeg",
   theme: "Happy Birthday!"
 })
 
 questionList.push({
-  prompt: "If I could get you anything in the world, it would have to be _____ .",
+  prompt: "If I could get you anything in the world, it would have to be _____.",
   response: "",
   image: "http://www.kiplinger.com/slideshow/credit/T065-S001-15-gifts-that-keep-on-giving/images/intro.jpg",
   theme: "Happy Birthday!"
@@ -25,42 +25,42 @@ questionList.push({
 /* Mother's Day Questions */
 
 questionList.push({
-  prompt: "You're Awesome because _____ .",
+  prompt: "You're Awesome because _____.",
   response: "",
   image: "https://s-media-cache-ak0.pinimg.com/736x/3e/6b/4f/3e6b4f008c6d66abbf4e7c5426e4ad5c.jpg",
   theme: "Happy Mother's Day!"
 })
 
 questionList.push({
-  prompt: "Your superpower is _____ .",
+  prompt: "Your superpower is _____.",
   response: "",
   image: "http://cdn.skim.gs/image/upload/v1456339293/msi/10-Qualities-SM-Art-Img_afs73h.jpg",
   theme: "Happy Mother's Day!"
 })
 
 questionList.push({
-  prompt: "I love the way you _____ .",
+  prompt: "I love the way you _____.",
   response: "",
   image: "http://2.bp.blogspot.com/-i4ajtFfZtZw/VUjaCQ5knYI/AAAAAAAAH8g/Q8xTUOgRMvU/s1600/walking%2Bdesert.png",
   theme: "Happy Mother's Day!"
 })
 
 questionList.push({
-  prompt: "Thanks for supporting me when I _____ .",
+  prompt: "Thanks for supporting me when I _____.",
   response: "",
   image: "http://garak.wimp.com/images/sthumbs/2015/09/88cb64ce64bd39e9c1d5c4a2cff5b793_crosscountry3.jpg",
   theme: "Happy Mother's Day!"
 })
 
 questionList.push({
-  prompt: "You are the best at _____ .",
+  prompt: "You are the best at _____.",
   response: "",
   image: "http://www.womencanbuild.org/wp-content/uploads/2015/05/Rosie_0011.jpg",
   theme: "Happy Mother's Day!"
 })
 
 questionList.push({
-  prompt: "I want to be _____ , just like you!",
+  prompt: "I want to be _____, just like you!",
   response: "",
   image: "https://upworthy-production.s3.amazonaws.com/nugget/524474cec56137112b000d54/attachments/disney_image_2.png",
   theme: "Happy Mother's Day!"
@@ -69,14 +69,14 @@ questionList.push({
 /* Father's Day Questions */
 
 questionList.push({
-  prompt: "You're Amazing because _____ .",
+  prompt: "You're Amazing because _____.",
   response: "",
   image: "http://charity-matters.com/wp-content/uploads/father-and-son-fathers-day.jpg",
   theme: "Happy Father's Day!"
 })
 
 questionList.push({
-  prompt: "If you were a superhero, you would be _____ .",
+  prompt: "If you were a superhero, you would be _____.",
   response: "",
   image: "https://www.fjackets.com/product_images/uploaded_images/superhero-costumes-for-men.jpg",
   theme: "Happy Father's Day!"
@@ -97,14 +97,14 @@ questionList.push({
 })
 
 questionList.push({
-  prompt: "You are the best at _____ .",
+  prompt: "You are the best at _____.",
   response: "",
   image: "http://www.dinntrophy.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/a/fathersdaybde_base.jpg",
   theme: "Happy Father's Day!"
 })
 
 questionList.push({
-  prompt: "My favorite memory with you is _____ .",
+  prompt: "My favorite memory with you is _____.",
   response: "",
   image: "http://www.goodwp.com/images/201104/goodwp.com_17570.jpg",
   theme: "Happy Father's Day!"
@@ -120,28 +120,28 @@ questionList.push({
 })
 
 questionList.push({
-  prompt: "My favorite Halloween memory is _____ .",
+  prompt: "My favorite Halloween memory is _____.",
   response: "",
   image: "http://thefw.com/files/2012/10/mariokart.jpg",
   theme: "Happy Halloween!"
 })
 
 questionList.push({
-  prompt: "You would look great dressed up like _____ .",
+  prompt: "You would look great dressed up like _____.",
   response: "",
   image: "http://www.funpedia.net/imgs/nov12/best_halloween_costumes_04.jpg",
   theme: "Happy Halloween!"
 })
 
 questionList.push({
-  prompt: "The scariest memory we shared together was that time when _____ .",
+  prompt: "The scariest memory we shared together was that time when _____.",
   response: "",
   image: "http://cdn.wallpapersafari.com/31/30/BMAJPh.jpg",
   theme: "Happy Halloween!"
 })
 
 questionList.push({
-  prompt: "The most creative costume you've ever had was _____ .",
+  prompt: "The most creative costume you've ever had was _____.",
   response: "",
   image: "http://www.buzzfyre.com/wp-content/uploads/2016/10/baby-rapunzel-in-her-tower.jpg",
   theme: "Happy Halloween!"
@@ -157,14 +157,14 @@ questionList.push({
 /* Thanksgiving */
 
 questionList.push({
-  prompt: "Thinking of you on Thanksgiving because _____ .",
+  prompt: "Thinking of you on Thanksgiving because _____.",
   response: "",
   image: "http://submar.com/wp-content/uploads/2016/11/Thanksgiving-11.23.16.png",
   theme: "Happy Thanksgiving!"
 })
 
 questionList.push({
-  prompt: "If you were a Thanksgiving dish, you would have to be _____ .",
+  prompt: "If you were a Thanksgiving dish, you would have to be _____.",
   response: "",
   image: "http://images.latintimes.com/sites/latintimes.com/files/2015/11/24/thanksgiving-dinner.jpg",
   theme: "Happy Thanksgiving!"
@@ -192,7 +192,7 @@ questionList.push({
 })
 
 questionList.push({
-  prompt: "You are a cornucopia of _____ .",
+  prompt: "You are a cornucopia of _____.",
   response: "",
   image: "http://www.joepaduda.com/wp-content/uploads/2015/10/Cornucopia.png",
   theme: "Happy Thanksgiving!"
@@ -202,14 +202,14 @@ questionList.push({
 /* Presidents' Day */
 
 questionList.push({
-  prompt: "I can picture us hanging out with President _____ .",
+  prompt: "I can picture us hanging out with President _____.",
   response: "",
   image: "http://submar.com/wp-content/uploads/2016/11/Thanksgiving-11.23.16.png",
   theme: "Happy Presidents' Day!"
 })
 
 questionList.push({
-  prompt: "If you were elected president, your first action would be _____ .",
+  prompt: "If you were elected president, your first action would be _____.",
   response: "",
   image: "http://images.latintimes.com/sites/latintimes.com/files/2015/11/24/thanksgiving-dinner.jpg",
   theme: "Happy Presidents' Day!"
@@ -237,7 +237,7 @@ questionList.push({
 })
 
 questionList.push({
-  prompt: "I think there should be a national policy to _____ .",
+  prompt: "I think there should be a national policy to _____.",
   response: "",
   image: "http://www.joepaduda.com/wp-content/uploads/2015/10/Cornucopia.png",
   theme: "Happy Presidents' Day!"
@@ -253,7 +253,7 @@ questionList.push({
 })
 
 questionList.push({
-  prompt: "Our favorite memory involving a tree must be _____ .",
+  prompt: "Our favorite memory involving a tree must be _____.",
   response: "",
   image: "http://images.latintimes.com/sites/latintimes.com/files/2015/11/24/thanksgiving-dinner.jpg",
   theme: "Happy Arbor Day!"
@@ -274,14 +274,14 @@ questionList.push({
 })
 
 questionList.push({
-  prompt: "Just as trees attract birds to call it home, you attract _____ .",
+  prompt: "Just as trees attract birds to call it home, you attract _____.",
   response: "",
   image: "http://cdn.business2community.com/wp-content/uploads/2014/11/Thanksgiving-Turkey-Cat-Costume.jpg",
   theme: "Happy Arbor Day!"
 })
 
 questionList.push({
-  prompt: "If we were to plant a tree together, we would plant it at _____ .",
+  prompt: "If we were to plant a tree together, we would plant it at _____.",
   response: "",
   image: "http://www.joepaduda.com/wp-content/uploads/2015/10/Cornucopia.png",
   theme: "Happy Arbor Day!"
