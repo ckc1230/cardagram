@@ -2,6 +2,10 @@ textarea {
 	resize: none;
 }
 
+p {
+  font-size: 2em;
+}
+
 .container {
 	width: 800px;
 	margin: 0 auto;
@@ -117,4 +121,13 @@ textarea {
     border: 1px solid #888;
     width: 70%; /* Could be more or less, depending on screen size */
     height: 70vh;
+}
+
+.prompt {
+  font-family: 'Just Another Hand', cursive;
+}
+
+.response {
+  font-family: 'Dawning of a New Day', cursive;
+  text-decoration: underline;
 }
