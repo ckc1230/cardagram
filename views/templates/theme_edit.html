@@ -19,13 +19,14 @@
 
 <div id="question-modal" class="modal">
 	<div class="modal-content">
-		<span class="close" ng-click="themeEditCtrl.closeModal()">&times;</span>
 		<div ng-repeat="question in themeEditCtrl.theme.questions">
 			<div class="questions" id="question-{{question.count}}" hidden>
 		  	<p>{{question.prompt}}</p>
 		    <p>{{question.response}}</p>
 		    <input ng-model="question.response">
-	    </div>
-	  </div>
+        <input type="submit" ng-click="themeEditCtrl.closeModal()">
+        <button ng-click="themeEditCtrl.clearResponse(question.count)">Clear</button>
+      </div>
+    </div>
   </div>
 </div>

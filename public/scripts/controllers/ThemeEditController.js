@@ -37,4 +37,7 @@ function ThemeEditController($http, $routeParams, $location) {
       questions[i].style.display = 'none';
     }
   }
+  vm.clearResponse = function(count) {
+    vm.theme.questions[count-1].response = "";
+  }
 };
