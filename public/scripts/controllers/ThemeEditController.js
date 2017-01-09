@@ -40,4 +40,21 @@ function ThemeEditController($http, $routeParams, $location) {
   vm.clearResponse = function(count) {
     vm.theme.questions[count-1].response = "";
   }
+  vm.getFrontPrompt = function(question) {
+    var parts = question.prompt.split("_____");
+    return parts[0];
+  }
+  vm.getResponse = function(question) {
+    if (question.response != "") {
+      document.getElementById('placeholder-span').style.display = "none";
+      return question.response;
+    } else {
+      document.getElementById('placeholder-span').style.display = "inline";
+      return "";
+    }
+  }
+  vm.getBackPrompt = function(question) {
+    var parts = question.prompt.split("_____");
+    return parts[1];
+  }
 };

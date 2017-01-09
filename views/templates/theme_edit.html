@@ -21,8 +21,12 @@
 	<div class="modal-content">
 		<div ng-repeat="question in themeEditCtrl.theme.questions">
 			<div class="questions" id="question-{{question.count}}" hidden>
-		  	<p>{{question.prompt}}</p>
-		    <p>{{question.response}}</p>
+        <p>
+          <span class="prompt">{{themeEditCtrl.getFrontPrompt(question)}}</span>
+          <span class="response">{{themeEditCtrl.getResponse(question)}}</span>
+          <span class="prompt" id="placeholder-span">_____</span>
+          <span class="prompt">{{themeEditCtrl.getBackPrompt(question)}}</span>
+        </p>
 		    <input ng-model="question.response">
         <input type="submit" ng-click="themeEditCtrl.closeModal()">
         <button ng-click="themeEditCtrl.clearResponse(question.count)">Clear</button>
