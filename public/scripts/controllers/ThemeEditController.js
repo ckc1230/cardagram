@@ -25,10 +25,19 @@ function ThemeEditController($http, $routeParams, $location) {
         $location.path('/ecards/'+response.data._id);
     });
   }
-  vm.openModal = function() {
+  vm.openModal = function(count) {
     document.getElementById('question-modal').style.display = "block";
+    var questionId = "question-"+count;
+    document.getElementById(questionId).style.display = "block";
   } 
   vm.closeModal = function() {
     document.getElementById('question-modal').style.display = "none";
+    var questions = document.getElementsByClassName('questions');
+    for(var i=0; i < questions.length; i++) {
+      questions[i].style.display = 'none';
+    }
+  }
+  vm.clearResponse = function(count) {
+    vm.theme.questions[count-1].response = "";
   }
 };
