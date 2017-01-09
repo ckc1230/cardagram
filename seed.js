@@ -12,14 +12,16 @@ questionList.push({
   prompt: "You're Awesome because _____.",
   response: "",
   image: "http://www.kazzledazz.com/wp-content/uploads/2015/02/friendship-cover.jpeg",
-  theme: "Happy Birthday!"
+  theme: "Happy Birthday!",
+  count: 1
 })
 
 questionList.push({
   prompt: "If I could get you anything in the world, it would have to be _____.",
   response: "",
   image: "http://www.kiplinger.com/slideshow/credit/T065-S001-15-gifts-that-keep-on-giving/images/intro.jpg",
-  theme: "Happy Birthday!"
+  theme: "Happy Birthday!",
+  count: 2
 })
 
 /* Mother's Day Questions */
@@ -292,7 +294,7 @@ questionList.push({
 
 themeList.push({
   title: "Happy Birthday!",
-  image: "http://www.sparklebox.co.uk/4931-4940/_wp_generated/ppc4396fa1_02.jpg"
+  image: "http://i.imgur.com/3bxTSHB.jpg"
 });
 
 themeList.push({

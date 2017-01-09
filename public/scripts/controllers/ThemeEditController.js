@@ -25,4 +25,10 @@ function ThemeEditController($http, $routeParams, $location) {
         $location.path('/ecards/'+response.data._id);
     });
   }
+  vm.openModal = function() {
+    document.getElementById('question-modal').style.display = "block";
+  } 
+  vm.closeModal = function() {
+    document.getElementById('question-modal').style.display = "none";
+  }
 };

@@ -7,7 +7,8 @@ var QuestionSchema = new Schema({
   prompt: String,
   response: String,
   image: String,
-  theme: String
+  theme: String,
+  count: Number
 });
 
 var Question = mongoose.model('Question', QuestionSchema);
