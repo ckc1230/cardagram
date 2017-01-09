@@ -1,3 +1,12 @@
+textarea {
+	resize: none;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+
 .center {
 	margin: 0 auto;
 	text-align: center;
@@ -17,6 +26,74 @@
   width: 30%;
 }
 
-.theme-img-show img {
-	height: 150px;
+.theme-img-show {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	background-image: url('http://i.imgur.com/3bxTSHB.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+
+.question-bubble {
+	border-radius: 50%;
+	border: 1px solid black;
+	position: absolute;
+	display: block;
+}
+
+.question-bubble-1 {
+	width: 100px;
+	height: 100px;
+	bottom: 55%;
+	left: 5%;
+	background:blue;
+}
+
+.question-bubble-2 {
+	width: 180px;
+	height: 180px;
+	bottom: 25%;
+	left: 20%;
+	background:red;
+}
+
+.question-bubble-3 {
+	width: 200px;
+	height: 200px;
+	bottom: 35%;
+	left: 70%;
+	background: green;
+}
+
+.question-bubble-4 {
+	width: 50px;
+	height: 50px;
+	background: yellow;
+	bottom: 65%;
+	left: 45%;
+}
+
+.question-bubble-5 {
+	width: 80px;
+	height: 80px;
+	background: purple;
+	bottom: 35%;
+	left: 53%;
+}
+
+.ecard-title {
+	width: 100%;
+	text-align: center;
+	bottom: 80%;
+	position: absolute;	
+}
+
+.ecard-msg {
+	width: 100%;
+	text-align: center;
+	bottom: 5%;
+	position: absolute;
 }

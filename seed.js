@@ -292,7 +292,7 @@ questionList.push({
 
 themeList.push({
   title: "Happy Birthday!",
-  image: "http://www.sparklebox.co.uk/4931-4940/_wp_generated/ppc4396fa1_02.jpg"
+  image: "http://i.imgur.com/3bxTSHB.jpg"
 });
 
 themeList.push({
