@@ -1,27 +1,31 @@
 <h3>{{themeEditCtrl.ecard.message}}</h3>
 <div class="container">
-	<div class="theme-img-show">
+	<div class="theme-img-show" style="background-image: url({{themeEditCtrl.theme.image}})">
 		<div class="ecard-title">
 			<h1>{{themeEditCtrl.theme.title}}</h1>
 		</div>
-		<div class="question-bubble question-bubble-1"></div>
-		<div class="question-bubble question-bubble-2"></div>
-		<div class="question-bubble question-bubble-3"></div>
-		<div class="question-bubble question-bubble-4"></div>
-		<div class="question-bubble question-bubble-5"></div>
+		<a class="launch-modal" ng-click="themeEditCtrl.openModal()"><div class="question-bubble" id="question-bubble-1"></div></a>
+		<a class="launch-modal"><div class="question-bubble" id="question-bubble-2"></div></a>
+		<a class="launch-modal"><div class="question-bubble" id="question-bubble-3"></div></a>
+		<a class="launch-modal"><div class="question-bubble" id="question-bubble-4"></div></a>
+		<a class="launch-modal"><div class="question-bubble" id="question-bubble-5"></div></a>
 		<div class="ecard-msg">
  			<p><textarea  maxlength="50" rows="4" cols="50" placeholder="Add your Message" ng-model="themeEditCtrl.theme.message"></textarea></p>
 		</div>
 	</div>
 </div>
 
-<form name="question-form">
-  <div ng-repeat="question in themeEditCtrl.theme.questions">
-  	<p>{{question.prompt}}</p>
-    <p>{{question.response}}</p>
-    <input ng-model="question.response">
+<input type="submit" ng-click="themeEditCtrl.saveECard()">
+
+<div id="question-modal" class="modal">
+	<div class="modal-content">
+		<span class="close" ng-click="themeEditCtrl.closeModal()">&times;</span>
+		<div ng-repeat="question in themeEditCtrl.theme.questions">
+			<div class="question-{{question.count}}">
+		  	<p>{{question.prompt}}</p>
+		    <p>{{question.response}}</p>
+		    <input ng-model="question.response">
+	    </div>
+	  </div>
   </div>
-  <p><label>Add Your Message:</label></p>
-  <p><textarea ng-model="themeEditCtrl.theme.message"></textarea></p>
-  <input type="submit" ng-click="themeEditCtrl.saveECard()">
-</form>
+</div>
