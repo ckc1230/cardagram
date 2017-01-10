@@ -24,6 +24,30 @@ questionList.push({
   count: 2
 })
 
+questionList.push({
+  prompt: "If I could get you anything in the world, it would have to be _____.",
+  response: "",
+  image: "https://s-media-cache-ak0.pinimg.com/736x/3e/6b/4f/3e6b4f008c6d66abbf4e7c5426e4ad5c.jpg",
+  theme: "Happy Birthday!",
+  count: 3
+})
+
+questionList.push({
+  prompt: "If I could get you anything in the world, it would have to be _____.",
+  response: "",
+  image: "http://www.kiplinger.com/slideshow/credit/T065-S001-15-gifts-that-keep-on-giving/images/intro.jpg",
+  theme: "Happy Birthday!",
+  count: 4
+})
+
+questionList.push({
+  prompt: "If I could get you anything in the world, it would have to be _____.",
+  response: "",
+  image: "http://cdn.skim.gs/image/upload/v1456339293/msi/10-Qualities-SM-Art-Img_afs73h.jpg",
+  theme: "Happy Birthday!",
+  count: 5
+})
+
 /* Mother's Day Questions */
 
 questionList.push({
