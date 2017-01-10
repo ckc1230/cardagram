@@ -45,6 +45,9 @@ p {
 	border: 1px solid black;
 	position: absolute;
 	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #question-bubble-1 {
@@ -52,7 +55,6 @@ p {
 	height: 100px;
 	bottom: 55%;
 	left: 5%;
-	background:blue;
 }
 
 #question-bubble-2 {
@@ -60,7 +62,6 @@ p {
 	height: 180px;
 	bottom: 25%;
 	left: 20%;
-	background:red;
 }
 
 #question-bubble-3 {
@@ -68,13 +69,11 @@ p {
 	height: 200px;
 	bottom: 35%;
 	left: 70%;
-	background: green;
 }
 
 #question-bubble-4 {
 	width: 50px;
 	height: 50px;
-	background: yellow;
 	bottom: 65%;
 	left: 45%;
 }
@@ -82,7 +81,6 @@ p {
 #question-bubble-5 {
 	width: 80px;
 	height: 80px;
-	background: purple;
 	bottom: 35%;
 	left: 53%;
 }
