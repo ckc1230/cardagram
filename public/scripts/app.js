@@ -1,7 +1,7 @@
 console.log("Hello!");
 
 angular
-  .module('eCardsApp', ['ngRoute'])
+  .module('eCardsApp', ['ngRoute','angularCSS'])
   .config(config)
     
 config.$inject = ['$routeProvider', '$locationProvider']    
@@ -15,7 +15,8 @@ function config(   $routeProvider,  $locationProvider   ) {
     .when('/ecards/:id', {
       templateUrl: '/templates/ecard',
       controllerAs: 'eCardCtrl',
-      controller: 'ECardsShowController'
+      controller: 'ECardsShowController',
+      css: '/styles/style.css'
     })
     .when('/themes/:id/edit', {
       templateUrl: '/templates/theme_edit',
