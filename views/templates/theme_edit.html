@@ -21,14 +21,16 @@
 	</div>
 </div>
 
-<input type="submit" ng-click="themeEditCtrl.saveECard()">
-
+<div class="center">
+  <input class="preview-btn" value="Preview" type="submit" ng-click="themeEditCtrl.saveECard()">
+</div>
 <div id="question-modal" class="modal">
 	<div class="modal-content">
-		<div ng-repeat="question in themeEditCtrl.theme.questions">
-			<div class="questions" id="question-{{question.count}}" hidden>
-				<div class="question-header">
-					<h1>Customize your message</h1>
+    <div ng-repeat="question in themeEditCtrl.theme.questions">
+      <div class="questions" id="question-{{question.count}}" hidden>
+        <span ng-click="themeEditCtrl.cancelResponse(question)" class='close'>&times;</span>
+        <div class="question-header">
+          <h1>Customize your message</h1>
 				</div>
 				<div class="question-form">
 					<table class="question-table">
@@ -45,7 +47,7 @@
 						        <p class="question-text-message">
 						          <span class="prompt">{{themeEditCtrl.getFrontPrompt(question)}}</span>
 						          <span class="response">{{themeEditCtrl.getResponse(question)}}</span>
-						          <span class="prompt" id="placeholder-span">_____</span>
+						          <span class="prompt placeholder-span">_____</span>
 						          <span class="prompt">{{themeEditCtrl.getBackPrompt(question)}}</span>
 						        </p>
 						    </div>

@@ -6,6 +6,8 @@ ThemeEditController.$inject = ['$http', '$routeParams', '$location'];
 
 function ThemeEditController($http, $routeParams, $location) {
   var vm = this;
+  vm.tempResponse = "";
+
   $http({
     method: 'GET',
     url: '/api/themes/' + $routeParams.id
@@ -26,9 +28,14 @@ function ThemeEditController($http, $routeParams, $location) {
     });
   }
   vm.openModal = function(count) {
+    if (vm.theme.questions[count-1].response != "") {
+      var placeholders = document.getElementsByClassName('placeholder-span');
+      placeholders[count-1].innerHTML = '';
+    }
     document.getElementById('question-modal').style.display = "block";
     var questionId = "question-"+count;
     document.getElementById(questionId).style.display = "block";
+    vm.tempResponse = vm.theme.questions[count-1].response;
   } 
   vm.closeModal = function() {
     document.getElementById('question-modal').style.display = "none";
@@ -39,6 +46,12 @@ function ThemeEditController($http, $routeParams, $location) {
   }
   vm.clearResponse = function(count) {
     vm.theme.questions[count-1].response = "";
+    var placeholders = document.getElementsByClassName('placeholder-span');
+    placeholders[count-1].innerHTML = '_____';
+  }
+  vm.cancelResponse = function(question) {
+    vm.theme.questions[question.count-1].response = vm.tempResponse;
+    vm.closeModal();
   }
   vm.getFrontPrompt = function(question) {
     var parts = question.prompt.split("_____");
@@ -46,10 +59,16 @@ function ThemeEditController($http, $routeParams, $location) {
   }
   vm.getResponse = function(question) {
     if (question.response != "") {
-      document.getElementById('placeholder-span').style.display = "none";
+      var placeholders = document.getElementsByClassName('placeholder-span');
+      for(var i=0; i < placeholders.length; i++) {
+        placeholders[i].style.display = 'none';
+      }
       return question.response;
     } else {
-      document.getElementById('placeholder-span').style.display = "inline";
+      var placeholders = document.getElementsByClassName('placeholder-span');
+      for(var i=0; i < placeholders.length; i++) {
+        placeholders[i].style.display = "inline";
+      }
       return "";
     }
   }
