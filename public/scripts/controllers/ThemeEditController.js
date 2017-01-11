@@ -45,7 +45,7 @@ function ThemeEditController($http, $routeParams, $location) {
   }
   vm.cancelResponse = function(question) {
     vm.theme.questions[question.count-1].response = vm.tempResponse;
-    document.getElementById('question-modal').style.display = "none";
+    vm.closeModal();
   }
   vm.getFrontPrompt = function(question) {
     var parts = question.prompt.split("_____");
