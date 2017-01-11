@@ -101,7 +101,7 @@ input {
 .ecard-msg {
 	width: 100%;
 	text-align: center;
-	bottom: 5%;
+	bottom: 1%;
 	position: absolute;
 }
 
@@ -234,4 +234,13 @@ input {
 	font-size: 15px;
 	font-weight: bold;
 	border-radius: 5%;
+}
+
+.preview-btn {
+  margin-top: 2%;
+  padding: 10px;
+  background: lightgreen;
+  border: 2px solid black;
+  font-size: 15px;
+  font-weight: bold;
 }
