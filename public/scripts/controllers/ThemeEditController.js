@@ -28,6 +28,10 @@ function ThemeEditController($http, $routeParams, $location) {
     });
   }
   vm.openModal = function(count) {
+    if (vm.theme.questions[count-1].response != "") {
+      var placeholders = document.getElementsByClassName('placeholder-span');
+      placeholders[count-1].innerHTML = '';
+    }
     document.getElementById('question-modal').style.display = "block";
     var questionId = "question-"+count;
     document.getElementById(questionId).style.display = "block";
@@ -42,6 +46,8 @@ function ThemeEditController($http, $routeParams, $location) {
   }
   vm.clearResponse = function(count) {
     vm.theme.questions[count-1].response = "";
+    var placeholders = document.getElementsByClassName('placeholder-span');
+    placeholders[count-1].innerHTML = '_____';
   }
   vm.cancelResponse = function(question) {
     vm.theme.questions[question.count-1].response = vm.tempResponse;
@@ -53,10 +59,16 @@ function ThemeEditController($http, $routeParams, $location) {
   }
   vm.getResponse = function(question) {
     if (question.response != "") {
-      document.getElementById('placeholder-span').style.display = "none";
+      var placeholders = document.getElementsByClassName('placeholder-span');
+      for(var i=0; i < placeholders.length; i++) {
+        placeholders[i].style.display = 'none';
+      }
       return question.response;
     } else {
-      document.getElementById('placeholder-span').style.display = "inline";
+      var placeholders = document.getElementsByClassName('placeholder-span');
+      for(var i=0; i < placeholders.length; i++) {
+        placeholders[i].style.display = "inline";
+      }
       return "";
     }
   }
