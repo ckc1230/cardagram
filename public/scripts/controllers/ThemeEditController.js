@@ -6,6 +6,8 @@ ThemeEditController.$inject = ['$http', '$routeParams', '$location'];
 
 function ThemeEditController($http, $routeParams, $location) {
   var vm = this;
+  vm.tempResponse = "";
+
   $http({
     method: 'GET',
     url: '/api/themes/' + $routeParams.id
@@ -29,6 +31,7 @@ function ThemeEditController($http, $routeParams, $location) {
     document.getElementById('question-modal').style.display = "block";
     var questionId = "question-"+count;
     document.getElementById(questionId).style.display = "block";
+    vm.tempResponse = vm.theme.questions[count-1].response;
   } 
   vm.closeModal = function() {
     document.getElementById('question-modal').style.display = "none";
@@ -39,6 +42,10 @@ function ThemeEditController($http, $routeParams, $location) {
   }
   vm.clearResponse = function(count) {
     vm.theme.questions[count-1].response = "";
+  }
+  vm.cancelResponse = function(question) {
+    vm.theme.questions[question.count-1].response = vm.tempResponse;
+    document.getElementById('question-modal').style.display = "none";
   }
   vm.getFrontPrompt = function(question) {
     var parts = question.prompt.split("_____");

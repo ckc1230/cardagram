@@ -25,10 +25,11 @@
 
 <div id="question-modal" class="modal">
 	<div class="modal-content">
-		<div ng-repeat="question in themeEditCtrl.theme.questions">
-			<div class="questions" id="question-{{question.count}}" hidden>
-				<div class="question-header">
-					<h1>Customize your message</h1>
+    <div ng-repeat="question in themeEditCtrl.theme.questions">
+      <div class="questions" id="question-{{question.count}}" hidden>
+        <span ng-click="themeEditCtrl.cancelResponse(question)" class='close'>&times;</span>
+        <div class="question-header">
+          <h1>Customize your message</h1>
 				</div>
 				<div class="question-form">
 					<table class="question-table">
