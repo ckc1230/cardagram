@@ -27,16 +27,50 @@
 	<div class="modal-content">
 		<div ng-repeat="question in themeEditCtrl.theme.questions">
 			<div class="questions" id="question-{{question.count}}" hidden>
-        <p>
-          <span class="prompt">{{themeEditCtrl.getFrontPrompt(question)}}</span>
-          <span class="response">{{themeEditCtrl.getResponse(question)}}</span>
-          <span class="prompt" id="placeholder-span">_____</span>
-          <span class="prompt">{{themeEditCtrl.getBackPrompt(question)}}</span>
-        </p>
-		    <input ng-model="question.response">
-        <input type="submit" ng-click="themeEditCtrl.closeModal()">
-        <button ng-click="themeEditCtrl.clearResponse(question.count)">Clear</button>
+				<div class="question-header">
+					<h1>Customize your message</h1>
+				</div>
+				<div class="question-form">
+					<table class="question-table">
+						<tr>
+							<td>
+								<div class="question-image-container">
+									<div class="question-image-div">
+										<img src={{question.image}} alt="">
+									</div>
+								</div>
+							</td>
+							<td class="question-text-table">
+								<div class="question-text-container">
+						        <p class="question-text-message">
+						          <span class="prompt">{{themeEditCtrl.getFrontPrompt(question)}}</span>
+						          <span class="response">{{themeEditCtrl.getResponse(question)}}</span>
+						          <span class="prompt" id="placeholder-span">_____</span>
+						          <span class="prompt">{{themeEditCtrl.getBackPrompt(question)}}</span>
+						        </p>
+						    </div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="question-image-input">
+									<label>Import your own image below:</label>
+									<input class="image-input-field" type="text" ng-model="question.image">
+								</div>	
+							</td>
+							<td>
+						    <input ng-model="question.response" maxlength="80" class="question-text-response" placeholder="Complete Your Message Here">
+							</td>
+						</tr>
+					</table>
+
+		    </div>
+		    <div class="question-footer">
+	        <button ng-click="themeEditCtrl.clearResponse(question.count)" class="clear-message-btn">Clear Message</button>
+	        <input type="submit" ng-click="themeEditCtrl.closeModal()" value="Save Message" class="save-message-btn">
+		    </div>
       </div>
+		    	
     </div>
   </div>
 </div>

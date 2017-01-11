@@ -6,6 +6,12 @@ p {
   font-size: 2em;
 }
 
+input {
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5%;
+}
+
 .container {
 	width: 800px;
 	margin: 0 auto;
@@ -128,4 +134,90 @@ p {
 .response {
   font-family: 'Dawning of a New Day', cursive;
   text-decoration: underline;
+}
+
+.question-form {
+	vertical-align: middle;
+}
+
+.question-header {
+	text-align: center;
+	border-bottom: 1px solid grey;
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 20px;
+}
+
+.question-header h1 {
+  margin: 0 auto 0 auto;
+}
+
+.question-image-container {
+	display: inline-block;
+	margin: 30px 30px 10px 30px;
+	text-align: center;
+}
+
+.question-image-div {
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+}
+
+.question-image-div img {
+	height: 200px;
+  margin-left: -25%;
+}
+
+.image-input-field {
+	margin-top: 10px;
+	width: 75%;
+}
+
+.question-table {
+	text-align: center;
+}
+
+.question-text-table {
+	text-align: center;
+	width: 70%;
+}
+
+.question-text-container {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: 80%;
+	margin: 0 auto;
+	top: 30%;
+}
+
+.question-text-message {
+	margin: 0 auto;
+}
+
+.question-text-response {
+	width: 300px;
+}
+
+.question-footer {
+	position: absolute;
+	bottom: 10%;
+	left: 60%;
+}
+
+.save-message-btn {
+	padding: 10px;
+	background: lightgreen;
+	border: 2px solid black;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.clear-message-btn {
+	padding: 10px;
+	border: 2px solid black;
+	background: white;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 5%;
 }
