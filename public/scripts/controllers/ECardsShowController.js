@@ -26,4 +26,42 @@ function ECardsShowController($http, $routeParams) {
     })
     return fullTexts;
   }
+  vm.openModal = function(count) {
+    document.getElementById('question-modal').style.display = "block";
+    var questionId = "question-"+count;
+    document.getElementById(questionId).style.display = "block";
+  }
+  vm.closeModal = function() {
+    document.getElementById('question-modal').style.display = "none";
+    var questions = document.getElementsByClassName('questions');
+    for(var i=0; i < questions.length; i++) {
+      questions[i].style.display = 'none';
+    }
+  }
+  vm.getFrontPrompt = function(question) {
+    var parts = question.prompt.split("_____");
+    return parts[0];
+  }
+  vm.getResponse = function(question) {
+    if (question.response != "") {
+      var placeholders = document.getElementsByClassName('placeholder-span');
+      for(var i=0; i < placeholders.length; i++) {
+        placeholders[i].style.display = 'none';
+      }
+      return question.response;
+    } else {
+      var placeholders = document.getElementsByClassName('placeholder-span');
+      for(var i=0; i < placeholders.length; i++) {
+        placeholders[i].style.display = "inline";
+      }
+      return "";
+    }
+  }
+  vm.getBackPrompt = function(question) {
+    var parts = question.prompt.split("_____");
+    return parts[1];
+  }
+  vm.sendECard = function() {
+    alert("Sent!");
+  }
 };

@@ -1,3 +1,4 @@
+<h3>{{themeEditCtrl.ecard.theme.message}}</h3>
 <div class="container">
   <div class="theme-img-show" style="background-image: url({{eCardCtrl.ecard.theme.image}})">
     <a ng-click="eCardCtrl.openModal(1)">
@@ -13,7 +14,7 @@
       <div class="question-bubble" id="question-bubble-5" style="background-image: url({{eCardCtrl.ecard.theme.questions[4].image}})"></div></a>
     <div class="ecard-msg">
       <p>
-        {{eCardCtrl.ecard.message}}
+        {{eCardCtrl.ecard.theme.message}}
       </p>
     </div>
   </div>
@@ -27,20 +28,10 @@
   <div class="modal-content">
     <div ng-repeat="question in eCardCtrl.ecard.theme.questions">
       <div class="questions" id="question-{{question.count}}" hidden>
-        <span ng-click="eCardCtrl.cancelResponse(question)" class='close'>&times;</span>
-        <div class="question-header">
-          <h1>Customize your message</h1>
-        </div>
+        <span ng-click="eCardCtrl.closeModal()" class='close'>&times;</span>
         <div class="question-form">
           <table class="question-table">
             <tr>
-              <td>
-                <div class="question-image-container">
-                  <div class="question-image-div">
-                    <img src={{question.image}} alt="">
-                  </div>
-                </div>
-              </td>
               <td class="question-text-table">
                 <div class="question-text-container">
                     <p class="question-text-message">
@@ -52,26 +43,9 @@
                 </div>
               </td>
             </tr>
-            <tr>
-              <td>
-                <div class="question-image-input">
-                  <label>Import your own image below:</label>
-                  <input class="image-input-field" type="text" ng-model="question.image">
-                </div>  
-              </td>
-              <td>
-                <input ng-model="question.response" maxlength="80" class="question-text-response" placeholder="Complete Your Message Here">
-              </td>
-            </tr>
           </table>
-
-        </div>
-        <div class="question-footer">
-          <button ng-click="eCardCtrl.clearResponse(question.count)" class="clear-message-btn">Clear Message</button>
-          <input type="submit" ng-click="eCardCtrl.closeModal()" value="Save Message" class="save-message-btn">
         </div>
       </div>
-          
     </div>
   </div>
 </div>
