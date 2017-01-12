@@ -343,7 +343,7 @@ themeList.push({
 
 themeList.push({
   title: "Happy Thanksgiving!",
-  image: "http://images.clipartpanda.com/thanksgiving-border-clipart-niXLoRGiB.png"
+  image: "http://i.imgur.com/PVGIGAZ.jpg"
 });
 
 themeList.push({
@@ -353,7 +353,7 @@ themeList.push({
 
 themeList.push({
   title: "Happy Arbor Day!",
-  image: "http://www.clipartkid.com/images/279/2014-clipartpanda-com-about-terms-vNwyiG-clipart.gif"
+  image: "http://i.imgur.com/3XAme7U.jpg"
 });
 
 /* ECARDS */
