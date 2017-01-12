@@ -54,6 +54,7 @@ input {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+  -webkit-transition: all 1.5s ease;
 }
 
 #question-bubble-1 {
@@ -243,4 +244,26 @@ input {
   border: 2px solid black;
   font-size: 15px;
   font-weight: bold;
+}
+
+#question-popup {
+  height: 400px;
+  width: 400px;
+  bottom: 10%;
+  left: 25%;
+  z-index: 10;
+}
+
+.full-message {
+  position: absolute;
+  height: 50%;
+  width: 80%;
+  top: 10%;
+  right: 10%;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 30%;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
 }
