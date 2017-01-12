@@ -323,12 +323,12 @@ themeList.push({
 
 themeList.push({
   title: "Happy New Year!",
-  image: "http://www.sparklebox.co.uk/3581-3590/_wp_generated/ppf2be0cad_02.jpg"
+  image: "http://i.imgur.com/w09TAJO.jpg"
 });
 
 themeList.push({
   title: "Happy Father's Day!",
-  image: "http://previews.123rf.com/images/jenifoto/jenifoto1505/jenifoto150500023/39565447-Happy-Fathers-Day-gift-tag-with-corner-border-of-tools-and-ties--Stock-Photo.jpg"
+  image: "http://i.imgur.com/54vtF0A.jpg"
 });
 
 themeList.push({
