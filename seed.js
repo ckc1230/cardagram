@@ -318,27 +318,27 @@ questionList.push({
 
 themeList.push({
   title: "Happy Birthday!",
-  image: "http://i.imgur.com/3bxTSHB.jpg"
+  image: "http://i.imgur.com/ERxKjDJ.jpg"
 });
 
 themeList.push({
   title: "Happy New Year!",
-  image: "http://www.sparklebox.co.uk/3581-3590/_wp_generated/ppf2be0cad_02.jpg"
+  image: "http://i.imgur.com/w09TAJO.jpg"
 });
 
 themeList.push({
   title: "Happy Father's Day!",
-  image: "http://previews.123rf.com/images/jenifoto/jenifoto1505/jenifoto150500023/39565447-Happy-Fathers-Day-gift-tag-with-corner-border-of-tools-and-ties--Stock-Photo.jpg"
+  image: "http://i.imgur.com/54vtF0A.jpg"
 });
 
 themeList.push({
   title: "Happy Mother's Day!",
-  image: "http://www.clipartkid.com/images/669/free-mother-s-day-borders-for-cards-scrapbooks-and-other-projects-IBoDlq-clipart.jpg"
+  image: "http://i.imgur.com/9YtzRml.jpg"
 });
 
 themeList.push({
   title: "Happy Halloween!",
-  image: "http://www.pngmart.com/files/1/Halloween-Border-PNG-Clipart.png"
+  image: "http://i.imgur.com/xBE2KXe.jpg"
 });
 
 themeList.push({
@@ -348,7 +348,7 @@ themeList.push({
 
 themeList.push({
   title: "Happy Presidents' Day!",
-  image: "http://www.clipartkid.com/images/480/www-wpclipart-com-page-frames-more-frames-americana-border-png-html-eygBml-clipart.png"
+  image: "http://i.imgur.com/cB29ZCi.jpg"
 });
 
 themeList.push({
