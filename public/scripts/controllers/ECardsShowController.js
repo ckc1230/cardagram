@@ -64,4 +64,22 @@ function ECardsShowController($http, $routeParams) {
   vm.sendECard = function() {
     alert("Sent!");
   }
+
+  vm.popup = function(count) {
+    var bubbleId = 'question-bubble-' + count;
+    var messageId = 'full-message-' + count;
+    var question = document.getElementById(bubbleId);
+    question.id = 'question-popup';
+    var message = document.getElementById(messageId);
+    message.style.display = 'block';
+  }
+
+  vm.popdown = function(count) {
+    var bubbleId = 'question-bubble-' + count;
+    var messageId = 'full-message-' + count;
+    var question = document.getElementById('question-popup');
+    question.id = bubbleId;
+    var message = document.getElementById(messageId);
+    message.style.display = 'none';
+  }
 };
