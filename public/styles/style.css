@@ -24,12 +24,14 @@ input {
 
 .plain-text a {
 	text-decoration: none;
+	color: black;
 }
 
 .main-header h1 {
 	display: inline;
 	vertical-align: middle;
 	line-height: 50px;
+	font-family: 'Carter One', cursive;
 }
 
 .main-header img {
@@ -57,7 +59,6 @@ input {
 	height: 500px;
 }
 
-
 .question-bubble {
 	border-radius: 50%;
 	border: 1px solid black;
@@ -67,6 +68,10 @@ input {
 	background-repeat: no-repeat;
 	background-position: center;
   -webkit-transition: all 1.5s ease;
+}
+
+.question-bubble:hover {
+	cursor: pointer;
 }
 
 #question-bubble-1 {
@@ -299,15 +304,19 @@ input {
 	background: #B8FDFE;
 	border: 2px solid black;
 	border-radius: 5%;
+	font-family: 'Carter One', cursive;
+
 }
 
 #get-started-div button:hover {
 	border: 3px solid #FEB8FB;
 	box-shadow: 0 0 10px #FEB8FB;
+	cursor: pointer;
 }
 
 #main-blurb {
 	font-size: 20px;
+	font-family: 'Carter One', cursive;
 }
 
 .slides {
