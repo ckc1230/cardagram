@@ -10,7 +10,8 @@ function config(   $routeProvider,  $locationProvider   ) {
     .when('/', {
       templateUrl: '/templates/ecards',
       controllerAs: 'eCardsCtrl',
-      controller: 'ECardsIndexController'
+      controller: 'ECardsIndexController',
+      css: '/styles/style.css'
     })
     .when('/ecards/:id', {
       templateUrl: '/templates/ecard',
@@ -21,7 +22,8 @@ function config(   $routeProvider,  $locationProvider   ) {
     .when('/themes/:id/edit', {
       templateUrl: '/templates/theme_edit',
       controllerAs: 'themeEditCtrl',
-      controller: 'ThemeEditController'
+      controller: 'ThemeEditController',
+      css: '/styles/style.css'
     });
 
   $locationProvider.html5Mode({

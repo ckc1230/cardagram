@@ -25,10 +25,14 @@
   </div>
 </div>
 
-<div class="center" id="send-div" >
+<div class="center" ng-hide="eCardCtrl.ecard.ecardSent">
   <input placeholder="Your Name" type="text" ng-model="eCardCtrl.senderName"> 
   <input placeholder="Your Email" type="text" ng-model="eCardCtrl.senderEmail"> 
   <input placeholder="Your Friend's Name" type="text" ng-model="eCardCtrl.receiverName"> 
   <input placeholder="Your Friend's Email" type="text" ng-model="eCardCtrl.receiverEmail"> 
   <input class="preview-btn" value="Send" type="submit" ng-click="eCardCtrl.sendECard()">
+</div>
+
+<div class="center plain-text" ng-show="eCardCtrl.ecard.ecardSent" class="ng-hide">
+  <a href="/"><h2>Create your own eCard!</h2></a>
 </div>

@@ -55,7 +55,16 @@ function ECardsShowController($http, $routeParams) {
     var mailToLink = 'mailto:' + vm.receiverEmail + '?subject=' + vm.ecard.theme.title +
       '&body=' + encodeURIComponent(formattedBody);
     window.location.href = mailToLink;
-    document.getElementById('send-div').style.display = 'none';
+    vm.ecard.ecardSent = true;
+    $http({
+      method: 'PATCH',
+      url: '/api/ecards/' + $routeParams.id,
+      data: vm.ecard
+    }).then(function successCallback(response) {
+      console.log("response",response);
+    }, function errorCallback(response) {
+      console.log('There was an error getting the data', response);
+    });
   }
 
   vm.popup = function(count) {

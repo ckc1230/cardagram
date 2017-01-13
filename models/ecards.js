@@ -8,7 +8,8 @@ var ECardSchema = new Schema({
   theme: {
     type: Schema.Types.Object, 
     ref: 'Theme'
-  }
+  },
+  ecardSent: { type: Boolean, default: false }
 });
 
 var ECard = mongoose.model('ECard', ECardSchema);
