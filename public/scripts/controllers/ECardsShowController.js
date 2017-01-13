@@ -62,7 +62,12 @@ function ECardsShowController($http, $routeParams) {
     return parts[1];
   }
   vm.sendECard = function() {
-    alert("Sent!");
+    var formattedBody = "Hi " + vm.receiverName + "!\n\n " +
+      vm.senderName + " sent you a very special ecard! You can view it here: " + window.location.href + " \n\n " +
+      "Enjoy!";
+    var mailToLink = "mailto:" + vm.receiverEmail + "?subject=" + vm.ecard.theme.title +
+      "&body=" + encodeURIComponent(formattedBody);
+    window.location.href = mailToLink;
   }
 
   vm.popup = function(count) {
