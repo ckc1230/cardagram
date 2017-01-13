@@ -263,9 +263,10 @@ input {
   text-align: center;
   font-size: 2em;
   padding-top: 30%;
-  border: 1px solid black;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgba(255,255,255,0.7);
+  text-overflow: hidden;
+  overflow: hidden;
 }
 
 #get-started-div {

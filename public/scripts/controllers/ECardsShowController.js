@@ -30,19 +30,7 @@ function ECardsShowController($http, $routeParams) {
     return parts[0];
   }
   vm.getResponse = function(question) {
-    if (question.response != '') {
-      var placeholders = document.getElementsByClassName('placeholder-span');
-      for(var i=0; i < placeholders.length; i++) {
-        placeholders[i].style.display = 'none';
-      }
-      return question.response;
-    } else {
-      var placeholders = document.getElementsByClassName('placeholder-span');
-      for(var i=0; i < placeholders.length; i++) {
-        placeholders[i].style.display = 'inline';
-      }
-      return '';
-    }
+    return question.response;
   }
   vm.getBackPrompt = function(question) {
     var parts = question.prompt.split('_____');
