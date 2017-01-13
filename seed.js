@@ -318,7 +318,7 @@ questionList.push({
 
 themeList.push({
   title: "Happy Birthday!",
-  image: "http://i.imgur.com/ERxKjDJ.jpg"
+  image: "http://i.imgur.com/LyCAoB8.jpg"
 });
 
 themeList.push({
@@ -328,27 +328,27 @@ themeList.push({
 
 themeList.push({
   title: "Happy Father's Day!",
-  image: "http://i.imgur.com/54vtF0A.jpg"
+  image: "http://i.imgur.com/zCUKzZy.jpg"
 });
 
 themeList.push({
   title: "Happy Mother's Day!",
-  image: "http://i.imgur.com/9YtzRml.jpg"
+  image: "http://i.imgur.com/4b2HTkh.jpg"
 });
 
 themeList.push({
   title: "Happy Halloween!",
-  image: "http://i.imgur.com/xBE2KXe.jpg"
+  image: "http://i.imgur.com/L4nV0bn.jpg"
 });
 
 themeList.push({
   title: "Happy Thanksgiving!",
-  image: "http://i.imgur.com/PVGIGAZ.jpg"
+  image: "http://i.imgur.com/UEXKnXD.jpg"
 });
 
 themeList.push({
   title: "Happy Presidents' Day!",
-  image: "http://i.imgur.com/cB29ZCi.jpg"
+  image: "http://i.imgur.com/8WoDdXx.jpg"
 });
 
 themeList.push({
