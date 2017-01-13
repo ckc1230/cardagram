@@ -30,6 +30,7 @@
   <input placeholder="Your Friend's Name" type="text" ng-model="eCardCtrl.receiverName"> 
   <input placeholder="Your Friend's Email" type="text" ng-model="eCardCtrl.receiverEmail"> 
   <input class="preview-btn" value="Send" type="submit" ng-click="eCardCtrl.sendECard()">
+  <input class="preview-btn" value="Edit" type="submit" ng-click="eCardCtrl.editECard()">
 </div>
 
 <div class="center plain-text" ng-show="eCardCtrl.ecard.ecardSent" class="ng-hide">

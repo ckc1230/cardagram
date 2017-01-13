@@ -2,9 +2,9 @@ angular
   .module('eCardsApp')
   .controller('ECardsShowController', ECardsShowController);
 
-ECardsShowController.$inject = ['$http', '$routeParams'];
+ECardsShowController.$inject = ['$http', '$routeParams', '$location'];
 
-function ECardsShowController($http, $routeParams) {
+function ECardsShowController($http, $routeParams, $location) {
   var vm = this;
   $http({
     method: 'GET',
@@ -50,6 +50,18 @@ function ECardsShowController($http, $routeParams) {
       data: vm.ecard
     }).then(function successCallback(response) {
       console.log("response",response);
+    }, function errorCallback(response) {
+      console.log('There was an error getting the data', response);
+    });
+  }
+
+  vm.editECard = function() {
+    $http({
+      method: 'PUT',
+      url: '/api/ecards/' + $routeParams.id,
+      data: vm.ecard
+    }).then(function successCallback(response) {
+      $location.path('/ecards/'+response.data._id+'/edit');
     }, function errorCallback(response) {
       console.log('There was an error getting the data', response);
     });

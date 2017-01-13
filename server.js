@@ -41,10 +41,11 @@ app.get('/api/ecards/:id', function showECard(req, res) {
   });
 });
 
-app.patch('/api/ecards/:id', function updateECard(req, res) {
-  console.log("req.body.ecardSent:",req.body.ecardSent);
+app.put('/api/ecards/:id', function updateECard(req, res) {
   db.ECard.findById({ _id: req.params.id }, function(err, eCard) {
     if (err) { throw err; };
+    eCard.theme = req.body.theme;
+    eCard.message = req.body.message;
     eCard.ecardSent = req.body.ecardSent;
     eCard.save(function(err, saved) {
       res.json(eCard);
