@@ -296,9 +296,14 @@ input {
 	padding: 20px;
 	font-weight: bold;
 	font-size: 20px;
-	background: lightblue;
+	background: #B8FDFE;
 	border: 2px solid black;
 	border-radius: 5%;
+}
+
+#get-started-div button:hover {
+	border: 3px solid #FEB8FB;
+	box-shadow: 0 0 10px #FEB8FB;
 }
 
 #main-blurb {
@@ -428,8 +433,6 @@ input:checked + .slide-container .nav label { display: block; }
 input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4,
-input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
+input#img-4:checked ~ .nav-dots label#img-dot-4 {
 	background: rgba(0, 0, 0, 0.8);
 }

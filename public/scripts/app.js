@@ -8,6 +8,10 @@ config.$inject = ['$routeProvider', '$locationProvider']
 function config(   $routeProvider,  $locationProvider   ) {
   $routeProvider
     .when('/', {
+      templateUrl: '/templates/main',
+      css: '/styles/style.css'
+    })
+    .when('/ecards', {
       templateUrl: '/templates/ecards',
       controllerAs: 'eCardsCtrl',
       controller: 'ECardsIndexController',
