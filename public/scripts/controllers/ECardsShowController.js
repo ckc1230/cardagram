@@ -36,6 +36,14 @@ function ECardsShowController($http, $routeParams, $location) {
     var parts = question.prompt.split('_____');
     return parts[1];
   }
+
+  vm.openModal = function() {
+    document.getElementById('send-modal').style.display = "block";
+  }
+  vm.closeModal = function() {
+    document.getElementById('send-modal').style.display = "none";
+  }
+
   vm.sendECard = function() {
     var formattedBody = 'Hi ' + vm.receiverName + '!\n\n ' +
       vm.senderName + ' sent you a very special ecard! You can view it here: ' + window.location.href + ' \n\n ' +
@@ -44,8 +52,9 @@ function ECardsShowController($http, $routeParams, $location) {
       '&body=' + encodeURIComponent(formattedBody);
     window.location.href = mailToLink;
     vm.ecard.ecardSent = true;
+    console.log("vm.ecard:",vm.ecard);
     $http({
-      method: 'PATCH',
+      method: 'PUT',
       url: '/api/ecards/' + $routeParams.id,
       data: vm.ecard
     }).then(function successCallback(response) {
@@ -53,6 +62,7 @@ function ECardsShowController($http, $routeParams, $location) {
     }, function errorCallback(response) {
       console.log('There was an error getting the data', response);
     });
+    vm.closeModal();
   }
 
   vm.editECard = function() {
