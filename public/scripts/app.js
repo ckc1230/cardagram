@@ -23,7 +23,13 @@ function config(   $routeProvider,  $locationProvider   ) {
       controller: 'ECardsShowController',
       css: '/styles/style.css'
     })
-    .when('/themes/:id/edit', {
+    .when('/ecards/:id/edit', {
+      templateUrl: '/templates/ecard_edit',
+      controllerAs: 'eCardEditCtrl',
+      controller: 'ECardEditController',
+      css: '/styles/style.css'
+    })
+   .when('/themes/:id/edit', {
       templateUrl: '/templates/theme_edit',
       controllerAs: 'themeEditCtrl',
       controller: 'ThemeEditController',

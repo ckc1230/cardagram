@@ -1,22 +1,20 @@
-<div class="container">
-  <div class="theme-img-show" style="background-image: url({{eCardCtrl.ecard.theme.image}})">
-    <div class="ecard-title">
+<div class='container'>
+  <div class='theme-img-show' style='background-image: url({{eCardCtrl.ecard.theme.image}})'>
+    <div class='ecard-title'>
       <h1>{{eCardCtrl.ecard.theme.title}}</h1>
     </div>
-    <div ng-repeat="question in eCardCtrl.ecard.theme.questions">
-      <a ng-click="eCardCtrl.openModal(question.count)">
-        <div class="question-bubble" id="question-bubble-{{question.count}}"
-          ng-mouseover="eCardCtrl.popup(question.count)" ng-mouseout="eCardCtrl.popdown(question.count)"
-          style="background-image: url({{eCardCtrl.ecard.theme.questions[question.count-1].image}})">
-          <div class="full-message" id="full-message-{{question.count}}" hidden>
-            <span class="prompt">{{eCardCtrl.getFrontPrompt(question)}}</span>
-            <span class="response">{{eCardCtrl.getResponse(question)}}</span>
-            <span class="prompt">{{eCardCtrl.getBackPrompt(question)}}</span>
-          </div>
+    <div ng-repeat='question in eCardCtrl.ecard.theme.questions'>
+      <div class='question-bubble' id='question-bubble-{{question.count}}'
+        ng-mouseover='eCardCtrl.popup(question.count)' ng-mouseout='eCardCtrl.popdown(question.count)'
+        style='background-image: url({{eCardCtrl.ecard.theme.questions[question.count-1].image}})'>
+        <div class='full-message' id='full-message-{{question.count}}' hidden>
+          <span class='prompt'>{{eCardCtrl.getFrontPrompt(question)}}</span>
+          <span class='response'>{{eCardCtrl.getResponse(question)}}</span>
+          <span class='prompt'>{{eCardCtrl.getBackPrompt(question)}}</span>
         </div>
-      </a>
+      </div>
     </div>
-    <div class="ecard-msg">
+    <div class='ecard-msg'>
       <p>
         {{eCardCtrl.ecard.theme.message}}
       </p>
@@ -24,14 +22,39 @@
   </div>
 </div>
 
-<div class="center" ng-hide="eCardCtrl.ecard.ecardSent">
-  <input placeholder="Your Name" type="text" ng-model="eCardCtrl.senderName"> 
-  <input placeholder="Your Email" type="text" ng-model="eCardCtrl.senderEmail"> 
-  <input placeholder="Your Friend's Name" type="text" ng-model="eCardCtrl.receiverName"> 
-  <input placeholder="Your Friend's Email" type="text" ng-model="eCardCtrl.receiverEmail"> 
-  <input class="preview-btn" value="Send" type="submit" ng-click="eCardCtrl.sendECard()">
+<div class='center' ng-hide='eCardCtrl.ecard.ecardSent'>
+  <input class='clear-message-btn' value='Edit' type='submit' ng-click='eCardCtrl.editECard()'>
+  <input class='preview-btn' value='Send' type='submit' ng-click='eCardCtrl.openModal()'>
 </div>
 
-<div class="center plain-text" ng-show="eCardCtrl.ecard.ecardSent" class="ng-hide">
-  <a href="/"><h2>Create your own eCard!</h2></a>
+<div class='center plain-text' ng-show='eCardCtrl.ecard.ecardSent' class='ng-hide'>
+  <a href='/'><h2>Create your own eCard!</h2></a>
+</div>
+
+<div id='send-modal' class='modal'>
+  <div id='send-modal-content' class='modal-content'>
+    <span ng-click='eCardCtrl.closeModal()' class='close'>&times;</span>
+    <div class='question-header'>
+      <h2>Address Your Cardagram</h2>
+    </div>
+    <p>
+      <table style='width:100%'>
+        <tr>
+          <td><input placeholder='Your Name' type='text' ng-model='eCardCtrl.senderName'></td>
+        </tr>
+        <tr>
+          <td><input placeholder='Your Email' type='text' ng-model='eCardCtrl.senderEmail'></td>
+        </tr>
+        <tr>
+          <td><input placeholder="Your Friend's Name" type='text' ng-model='eCardCtrl.receiverName'></td>
+        </tr>
+        <tr>
+          <td><input placeholder="Your Friend's Email" type='text' ng-model='eCardCtrl.receiverEmail'></td>
+        </tr>
+        <tr>
+          <td><input class='preview-btn' value='Send' type='submit' ng-click='eCardCtrl.sendECard()'></td>
+        </tr>
+      </table>
+    </p>
+  </div>
 </div>
