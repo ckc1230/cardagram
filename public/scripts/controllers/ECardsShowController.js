@@ -46,8 +46,10 @@ function ECardsShowController($http, $routeParams, $location) {
 
   vm.sendECard = function() {
     var formattedBody = 'Hi ' + vm.receiverName + '!\n\n ' +
-      vm.senderName + ' sent you a very special ecard! You can view it here: ' + window.location.href + ' \n\n ' +
-      'Enjoy!';
+      vm.senderName + ' sent you a very special interactive ecard! You can view it here:\n' +
+        window.location.href + ' \n\n ' +
+        "Don't forget to explore!\n Enjoy!\n\n" +
+        '- Your friends at Cardagram';
     var mailToLink = 'mailto:' + vm.receiverEmail + '?subject=' + vm.ecard.theme.title +
       '&body=' + encodeURIComponent(formattedBody);
     window.location.href = mailToLink;
