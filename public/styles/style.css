@@ -70,7 +70,23 @@ input {
   -webkit-transition: all 1.5s ease;
 }
 
-.question-bubble:hover {
+.question-bubble-pending {
+	border-radius: 50%;
+	border: 1px solid red;
+	position: absolute;
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0 0 10px red;
+  -webkit-transition: all 1.5s ease;
+}
+
+.question-bubble-done {
+	border: 1px solid green !important;
+}
+
+.question-bubble:hover, .question-bubble-pending:hover, .question-bubble-pending:hover {
 	cursor: pointer;
 }
 
@@ -254,13 +270,23 @@ input {
 	border-radius: 5%;
 }
 
-.preview-btn {
-  margin-top: 2%;
+.progress-bar-step {
+  margin: 20px 15px 0 15px;
   padding: 10px;
-  background: lightgreen;
-  border: 2px solid black;
+  background: white;
+  border: 2px solid #C0C0C0;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: bold;	
+  display: inline-block;
+	font-family: 'Carter One', cursive;
+	border-radius: 5%;
+	color: #C0C0C0;
+}
+
+.active-step {
+  border: 2px solid black;
+  color: black;
+  background: lightgreen
 }
 
 #question-popup {
@@ -305,13 +331,16 @@ input {
 	border: 2px solid black;
 	border-radius: 5%;
 	font-family: 'Carter One', cursive;
-
 }
 
 #get-started-div button:hover {
 	border: 3px solid #FEB8FB;
 	box-shadow: 0 0 10px #FEB8FB;
 	cursor: pointer;
+}
+
+#get-started-div button:active {
+	outline: none;
 }
 
 #main-blurb {

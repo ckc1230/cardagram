@@ -16,6 +16,7 @@ function ThemeEditController($http, $routeParams, $location) {
   }, function errorCallback(response) {
     console.log('There was an error getting the data', response);
   });
+
   vm.saveECard = function() {
     var newECard = {
       message: vm.theme.message,
@@ -27,6 +28,7 @@ function ThemeEditController($http, $routeParams, $location) {
         $location.path('/ecards/'+response.data._id);
     });
   }
+  
   vm.openModal = function(count) {
     if (vm.theme.questions[count-1].response != "") {
       var placeholders = document.getElementsByClassName('placeholder-span');
@@ -48,6 +50,17 @@ function ThemeEditController($http, $routeParams, $location) {
     vm.theme.questions[count-1].response = "";
     var placeholders = document.getElementsByClassName('placeholder-span');
     placeholders[count-1].innerHTML = '_____';
+  }
+  vm.saveResponse = function(count) {
+    var questionId = "question-bubble-"+count;
+    if (vm.theme.questions[count-1].response != "") {
+      document.getElementById(questionId).style.border = "1px solid green";
+      document.getElementById(questionId).style.boxShadow = "0 0 10px green";
+    } else {
+      document.getElementById(questionId).style.border = "1px solid red";
+      document.getElementById(questionId).style.boxShadow = "0 0 10px red";     
+    }
+    vm.closeModal();
   }
   vm.cancelResponse = function(question) {
     vm.theme.questions[question.count-1].response = vm.tempResponse;
