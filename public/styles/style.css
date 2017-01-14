@@ -280,6 +280,15 @@ input {
 	border-radius: 5%;
 }
 
+.preview-btn {
+    margin-top: 2%;
+    padding: 10px;
+    background: lightgreen;
+    border: 2px solid black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 .progress-bar-step {
   margin: 20px 15px 0 15px;
   padding: 10px;
