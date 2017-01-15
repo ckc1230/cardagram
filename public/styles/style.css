@@ -218,6 +218,7 @@ input {
 .question-image-div {
 	height: 200px;
 	width: 200px;
+	border-radius: 50%;
 	overflow: hidden;
 }
 
@@ -280,13 +281,22 @@ input {
 	border-radius: 5%;
 }
 
+#message-text-area {
+	font-size: 14px;
+	font-family: 'Carter One', cursive;
+}
+
 .preview-btn {
-    margin-top: 2%;
-    padding: 10px;
-    background: lightgreen;
-    border: 2px solid black;
-    font-size: 15px;
-    font-weight: bold;
+  margin-top: 2%;
+  padding: 10px;
+  background: lightgreen;
+  border: 2px solid black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#preview-cardagram-btn:hover {
+	cursor: pointer;
 }
 
 .progress-bar-step {
@@ -302,10 +312,18 @@ input {
 	color: #C0C0C0;
 }
 
+.progress-bar-step:hover {
+	cursor: default;
+}
+
 .active-step {
   border: 2px solid black;
   color: black;
-  background: lightgreen
+}
+
+.click-me {
+	box-shadow: 0 0 10px yellow;
+  background: lightgreen;
 }
 
 #question-popup {

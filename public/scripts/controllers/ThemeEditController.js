@@ -7,6 +7,7 @@ ThemeEditController.$inject = ['$http', '$routeParams', '$location'];
 function ThemeEditController($http, $routeParams, $location) {
   var vm = this;
   vm.tempResponse = "";
+  vm.bubblesComplete = false;
 
   $http({
     method: 'GET',
@@ -56,10 +57,14 @@ function ThemeEditController($http, $routeParams, $location) {
     if (vm.theme.questions[count-1].response != "") {
       document.getElementById(questionId).style.border = "1px solid green";
       document.getElementById(questionId).style.boxShadow = "0 0 10px green";
+      document.getElementById(questionId).dataset.color = "green"
+
     } else {
       document.getElementById(questionId).style.border = "1px solid red";
-      document.getElementById(questionId).style.boxShadow = "0 0 10px red";     
+      document.getElementById(questionId).style.boxShadow = "0 0 10px red"; 
+      document.getElementById(questionId).dataset.color = "red"    
     }
+    vm.checkBubbles();
     vm.closeModal();
   }
   vm.cancelResponse = function(question) {
@@ -88,5 +93,18 @@ function ThemeEditController($http, $routeParams, $location) {
   vm.getBackPrompt = function(question) {
     var parts = question.prompt.split("_____");
     return parts[1];
+  }
+  vm.checkBubbles = function() {
+    if (document.getElementById('question-bubble-1').dataset.color === "green" &&
+        document.getElementById('question-bubble-2').dataset.color === "green" &&
+        document.getElementById('question-bubble-3').dataset.color === "green" &&
+        document.getElementById('question-bubble-4').dataset.color === "green" &&
+        document.getElementById('question-bubble-5').dataset.color === "green") {
+      vm.bubblesComplete = true;
+      document.getElementById('write-message-step').className += " active-step";
+    } else {
+      vm.bubblesComplete = false;
+      document.getElementById('write-message-step').className = "progress-bar-step"
+    }
   }
 };
