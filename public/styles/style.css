@@ -1,3 +1,9 @@
+body {
+   min-width:600px;
+   width: auto !important;
+   width:600px;
+}
+
 textarea {
 	resize: none;
 }
@@ -492,4 +498,114 @@ input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4 {
 	background: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    width: 600px;
+    height: 375px;
+    margin: 0 auto;
+  }
+  #question-bubble-1 {
+    width: 75px;
+    height: 75px;
+    bottom: 70%;
+    left: 10%;
+  }
+  #question-bubble-2 {
+    width: 135px;
+    height: 135px;
+    bottom: 45%;
+    left: 20%;
+  }
+  #question-bubble-3 {
+    width: 150px;
+    height: 150px;
+    bottom: 48%;
+    left: 68%;
+  }
+  #question-bubble-4 {
+    width: 37.5px;
+    height: 37.5px;
+    bottom: 75%;
+    left: 48%;
+  }
+  #question-bubble-5 {
+    width: 60px;
+    height: 60px;
+    bottom: 50%;
+    left: 53%;
+  }
+  .ecard-msg {
+    bottom: 25%;
+    font-size: 0.75em;
+  }
+  .ecard-title {
+    bottom: 83%;
+  }
+  .question-header {
+    font-size: 1em;
+  }
+  #question-popup {
+    height: 300px;
+    width: 300px;
+    bottom: 33%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  #question-bubble-1 {
+    width: 50px;
+    height: 50px;
+    bottom: 80%;
+    left: 5%;
+  }
+  #question-bubble-2 {
+    width: 90px;
+    height: 90px;
+    bottom: 65%;
+  }
+  #question-bubble-3 {
+    width: 100px;
+    height: 100px;
+    bottom: 68%;
+  }
+  #question-bubble-4 {
+    width: 25px;
+    height: 25px;
+    bottom: 83%;
+  }
+  #question-bubble-5 {
+    width: 40px;
+    height: 40px;
+    bottom: 68%;
+    left: 53%;
+  }
+  .ecard-msg textarea {
+    height: 3em;
+    width: 25em;
+  }
+  .ecard-msg {
+    bottom: 52%;
+    font-size: 0.5em;
+  }
+  .ecard-title {
+    bottom: 90%;
+    font-size: 0.5em;
+  }
+  .question-header {
+    font-size: 0.75em;
+  }
+  #question-popup {
+    height: 250px;
+    width: 250px;
+    bottom: 50%;
+    left: 20%;
+    font-size: 0.75em;
+  }
 }
