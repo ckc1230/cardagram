@@ -65,7 +65,7 @@
 									</div>	
 								</td>
 								<td>
-							    <input ng-model="question.response" maxlength="80" class="question-text-response" placeholder="Complete Your Message Here">
+							    <input ng-model="question.response" maxlength="80" class="question-text-response" placeholder="Complete Your Message Here" ng-keypress="themeEditCtrl.playWritingSFX()">
 								</td>
 							</tr>
 						</table>
