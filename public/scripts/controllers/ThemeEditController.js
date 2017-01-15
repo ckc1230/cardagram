@@ -8,7 +8,6 @@ function ThemeEditController($http, $routeParams, $location) {
   var vm = this;
   vm.tempResponse = "";
   vm.bubblesComplete = false;
-  vm.messageComplete = false;
 
   $http({
     method: 'GET',

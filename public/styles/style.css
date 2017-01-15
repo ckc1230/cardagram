@@ -218,6 +218,7 @@ input {
 .question-image-div {
 	height: 200px;
 	width: 200px;
+	border-radius: 50%;
 	overflow: hidden;
 }
 
@@ -278,6 +279,11 @@ input {
 	font-size: 15px;
 	font-weight: bold;
 	border-radius: 5%;
+}
+
+#message-text-area {
+	font-size: 14px;
+	font-family: 'Carter One', cursive;
 }
 
 .preview-btn {
