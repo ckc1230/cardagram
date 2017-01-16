@@ -89,7 +89,8 @@ input {
 }
 
 .question-bubble-done {
-	border: 1px solid green !important;
+	border: 1px solid green;
+  box-shadow: 0 0 10px green;
 }
 
 .question-bubble:hover, .question-bubble-pending:hover, .question-bubble-pending:hover {
@@ -301,8 +302,14 @@ input {
   font-weight: bold;
 }
 
-#preview-cardagram-btn:hover {
+#preview-cardagram-btn:hover, 
+#preview-edit-cardagram-btn:hover {
 	cursor: pointer;
+}
+
+#preview-edit-cardagram-btn:disabled {
+  background: white;
+  cursor: not-allowed;
 }
 
 .progress-bar-step {

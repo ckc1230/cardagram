@@ -1,72 +1,74 @@
-<div class="container">
-	<div class="theme-img-show" style="background-image: url({{eCardEditCtrl.ecard.theme.image}})">
-		<div class="ecard-title">
-			<h1>{{eCardEditCtrl.ecard.theme.title}}</h1>
-		</div>
-		<div ng-repeat="question in eCardEditCtrl.ecard.theme.questions">
-			<a ng-click="eCardEditCtrl.openModal(question.count)">
-				<div class="question-bubble" id="question-bubble-{{question.count}}" style="background-image: url({{question.image}})"></div>
-			</a>
-		</div>
-		<div class="ecard-msg">
- 			<p><textarea  maxlength="50" rows="4" cols="50" placeholder="Add your Message" ng-model="eCardEditCtrl.ecard.theme.message"></textarea></p>
+<form name="theme-edit-form">
+	<div class="container">
+		<div class="theme-img-show" style="background-image: url({{eCardEditCtrl.ecard.theme.image}})">
+			<div class="ecard-title">
+				<h1>{{eCardEditCtrl.ecard.theme.title}}</h1>
+			</div>
+			<div ng-repeat="question in eCardEditCtrl.ecard.theme.questions">
+				<a ng-click="eCardEditCtrl.openModal(question.count)">
+					<div class="question-bubble question-bubble-done" id="question-bubble-{{question.count}}" data-color="green" style="background-image: url({{question.image}})"></div>
+				</a>
+			</div>
+			<div class="ecard-msg">
+	 			<p><textarea  id="message-text-area" maxlength="165" rows="3" cols="50" placeholder="Add your Message" ng-model="eCardEditCtrl.ecard.theme.message"></textarea></p>
+			</div>
 		</div>
 	</div>
-</div>
 
-<div class="center">
-  <input class="preview-btn" value="Preview" type="submit" ng-click="eCardEditCtrl.saveECard()">
-</div>
+	<div class="center">
+	  <input class="preview-btn" id="preview-edit-cardagram-btn" value="Preview Cardagram" type="submit" ng-click="eCardEditCtrl.saveECard()" ng-disabled="!(eCardEditCtrl.bubblesComplete && eCardEditCtrl.ecard.theme.message.length > 0)">
+	</div>
 
-<div id="question-modal" class="modal">
-	<div class="modal-content">
-    <div ng-repeat="question in eCardEditCtrl.ecard.theme.questions">
-      <div class="questions" id="question-{{question.count}}" hidden>
-        <span ng-click="eCardEditCtrl.cancelResponse(question)" class='close'>&times;</span>
-        <div class="question-header">
-          <h1>Customize your message</h1>
-				</div>
-				<div class="question-form">
-					<table class="question-table">
-						<tr>
-							<td>
-								<div class="question-image-container">
-									<div class="question-image-div">
-										<img src={{question.image}} alt="">
+	<div id="question-modal" class="modal">
+		<div class="modal-content">
+	    <div ng-repeat="question in eCardEditCtrl.ecard.theme.questions">
+	      <div class="questions" id="question-{{question.count}}" hidden>
+	        <span ng-click="eCardEditCtrl.cancelResponse(question)" class='close'>&times;</span>
+	        <div class="question-header">
+	          <h1>Customize your message</h1>
+					</div>
+					<div class="question-form">
+						<table class="question-table">
+							<tr>
+								<td>
+									<div class="question-image-container">
+										<div class="question-image-div">
+											<img src={{question.image}} alt="">
+										</div>
 									</div>
-								</div>
-							</td>
-							<td class="question-text-table">
-								<div class="question-text-container">
-						        <p class="question-text-message">
-						          <span class="prompt">{{eCardEditCtrl.getFrontPrompt(question)}}</span>
-						          <span class="response">{{eCardEditCtrl.getResponse(question)}}</span>
-						          <span class="prompt placeholder-span">_____</span>
-						          <span class="prompt">{{eCardEditCtrl.getBackPrompt(question)}}</span>
-						        </p>
-						    </div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="question-image-input">
-									<label>Import your own image below:</label>
-									<input class="image-input-field" type="text" ng-model="question.image">
-								</div>	
-							</td>
-							<td>
-						    <input ng-model="question.response" maxlength="80" class="question-text-response" placeholder="Complete Your Message Here">
-							</td>
-						</tr>
-					</table>
+								</td>
+								<td class="question-text-table">
+									<div class="question-text-container">
+							        <p class="question-text-message">
+							          <span class="prompt">{{eCardEditCtrl.getFrontPrompt(question)}}</span>
+							          <span class="response">{{eCardEditCtrl.getResponse(question)}}</span>
+							          <span class="prompt placeholder-span">_____</span>
+							          <span class="prompt">{{eCardEditCtrl.getBackPrompt(question)}}</span>
+							        </p>
+							    </div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="question-image-input">
+										<label>Import your own image below:</label>
+										<input class="image-input-field" type="text" ng-model="question.image">
+									</div>	
+								</td>
+								<td>
+							    <input ng-model="question.response" maxlength="80" class="question-text-response" placeholder="Complete Your Message Here" ng-keypress="eCardEditCtrl.playWritingSFX()">
+								</td>
+							</tr>
+						</table>
 
-		    </div>
-		    <div class="question-footer">
-	        <button ng-click="eCardEditCtrl.clearResponse(question.count)" class="clear-message-btn">Clear Message</button>
-	        <input type="submit" ng-click="eCardEditCtrl.closeModal()" value="Save Message" class="save-message-btn">
-		    </div>
-      </div>
-		    	
-    </div>
-  </div>
-</div>
+			    </div>
+			    <div class="question-footer">
+		        <button ng-click="eCardEditCtrl.clearResponse(question.count)" class="clear-message-btn">Clear Message</button>
+		        <input type="submit" ng-click="eCardEditCtrl.saveResponse(question.count)" value="Save Message" class="save-message-btn">
+			    </div>
+	      </div>
+			    	
+	    </div>
+	  </div>
+	</div>
+</form>
