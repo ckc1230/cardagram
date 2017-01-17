@@ -36,46 +36,53 @@
 	        <div class="question-header">
 	          <h1>Customize your message</h1>
 					</div>
+
 					<div class="question-form">
-						<table class="question-table">
-							<tr>
-								<td>
-									<div class="question-image-container">
-										<div class="question-image-div">
-											<img src={{question.image}} alt="">
-										</div>
+
+						<div class="row">
+
+							<div class="question-column question-image">
+								<div class="question-section question-image-container">
+									<div class="question-image-div">
+										<img src={{question.image}} alt="">
 									</div>
-								</td>
-								<td class="question-text-table">
-									<div class="question-text-container">
-							        <p class="question-text-message">
-							          <span class="prompt">{{themeEditCtrl.getFrontPrompt(question)}}</span>
-							          <span class="response">{{themeEditCtrl.getResponse(question)}}</span>
-							          <span class="prompt placeholder-span">_____</span>
-							          <span class="prompt">{{themeEditCtrl.getBackPrompt(question)}}</span>
-							        </p>
-							    </div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="question-image-input">
+								</div>
+									<div class="question-section question-image-input">
 										<label>Import your own image below:</label>
 										<input class="image-input-field" type="text" ng-model="question.image" ng-required="true">
 									</div>	
-								</td>
-								<td>
-							    <input ng-model="question.response" maxlength="80" class="question-text-response" placeholder="Complete Your Message Here" ng-keypress="themeEditCtrl.playWritingSFX()">
-								</td>
-							</tr>
-						</table>
+							</div>
+							
+							<div class="question-column question-response">
+								<div class="question-section question-text-container">
+						        <p class="question-text-message">
+						          <span class="prompt">{{themeEditCtrl.getFrontPrompt(question)}}</span>
+						          <span class="response">{{themeEditCtrl.getResponse(question)}}</span>
+						          <span class="prompt placeholder-span">_____</span>
+						          <span class="prompt">{{themeEditCtrl.getBackPrompt(question)}}</span>
+						        </p>
+						    </div>
+						    <div class="question-section question-image-input">
+						    	<input ng-model="question.response" maxlength="80" class="question-text-response" placeholder="Complete Your Message Here" ng-keypress="themeEditCtrl.playWritingSFX()">
+						    </div>
+							</div>
 
-			    </div>
-			    <div class="question-footer">
-		        <button ng-click="themeEditCtrl.clearResponse(question.count)" class="clear-message-btn">Clear Message</button>
-		        <input type="submit" ng-click="themeEditCtrl.saveResponse(question.count)" value="Save Message" class="save-message-btn">
-			    </div>
-	      </div>
+						</div>
+
+						<div class="row">
+
+							<div class="question-column">
+							</div>
+
+							<div class="question-column question-buttons">
+								<button ng-click="themeEditCtrl.clearResponse(question.count)" class="clear-message-btn">Clear Message</button>
+			        	<input type="submit" ng-click="themeEditCtrl.saveResponse(question.count)" value="Save Message" class="save-message-btn">
+							</div>
+
+						</div>
+
+					</div>
+				</div>
 	    </div>
 	  </div>
 	</div>
