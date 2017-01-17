@@ -251,7 +251,7 @@ input {
 }
 
 .question-buttons {
-  text-align: right;
+  text-align: center;
 }
 
 .dont-break-out {
@@ -526,10 +526,6 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
 }
 
 @media screen and (max-width: 905px) {
-  .question-buttons {
-    width: 100%;
-    text-align: center;
-  }
   .question-buttons button {
     margin: 2%;
   }
@@ -585,9 +581,6 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     height: 300px;
     width: 300px;
     bottom: 33%;
-  }
-  .question-buttons {
-    text-align: center;
   }
 }
 
