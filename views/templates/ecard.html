@@ -9,7 +9,7 @@
         style='background-image: url({{eCardCtrl.ecard.theme.questions[question.count-1].image}})'>
         <div class='full-message' id='full-message-{{question.count}}' hidden>
           <span class='prompt'>{{eCardCtrl.getFrontPrompt(question)}}</span>
-          <span class='response'>{{eCardCtrl.getResponse(question)}}</span>
+          <span class='response dont-break-out'>{{eCardCtrl.getResponse(question)}}</span>
           <span class='prompt'>{{eCardCtrl.getBackPrompt(question)}}</span>
         </div>
       </div>

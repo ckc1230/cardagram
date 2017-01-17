@@ -48,13 +48,13 @@
 							<div class="question-section question-text-container">
 					        <p class="question-text-message">
 					          <span class="prompt">{{eCardEditCtrl.getFrontPrompt(question)}}</span>
-					          <span class="response">{{eCardEditCtrl.getResponse(question)}}</span>
+					          <span class="response dont-break-out">{{eCardEditCtrl.getResponse(question)}}</span>
 					          <span class="prompt placeholder-span">_____</span>
 					          <span class="prompt">{{eCardEditCtrl.getBackPrompt(question)}}</span>
 					        </p>
 					    </div>
 					    <div class="question-section question-image-input">
-					    	<input ng-model="question.response" maxlength="80" class="question-text-response" placeholder="Complete Your Message Here">
+								<input ng-model="question.response" maxlength="60" class="question-text-response" placeholder="Complete Your Message Here">
 					    </div>
 						</div>
 
