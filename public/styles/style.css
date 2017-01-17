@@ -290,7 +290,7 @@ input {
 	cursor: pointer;
 }
 
-#preview-edit-cardagram-btn:disabled {
+#preview-edit-cardagram-btn:disabled, #preview-cardagram-btn:disabled {
   background: white;
   cursor: not-allowed;
 }
