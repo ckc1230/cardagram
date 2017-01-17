@@ -342,17 +342,24 @@ input {
 
 .full-message {
   position: absolute;
-  height: 50%;
+  height: 80%;
   width: 80%;
   top: 10%;
   right: 10%;
   text-align: center;
   font-size: 2em;
-  padding-top: 30%;
   border-radius: 50%;
   background-color: rgba(255,255,255,0.7);
   text-overflow: hidden;
   overflow: hidden;
+}
+
+.full-message-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  padding: 5%;
 }
 
 #get-started-div {
@@ -597,6 +604,9 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     vertical-align: top;
     padding-top: 15%;
     text-align: center;
+  }
+  .full-message {
+    font-size: 1.5em;
   }
 }
 
