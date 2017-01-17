@@ -251,7 +251,17 @@ input {
 }
 
 .question-buttons {
-  text-align: right;
+  text-align: center;
+}
+
+.dont-break-out {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .save-message-btn {
@@ -332,17 +342,24 @@ input {
 
 .full-message {
   position: absolute;
-  height: 50%;
+  height: 80%;
   width: 80%;
   top: 10%;
   right: 10%;
   text-align: center;
   font-size: 2em;
-  padding-top: 30%;
   border-radius: 50%;
   background-color: rgba(255,255,255,0.7);
   text-overflow: hidden;
   overflow: hidden;
+}
+
+.full-message-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  padding: 5%;
 }
 
 #get-started-div {
@@ -509,10 +526,6 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
 }
 
 @media screen and (max-width: 905px) {
-  .question-buttons {
-    width: 100%;
-    text-align: center;
-  }
   .question-buttons button {
     margin: 2%;
   }
@@ -569,9 +582,6 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     width: 300px;
     bottom: 33%;
   }
-  .question-buttons {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 770px) {
@@ -587,6 +597,9 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     vertical-align: top;
     padding-top: 15%;
     text-align: center;
+  }
+  .full-message {
+    font-size: 1.5em;
   }
 }
 
