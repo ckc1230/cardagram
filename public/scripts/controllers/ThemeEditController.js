@@ -41,7 +41,7 @@ function ThemeEditController($http, $routeParams, $location) {
   }
   
   vm.openModal = function(count) {
-    if (vm.theme.questions[count-1].response != "") {
+    if (vm.theme.questions[count-1].response.length > 0) {
       var placeholders = document.getElementsByClassName('placeholder-span');
       placeholders[count-1].innerHTML = '';
     }
@@ -50,6 +50,7 @@ function ThemeEditController($http, $routeParams, $location) {
     document.getElementById(questionId).style.display = "block";
     vm.tempResponse = vm.theme.questions[count-1].response;
   } 
+
   vm.closeModal = function() {
     document.getElementById('question-modal').style.display = "none";
     var questions = document.getElementsByClassName('questions');
@@ -57,11 +58,13 @@ function ThemeEditController($http, $routeParams, $location) {
       questions[i].style.display = 'none';
     }
   }
+
   vm.clearResponse = function(count) {
     vm.theme.questions[count-1].response = "";
     var placeholders = document.getElementsByClassName('placeholder-span');
     placeholders[count-1].innerHTML = '_____';
   }
+
   vm.saveResponse = function(count) {
     var questionId = "question-bubble-"+count;
     if (vm.theme.questions[count-1].response != "") {
