@@ -77,14 +77,17 @@ function ThemeEditController($http, $routeParams, $location) {
     vm.checkBubbles();
     vm.closeModal();
   }
+  
   vm.cancelResponse = function(question) {
     vm.theme.questions[question.count-1].response = vm.tempResponse;
     vm.closeModal();
   }
+
   vm.getFrontPrompt = function(question) {
     var parts = question.prompt.split("_____");
     return parts[0];
   }
+
   vm.getResponse = function(question) {
     if (question.response != "") {
       var placeholders = document.getElementsByClassName('placeholder-span');
@@ -100,10 +103,12 @@ function ThemeEditController($http, $routeParams, $location) {
       return "";
     }
   }
+
   vm.getBackPrompt = function(question) {
     var parts = question.prompt.split("_____");
     return parts[1];
   }
+
   vm.checkBubbles = function() {
     if (document.getElementById('question-bubble-1').dataset.color === "green" &&
         document.getElementById('question-bubble-2').dataset.color === "green" &&
