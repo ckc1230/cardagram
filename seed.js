@@ -301,6 +301,48 @@ questionList.push({
   count: 5
 })
 
+/* Valentine's Day */
+
+questionList.push({
+  prompt: "My favorite thing about us is _____.",
+  response: "",
+  image: "http://img07.deviantart.net/ce1f/i/2010/079/6/0/the_happy_couple_by_vexedmind.jpg",
+  theme: "Happy Valentine's Day!",
+  count: 1
+})
+
+questionList.push({
+  prompt: "The time we _____ makes such an awesome story!",
+  response: "",
+  image: "http://24.media.tumblr.com/tumblr_manu6aebXb1r67kbgo2_500.jpg",
+  theme: "Happy Valentine's Day!",
+  count: 2
+})
+
+questionList.push({
+  prompt: "Together, we're unstoppable at _____.",
+  response: "",
+  image: "http://i.imgur.com/s5nP5S1.jpg",
+  theme: "Happy Valentine's Day!",
+  count: 3
+})
+
+questionList.push({
+  prompt: "Because of you, I want to be better at _____.",
+  response: "",
+  image: "https://stockphotos.io/wp-content/uploads/2013/04/1368036503b23ad-600x574.jpg",
+  theme: "Happy Valentine's Day!",
+  count: 4
+})
+
+questionList.push({
+  prompt: "I love sharing _____ with you.",
+  response: "",
+  image: "http://images.huffingtonpost.com/2016-01-18-1453090253-7345058-dailyhabitsofwildlyhappycouples.jpg",
+  theme: "Happy Valentine's Day!",
+  count: 5
+})
+
 /* THEMES */
 
 themeList.push({
@@ -341,6 +383,11 @@ themeList.push({
 themeList.push({
   title: "Happy Arbor Day!",
   image: "http://i.imgur.com/3XAme7U.jpg"
+});
+
+themeList.push({
+  title: "Happy Valentine's Day!",
+  image: "http://i.imgur.com/BvXPIQl.jpg"
 });
 
 /* ECARDS */
