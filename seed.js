@@ -48,6 +48,48 @@ questionList.push({
   count: 5
 })
 
+/* New Year's Questions */
+
+questionList.push({
+  prompt: "New Year, New _____.",
+  response: "",
+  image: "http://images.fineartamerica.com/images-medium-large-5/spectacular-fireworks-square-format-ausra-paulauskaite.jpg",
+  theme: "Happy New Year!",
+  count: 1
+})
+
+questionList.push({
+  prompt: "This year our resolution should be _____.",
+  response: "",
+  image: "http://cdn-img.health.com/sites/default/files/migration/images/slides/2011-year-resolution-400x400.jpg",
+  theme: "Happy New Year!",
+  count: 2
+})
+
+questionList.push({
+  prompt: "In the new year we should _____.",
+  response: "",
+  image: "http://www.studentflights.com.au/sites/studentflights.com.au/files/travel-mag/files/2013/07/friends.jpg",
+  theme: "Happy New Year!",
+  count: 3
+})
+
+questionList.push({
+  prompt: "My favorite memory of us together last year was _____.",
+  response: "",
+  image: "http://st03.kakprosto.ru//images/article/2012/9/10/1_5255325311d295255325311d90.jpg",
+  theme: "Happy New Year!",
+  count: 4
+})
+
+questionList.push({
+  prompt: "Cheers! Let's celebrate _____!",
+  response: "",
+  image: "http://www.foodanddine.com/wp-content/uploads/2014/12/hd-wallpapers-new-years-wallpaper-year-champagne-2560x1600-wallpaper.jpg",
+  theme: "Happy New Year!",
+  count: 5
+})
+
 /* Mother's Day Questions */
 
 questionList.push({
