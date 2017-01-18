@@ -567,47 +567,50 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   #question-bubble-1 {
     width: 75px;
     height: 75px;
-    bottom: 70%;
+    bottom: 60%;
     left: 10%;
   }
   #question-bubble-2 {
     width: 135px;
     height: 135px;
-    bottom: 45%;
+    bottom: 32%;
     left: 20%;
   }
   #question-bubble-3 {
     width: 150px;
     height: 150px;
-    bottom: 48%;
+    bottom: 38%;
     left: 68%;
   }
   #question-bubble-4 {
     width: 37.5px;
     height: 37.5px;
-    bottom: 75%;
+    bottom: 65%;
     left: 48%;
   }
   #question-bubble-5 {
     width: 60px;
     height: 60px;
-    bottom: 50%;
+    bottom: 40%;
     left: 53%;
   }
   .ecard-msg {
-    bottom: 25%;
+    bottom: 6%;
     font-size: 0.75em;
   }
   .ecard-title {
-    bottom: 83%;
+    bottom: 78%;
   }
   .question-header {
     font-size: 1em;
   }
   #question-popup {
-    height: 300px;
-    width: 300px;
-    bottom: 33%;
+    height: 350px;
+    width: 350px;
+    bottom: 10%;
+  }
+  .theme-img-show {
+    height: 400px;
   }
 }
 
@@ -636,31 +639,34 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     height: 250px;
     margin: 0 auto;
   }
+  .theme-img-show {
+    height: 250px;
+  }
   #question-bubble-1 {
     width: 50px;
     height: 50px;
-    bottom: 80%;
+    bottom: 60%;
     left: 5%;
   }
   #question-bubble-2 {
     width: 90px;
     height: 90px;
-    bottom: 65%;
+    bottom: 30%;
   }
   #question-bubble-3 {
     width: 100px;
     height: 100px;
-    bottom: 68%;
+    bottom: 32%;
   }
   #question-bubble-4 {
     width: 25px;
     height: 25px;
-    bottom: 83%;
+    bottom: 63%;
   }
   #question-bubble-5 {
     width: 40px;
     height: 40px;
-    bottom: 68%;
+    bottom: 38%;
     left: 53%;
   }
   .ecard-msg textarea {
@@ -668,11 +674,11 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     width: 25em;
   }
   .ecard-msg {
-    bottom: 52%;
+    bottom: 2%;
     font-size: 0.5em;
   }
   .ecard-title {
-    bottom: 90%;
+    bottom: 80%;
     font-size: 0.5em;
   }
   .question-header {
@@ -681,7 +687,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   #question-popup {
     height: 250px;
     width: 250px;
-    bottom: 50%;
+    bottom: 1%;
     left: 20%;
     font-size: 0.75em;
   }
