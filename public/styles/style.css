@@ -556,6 +556,9 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   .question-buttons button {
     margin: 2%;
   }
+  .theme-img-index {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -717,5 +720,8 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     vertical-align: top;
     padding-top: 0%;
     text-align: center;
+  }
+  .theme-img-index {
+    width: 95%;
   }
 }
