@@ -6,6 +6,7 @@
     <div ng-repeat='question in eCardCtrl.ecard.theme.questions'>
       <div class='question-bubble' id='question-bubble-{{question.count}}'
         ng-mouseover='eCardCtrl.popup(question.count)' ng-mouseout='eCardCtrl.popdown(question.count)'
+        ng-click='eCardCtrl.popdown(question.count)'
         style='background-image: url({{eCardCtrl.ecard.theme.questions[question.count-1].image}})'>
         <div class='full-message' id='full-message-{{question.count}}' hidden>
           <div class='full-message-text'>
