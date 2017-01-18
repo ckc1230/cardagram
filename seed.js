@@ -385,6 +385,48 @@ questionList.push({
   count: 5
 })
 
+/* Good Morning */
+
+questionList.push({
+  prompt: "Before you start your day, I wanted to tell you _____.",
+  response: "",
+  image: "http://rlv.zcache.com/encourage_mint_poster-r29972264b982449b86a31cc8c78648e1_wv3_8byvr_324.jpg",
+  theme: "Good Morning!",
+  count: 1
+})
+
+questionList.push({
+  prompt: "I hope your day is filled with _____!",
+  response: "",
+  image: "http://cdn.earthporm.com/wp-content/uploads/2015/10/XX-Proud-Mommies5__605.jpg",
+  theme: "Good Morning!",
+  count: 2
+})
+
+questionList.push({
+  prompt: "Just as the sun always rises, _____.",
+  response: "",
+  image: "http://images.naldzgraphics.net/2010/08/3-starfish-sunrise-wallpaper.jpg",
+  theme: "Good Morning!",
+  count: 3
+})
+
+questionList.push({
+  prompt: "One day more. Another day another destiny. This never ending road to _____.",
+  response: "",
+  image: "http://i.imgur.com/W9jUtj2.jpg",
+  theme: "Good Morning!",
+  count: 4
+})
+
+questionList.push({
+  prompt: "Look in the mirror and and remember _____.",
+  response: "",
+  image: "http://www.marketoracle.co.uk/images/janice_cat.jpg",
+  theme: "Good Morning!",
+  count: 5
+})
+
 /* THEMES */
 
 themeList.push({
@@ -431,6 +473,12 @@ themeList.push({
   title: "Happy Valentine's Day!",
   image: "http://i.imgur.com/BvXPIQl.jpg"
 });
+
+themeList.push({
+  title: "Good Morning!",
+  image: "http://i.imgur.com/pT0klwW.jpg"
+});
+
 
 /* ECARDS */
 
