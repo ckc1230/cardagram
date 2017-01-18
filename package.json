@@ -1,6 +1,6 @@
 {
   "name": "fun-ecards",
-  "version": "1.0.0",
+  "version": "3.10.8",
   "description": "### Synopsis",
   "main": "server.js",
   "dependencies": {
