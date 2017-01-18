@@ -7,6 +7,8 @@ ThemeEditController.$inject = ['$http', '$routeParams', '$location'];
 function ThemeEditController($http, $routeParams, $location) {
   var vm = this;
   vm.tempResponse = "";
+  vm.showImage = false;
+  vm.tempImage = "";
   vm.bubblesComplete = false;
 
   var writingSFX = [
@@ -124,6 +126,20 @@ function ThemeEditController($http, $routeParams, $location) {
       vm.bubblesComplete = false;
       document.getElementById('write-message-step').className = "progress-bar-step"
     }
+  }
+
+  vm.showImageForm = function(question) {
+    vm.showImage = !vm.showImage;
+    vm.tempImage = question.image;
+  }
+
+  vm.revertImage = function(question) {
+    question.image = vm.tempImage;
+    vm.showImage = !vm.showImage;
+  }
+
+  vm.confirmImage = function() {
+    vm.showImage = !vm.showImage;
   }
 
   vm.playWritingSFX = function() {

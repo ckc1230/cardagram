@@ -46,8 +46,10 @@
 									</div>
 								</div>
 									<div class="question-section question-image-input">
-										<label>Import your own image below:</label>
-										<input class="image-input-field" type="text" ng-model="question.image">
+										<button ng-hide="themeEditCtrl.showImage" ng-click="themeEditCtrl.showImageForm(question)">Link your own image</button>
+										<button ng-show="themeEditCtrl.showImage" ng-click="themeEditCtrl.revertImage(question)">Revert</button>
+										<button ng-show="themeEditCtrl.showImage" ng-click="themeEditCtrl.confirmImage()">Confirm</button>
+										<input placeholder="http://link-to-your-image" ng-show="themeEditCtrl.showImage" class="image-input-field" type="text" ng-model="question.image">
 									</div>	
 							</div>
 							
