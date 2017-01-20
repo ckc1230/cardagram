@@ -37,11 +37,45 @@ function ECardsShowController($http, $routeParams, $location) {
     return parts[1];
   }
 
+  vm.openChooseModal = function() {
+    document.getElementById('choose-modal').style.display = "block";
+  }
+
+  vm.closeChooseModal = function() {
+    document.getElementById('choose-modal').style.display = "none";
+  }
+
   vm.openModal = function() {
     document.getElementById('send-modal').style.display = "block";
+    vm.closeChooseModal();
   }
+
   vm.closeModal = function() {
     document.getElementById('send-modal').style.display = "none";
+  }
+
+  vm.openLinkModal = function() {
+    document.getElementById('link-modal').style.display = "block";
+    vm.closeChooseModal();
+  }
+
+  vm.cancelLinkModal = function() {
+    document.getElementById('link-modal').style.display = "none";   
+  }
+
+  vm.closeLinkModal = function() {
+    vm.ecard.ecardSent = true;
+    console.log("vm.ecard:",vm.ecard);
+    $http({
+      method: 'PUT',
+      url: '/api/ecards/' + $routeParams.id,
+      data: vm.ecard
+    }).then(function successCallback(response) {
+      console.log("response",response);
+    }, function errorCallback(response) {
+      console.log('There was an error getting the data', response);
+    });
+    document.getElementById('link-modal').style.display = "none";
   }
 
   vm.sendECard = function() {
@@ -65,6 +99,10 @@ function ECardsShowController($http, $routeParams, $location) {
       console.log('There was an error getting the data', response);
     });
     vm.closeModal();
+  }
+
+  vm.getURL = function() {
+    return window.location.href;
   }
 
   vm.editECard = function() {

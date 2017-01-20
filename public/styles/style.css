@@ -484,6 +484,39 @@ input {
 	text-shadow: 5px 5px 20px black;
 }
 
+.choose-modal-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.choose-modal-button {
+  display: table;
+  height: 80px;
+  width: 80%;
+  text-align: center;
+  border: 2px solid black;
+  font-size: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+#link-modal-done {
+  text-align: center;
+  width: 60px;
+}
+
+#link-modal-done:hover, .choose-modal-button:hover, .preview-btn:hover, .clear-message-btn:hover {
+  cursor: pointer;
+}
+
+#url-reveal {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+}
+
 .nav label {
     width: 100px;
     height: 100%;
