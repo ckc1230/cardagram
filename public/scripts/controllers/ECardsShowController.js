@@ -13,6 +13,15 @@ function ECardsShowController($http, $routeParams, $location) {
     vm.ecard = response.data;
     var questions = vm.ecard.theme.questions;
     vm.ecard.customTexts = getFullText(questions);
+    window.onload = function() {
+      var bubble1 = document.getElementById('question-bubble-1');
+      setTimeout(function() {
+        bubble1.classList.add('jump');
+        setTimeout(function() {
+          bubble1.classList.remove('jump');
+        },1000);
+     },1000);
+    };
   }, function errorCallback(response) {
     console.log('There was an error getting the data', response);
   });
