@@ -43,10 +43,6 @@ function ThemeEditController($http, $routeParams, $location) {
   }
   
   vm.openModal = function(count) {
-    if (vm.theme.questions[count-1].response.length > 0) {
-      var placeholders = document.getElementsByClassName('placeholder-span');
-      placeholders[count-1].innerHTML = '';
-    }
     document.getElementById('question-modal').style.display = "block";
     var questionId = "question-"+count;
     document.getElementById(questionId).style.display = "block";
@@ -63,8 +59,6 @@ function ThemeEditController($http, $routeParams, $location) {
 
   vm.clearResponse = function(count) {
     vm.theme.questions[count-1].response = "";
-    var placeholders = document.getElementsByClassName('placeholder-span');
-    placeholders[count-1].innerHTML = '_____';
   }
 
   vm.saveResponse = function(count) {
@@ -91,22 +85,6 @@ function ThemeEditController($http, $routeParams, $location) {
   vm.getFrontPrompt = function(question) {
     var parts = question.prompt.split("_____");
     return parts[0];
-  }
-
-  vm.getResponse = function(question) {
-    if (question.response != "") {
-      var placeholders = document.getElementsByClassName('placeholder-span');
-      for(var i=0; i < placeholders.length; i++) {
-        placeholders[i].style.display = 'none';
-      }
-      return question.response;
-    } else {
-      var placeholders = document.getElementsByClassName('placeholder-span');
-      for(var i=0; i < placeholders.length; i++) {
-        placeholders[i].style.display = "inline";
-      }
-      return "";
-    }
   }
 
   vm.getBackPrompt = function(question) {

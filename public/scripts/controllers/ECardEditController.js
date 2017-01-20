@@ -7,6 +7,8 @@ ECardEditController.$inject = ['$http', '$routeParams', '$location'];
 function ECardEditController($http, $routeParams, $location) {
   var vm = this;
   vm.tempResponse = "";
+  vm.showImage = false;
+  vm.tempImage = "";
   vm.bubblesComplete = true;
 
   var writingSFX = [
@@ -42,10 +44,6 @@ function ECardEditController($http, $routeParams, $location) {
   }
 
   vm.openModal = function(count) {
-    if (vm.ecard.theme.questions[count-1].response != "") {
-      var placeholders = document.getElementsByClassName('placeholder-span');
-      placeholders[count-1].innerHTML = '';
-    }
     document.getElementById('question-modal').style.display = "block";
     var questionId = "question-"+count;
     document.getElementById(questionId).style.display = "block";
@@ -62,8 +60,6 @@ function ECardEditController($http, $routeParams, $location) {
 
   vm.clearResponse = function(count) {
     vm.ecard.theme.questions[count-1].response = "";
-    var placeholders = document.getElementsByClassName('placeholder-span');
-    placeholders[count-1].innerHTML = '_____';
   }
 
   vm.saveResponse = function(count) {
@@ -92,22 +88,6 @@ function ECardEditController($http, $routeParams, $location) {
     return parts[0];
   }
 
-  vm.getResponse = function(question) {
-    if (question.response != "") {
-      var placeholders = document.getElementsByClassName('placeholder-span');
-      for(var i=0; i < placeholders.length; i++) {
-        placeholders[i].style.display = 'none';
-      }
-      return question.response;
-    } else {
-      var placeholders = document.getElementsByClassName('placeholder-span');
-      for(var i=0; i < placeholders.length; i++) {
-        placeholders[i].style.display = "inline";
-      }
-      return "";
-    }
-  }
-
   vm.getBackPrompt = function(question) {
     var parts = question.prompt.split("_____");
     return parts[1];
@@ -124,6 +104,20 @@ function ECardEditController($http, $routeParams, $location) {
     } else {
       vm.bubblesComplete = false;
     }
+  }
+
+  vm.showImageForm = function(question) {
+    vm.showImage = !vm.showImage;
+    vm.tempImage = question.image;
+  }
+
+  vm.revertImage = function(question) {
+    question.image = vm.tempImage;
+    vm.showImage = !vm.showImage;
+  }
+
+  vm.confirmImage = function() {
+    vm.showImage = !vm.showImage;
   }
 
   vm.playWritingSFX = function() {
