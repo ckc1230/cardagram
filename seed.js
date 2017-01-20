@@ -514,22 +514,6 @@ db.Question.remove({}, function(err, questions) {
     });
     console.log("Themes SAVED");
 
-    // Creating eCards
-    db.ECard.remove({}, function(err, ecards) {
-      eCardList.forEach(function(eCardData) {
-        var eCard = new db.ECard(eCardData);
-        db.Theme.findOne({title: eCardData.theme}, function(err, foundTheme) {
-          if (err) { return console.log("Error:",err) };
-          eCard.theme = foundTheme;
-          eCard.save(function(err, savedECard) {
-            if (err) { return console.log("Error:",err) };
-          });
-        });
-      });
-      console.log("ECards SAVED");
-
-    }); // End eCards
-
   }); // End Themes
 
 }); // End Questions
