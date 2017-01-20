@@ -255,11 +255,13 @@ input {
 	width: 200px;
 	border-radius: 50%;
 	overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .question-image-div img {
 	height: 200px;
-  margin-left: -25%;
+  flex: none;
 }
 
 .image-input-field {
