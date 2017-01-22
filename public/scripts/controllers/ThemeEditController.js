@@ -11,6 +11,18 @@ function ThemeEditController($http, $routeParams, $location) {
   vm.tempImage = "";
   vm.bubblesComplete = false;
 
+  angular.element(document).ready(function () {
+    document.getElementById('question-bubble-1').addEventListener("click", vm.closeInfoBox)
+    document.getElementById('overlay').addEventListener("click", vm.closeInfoBox);
+    document.getElementById('info-box').addEventListener("click", vm.closeInfoBox);
+  });
+
+  vm.closeInfoBox = function() {
+    document.getElementById('overlay').style.display = "none";
+    document.getElementById('info-box').style.display = "none";
+    document.getElementById('question-bubble-1').className = 'question-bubble-pending';  
+  }
+
   var writingSFX = [
     new Audio('http://s0.vocaroo.com/media/download_temp/Vocaroo_s08ILxxVkmHQ.mp3'),
     new Audio('http://s0.vocaroo.com/media/download_temp/Vocaroo_s0oNdT3cqAtW.mp3'),

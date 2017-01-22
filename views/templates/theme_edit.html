@@ -1,3 +1,17 @@
+<div id="overlay"></div>
+<div id="info-box">
+	<div>
+		<h1>Creating A Cardagram</h1>
+		<ol>
+			<li>Click on 1 of the 5 Note-Bubbles</li>
+			<li>Each Note-Bubble has a phrase for you to complete</li>
+			<li>You can also choose to link a personalized image</li>
+			<li>Once all 5 are completed, write a message to tie it all together</li>
+			<li>Preview your Cardagram and Send</li>
+		</ol>
+	</div>
+</div>
+
 <form name="theme-edit-form">
 	<div class="container">
 		<div class="theme-img-show" style="background-image: url({{themeEditCtrl.theme.image}})">
@@ -5,7 +19,7 @@
 				<h1>{{themeEditCtrl.theme.title}}</h1>
 			</div>
 			<a ng-click="themeEditCtrl.openModal(1)">
-				<div class="question-bubble-pending" id="question-bubble-1" data-color="red" style="background-image: url({{themeEditCtrl.theme.questions[0].image}})"></div>
+				<div class="question-bubble-pending highlight" id="question-bubble-1" data-color="red" style="background-image: url({{themeEditCtrl.theme.questions[0].image}})"></div>
 			</a>
 			<a ng-click="themeEditCtrl.openModal(2)">
 				<div class="question-bubble-pending" id="question-bubble-2" data-color="red" style="background-image: url({{themeEditCtrl.theme.questions[1].image}})"></div></a>
@@ -23,7 +37,7 @@
 
 	<div class="center">
 		<div class="progress-bar">
-			<div class="progress-bar-step active-step">Customize Your Messages</div>
+			<div class="progress-bar-step active-step">Customize Your Note-Bubbles</div>
 			<div class="progress-bar-step" id="write-message-step">Write A Message</div>
 	  	<input class="progress-bar-step" id="preview-cardagram-btn" value="Preview Cardagram" type="submit" ng-disabled="!(themeEditCtrl.bubblesComplete && themeEditCtrl.theme.message.length > 0)" ng-click="themeEditCtrl.saveECard()" ng-class="{true: 'active-step click-me', false: ''}[themeEditCtrl.theme.message.length > 0 && themeEditCtrl.bubblesComplete]">
 		</div>

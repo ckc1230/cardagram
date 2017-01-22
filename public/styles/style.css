@@ -12,6 +12,10 @@ input {
   border-radius: 5%;
 }
 
+.cardagram-font {
+  font-family: 'Carter One', cursive;
+}
+
 .response-red-background:before {
   background: rgba(255,0,0,0.2);
   padding: 0 5px;
@@ -60,6 +64,62 @@ input {
 
 .menu-title {
   font-family: 'Carter One', cursive;
+}
+
+#overlay {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: black;
+    opacity:0.7;
+    z-index:1001;
+    transition: background 1s ease-in-out;
+    -webkit-transition: background 1s ease-in-out;
+}
+
+#info-box {
+  width: 100%;
+  z-index:1002;
+  position: fixed;
+  top: 45%;
+  animation: slideFromTop 2s ease-in-out; 
+}
+
+#info-box div {
+  margin: 0 auto;
+  width:50%;
+  padding: 30px 30px 40px 30px;  
+  background-color:#fff;
+  opacity:1;
+  border-radius: 10px;
+  z-index: 1003;
+}
+
+#info-box h1 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Carter One', cursive;
+}
+
+#info-box ol {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+@keyframes slideFromTop {
+    0%   {top: 0%;}
+    50% {top: 50%;}
+    75% {top: 43%;}
+    /*85% {top: 46%;}*/
+    100% {top:45%;}
+}
+
+.highlight {
+   opacity:1;
+    z-index:1002;
 }
 
 .theme-img-index img {
@@ -118,6 +178,12 @@ input {
 	height: 100px;
 	bottom: 55%;
 	left: 10%;
+  animation: zIndexUp 2s ease-in-out;
+}
+
+@keyframes zIndexUp {
+    0%   {z-index: 0;}
+    100% {z-index: 1;}
 }
 
 #question-bubble-2 {
@@ -730,6 +796,24 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   .theme-img-show {
     height: 400px;
   }
+
+  #info-box {
+    top: 40%;
+  }
+
+  #info-box div {
+    padding: 10px 10px 15px 10px;  
+  }
+
+  #info-box ol {
+    font-size: 13px;
+  }
+
+  #info-box h1 {
+    font-size: 20px;
+  }
+
+
 }
 
 @media screen and (max-width: 770px) {
@@ -838,5 +922,8 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
   .theme-img-index {
     width: 95%;
+  }
+  #info-box {
+    top: 30%;
   }
 }
