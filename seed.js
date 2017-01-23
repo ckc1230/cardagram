@@ -431,7 +431,8 @@ questionList.push({
 
 themeList.push({
   title: "Happy Birthday!",
-  image: "http://i.imgur.com/LyCAoB8.jpg"
+  image: "http://i.imgur.com/LyCAoB8.jpg",
+  mobileImage: "http://i.imgur.com/vcWB9fD.png"
 });
 
 themeList.push({

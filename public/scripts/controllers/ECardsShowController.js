@@ -20,7 +20,8 @@ function ECardsShowController($http, $routeParams, $location) {
         setTimeout(function() {
           bubble1.classList.remove('jump');
         },1000);
-     },1000);
+      },1000);
+      vm.getBackground();
     };
   }, function errorCallback(response) {
     console.log('There was an error getting the data', response);
@@ -33,6 +34,33 @@ function ECardsShowController($http, $routeParams, $location) {
       fullTexts.push(fullText);      
     })
     return fullTexts;
+  }
+  vm.getBackground = function() {
+    if(vm.ecard) {
+      window.addEventListener('resize', function(){
+        // var desktopSmall = window.matchMedia('(max-width: 400px)');
+        // var mobile = window.matchMedia('@media screen and (max-width: 400px)');
+        var backgroundImg = "";
+        // if(mobile.matches || desktopSmall.matches) {
+        if(vm.isMobile()) {
+          backgroundImg += vm.ecard.theme.mobileImage;
+        } else {
+          backgroundImg += vm.ecard.theme.image;
+        }
+        document.getElementById('theme-img-show').style.backgroundImage = "url('"+backgroundImg+"')";
+        var bubbleOpen = false;
+      }, true);
+    }
+  }
+  vm.isMobile = function() {
+    var desktopSmall = window.matchMedia('(max-width: 400px)');
+    var mobile = window.matchMedia('@media screen and (max-width: 400px)');
+    var backgroundImg = "";
+    if(mobile.matches || desktopSmall.matches) {
+      return true;
+    } else {
+      return false;
+    }
   }
   vm.getFrontPrompt = function(question) {
     var parts = question.prompt.split('_____');
@@ -97,7 +125,6 @@ function ECardsShowController($http, $routeParams, $location) {
       '&body=' + encodeURIComponent(formattedBody);
     window.location.href = mailToLink;
     vm.ecard.ecardSent = true;
-    console.log("vm.ecard:",vm.ecard);
     $http({
       method: 'PUT',
       url: '/api/ecards/' + $routeParams.id,
