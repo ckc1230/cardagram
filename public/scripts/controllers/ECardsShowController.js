@@ -6,6 +6,7 @@ ECardsShowController.$inject = ['$http', '$routeParams', '$location'];
 
 function ECardsShowController($http, $routeParams, $location) {
   var vm = this;
+  vm.bubbleOpen = false;
   $http({
     method: 'GET',
     url: '/api/ecards/' + $routeParams.id
@@ -160,6 +161,7 @@ function ECardsShowController($http, $routeParams, $location) {
     question.id = 'question-popup';
     var message = document.getElementById(messageId);
     message.style.display = 'block';
+    vm.bubbleOpen = true;
   }
 
   vm.popdown = function(count) {
@@ -169,5 +171,26 @@ function ECardsShowController($http, $routeParams, $location) {
     question.id = bubbleId;
     var message = document.getElementById(messageId);
     message.style.display = 'none';
+    vm.bubbleOpen = false;
+  }
+
+  vm.bubblePop = function(count) {
+    if(!vm.isMobile()) {
+      if(vm.bubbleOpen) {
+        vm.popdown(count);
+      } else {
+        vm.popup(count);
+      }
+    }
+  }
+
+  vm.mobilePop = function(count) {
+    if(vm.isMobile()) {
+      if(vm.bubbleOpen) {
+        vm.popdown(count);
+      } else {
+        vm.popup(count);
+      }
+    }
   }
 };
