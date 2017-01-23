@@ -6,6 +6,7 @@ ECardsShowController.$inject = ['$http', '$routeParams', '$location'];
 
 function ECardsShowController($http, $routeParams, $location) {
   var vm = this;
+  vm.bubbleOpen = false;
   $http({
     method: 'GET',
     url: '/api/ecards/' + $routeParams.id
@@ -20,7 +21,8 @@ function ECardsShowController($http, $routeParams, $location) {
         setTimeout(function() {
           bubble1.classList.remove('jump');
         },1000);
-     },1000);
+      },1000);
+      vm.getBackground();
     };
   }, function errorCallback(response) {
     console.log('There was an error getting the data', response);
@@ -33,6 +35,41 @@ function ECardsShowController($http, $routeParams, $location) {
       fullTexts.push(fullText);      
     })
     return fullTexts;
+  }
+  vm.isMobile = function() {
+    var desktopSmall = window.matchMedia('(max-width: 400px)');
+    var mobile = window.matchMedia('@media screen and (max-width: 400px)');
+    var backgroundImg = "";
+    if(mobile.matches || desktopSmall.matches) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  vm.getBackground = function() {
+    if(vm.ecard) {
+      window.addEventListener('resize', function(){
+        var backgroundImg = "";
+        if(vm.isMobile()) {
+          backgroundImg += vm.ecard.theme.mobileImage;
+        } else {
+          backgroundImg += vm.ecard.theme.image;
+        }
+        document.getElementById('theme-img-show').style.backgroundImage = "url('"+backgroundImg+"')";
+        var bubbleOpen = false;
+      }, true);
+    }
+  }
+  vm.loadBackground = function() {
+    if(vm.ecard) {
+      var backgroundTxt = "";
+      if(vm.isMobile()) {
+        backgroundTxt += vm.ecard.theme.mobileImage;
+      } else {
+        backgroundTxt += vm.ecard.theme.image;
+      }
+      return "background-image: url('"+backgroundTxt+"')";
+    }
   }
   vm.getFrontPrompt = function(question) {
     var parts = question.prompt.split('_____');
@@ -97,7 +134,6 @@ function ECardsShowController($http, $routeParams, $location) {
       '&body=' + encodeURIComponent(formattedBody);
     window.location.href = mailToLink;
     vm.ecard.ecardSent = true;
-    console.log("vm.ecard:",vm.ecard);
     $http({
       method: 'PUT',
       url: '/api/ecards/' + $routeParams.id,
@@ -133,6 +169,7 @@ function ECardsShowController($http, $routeParams, $location) {
     question.id = 'question-popup';
     var message = document.getElementById(messageId);
     message.style.display = 'block';
+    vm.bubbleOpen = true;
   }
 
   vm.popdown = function(count) {
@@ -142,5 +179,26 @@ function ECardsShowController($http, $routeParams, $location) {
     question.id = bubbleId;
     var message = document.getElementById(messageId);
     message.style.display = 'none';
+    vm.bubbleOpen = false;
+  }
+
+  vm.bubblePop = function(count) {
+    if(!vm.isMobile()) {
+      if(vm.bubbleOpen) {
+        vm.popdown(count);
+      } else {
+        vm.popup(count);
+      }
+    }
+  }
+
+  vm.mobilePop = function(count) {
+    if(vm.isMobile()) {
+      if(vm.bubbleOpen) {
+        vm.popdown(count);
+      } else {
+        vm.popup(count);
+      }
+    }
   }
 };

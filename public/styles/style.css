@@ -132,7 +132,7 @@ input {
   width: 30%;
 }
 
-.theme-img-show {
+#theme-img-show {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -793,7 +793,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     width: 350px;
     bottom: 10%;
   }
-  .theme-img-show {
+  #theme-img-show {
     height: 400px;
   }
 
@@ -841,7 +841,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     height: 250px;
     margin: 0 auto;
   }
-  .theme-img-show {
+  #theme-img-show{
     height: 250px;
   }
   #question-bubble-1 {
@@ -925,5 +925,98 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
   #info-box {
     top: 30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 300px;
+    height: 480px;
+    margin: 0 auto;
+  }
+  #theme-img-show {
+    height: 480px;
+  }
+  #question-bubble-1 {
+    width: 70px;
+    height: 70px;
+    bottom: 60%;
+    left: 10%;
+  }
+  #question-bubble-2 {
+    width: 120px;
+    height: 120px;
+    bottom: 20%;
+    left: 10%;
+  }
+  #question-bubble-3 {
+    width: 100px;
+    height: 100px;
+    bottom: 52%;
+    left: 60%;
+  }
+  #question-bubble-4 {
+    width: 45px;
+    height: 45px;
+    bottom: 50%;
+    left: 35%;
+  }
+  #question-bubble-5 {
+    width: 60px;
+    height: 60px;
+    bottom: 27%;
+    left: 63%;
+  }
+  .ecard-msg textarea {
+    height: 3em;
+    width: 25em;
+  }
+  .ecard-msg {
+    bottom: 2%;
+    font-size: 0.75em;
+  }
+  .ecard-title {
+    bottom: 80%;
+    font-size: 0.75em;
+  }
+  .question-header {
+    font-size: 0.75em;
+  }
+  #question-popup {
+    height: 275px;
+    width: 275px;
+    bottom: 25%;
+    left: 3%;
+    font-size: 1em;
+  }
+  .question-column {
+    width: 100%;
+    display: inline-block;
+  }
+  .question-section {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.75em;
+  }
+  .question-image-div {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+  }
+  .question-image-div img {
+    height: 120px;
+    width: 120px;
+  }
+  .question-image-container {
+    margin: 0;
+  }
+  .question-image-input {
+    vertical-align: top;
+    padding-top: 0%;
+    text-align: center;
+  }
+  .theme-img-index {
+    width: 90%;
   }
 }

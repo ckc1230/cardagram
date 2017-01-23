@@ -27,10 +27,47 @@ function ECardEditController($http, $routeParams, $location) {
   }).then(function successCallback(response) {
     vm.ecard = response.data;
     var questions = vm.ecard.theme.questions;
+    window.onload = function() {
+      vm.getBackground();
+    };
   }, function errorCallback(response) {
     console.log('There was an error getting the data', response);
   });
-
+  vm.isMobile = function() {
+    var desktopSmall = window.matchMedia('(max-width: 400px)');
+    var mobile = window.matchMedia('@media screen and (max-width: 400px)');
+    var backgroundImg = "";
+    if(mobile.matches || desktopSmall.matches) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  vm.getBackground = function() {
+    if(vm.ecard) {
+      window.addEventListener('resize', function(){
+        var backgroundImg = "";
+        if(vm.isMobile()) {
+          backgroundImg += vm.ecard.theme.mobileImage;
+        } else {
+          backgroundImg += vm.ecard.theme.image;
+        }
+        document.getElementById('theme-img-show').style.backgroundImage = "url('"+backgroundImg+"')";
+        var bubbleOpen = false;
+      }, true);
+    }
+  }
+  vm.loadBackground = function() {
+    if(vm.ecard) {
+      var backgroundTxt = "";
+      if(vm.isMobile()) {
+        backgroundTxt += vm.ecard.theme.mobileImage;
+      } else {
+        backgroundTxt += vm.ecard.theme.image;
+      }
+      return "background-image: url('"+backgroundTxt+"')";
+    }
+  }
   vm.saveECard = function() {
     $http({
       method: 'PUT',

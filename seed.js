@@ -431,52 +431,62 @@ questionList.push({
 
 themeList.push({
   title: "Happy Birthday!",
-  image: "http://i.imgur.com/LyCAoB8.jpg"
+  image: "http://i.imgur.com/LyCAoB8.jpg",
+  mobileImage: "http://i.imgur.com/vcWB9fD.png"
 });
 
 themeList.push({
   title: "Happy New Year!",
-  image: "http://i.imgur.com/w09TAJO.jpg"
+  image: "http://i.imgur.com/w09TAJO.jpg",
+  mobileImage: "http://i.imgur.com/oE5IEUE.png"
 });
 
 themeList.push({
   title: "Happy Father's Day!",
-  image: "http://i.imgur.com/zCUKzZy.jpg"
+  image: "http://i.imgur.com/zCUKzZy.jpg",
+  mobileImage: "http://i.imgur.com/7ZD4VJ4.png"
 });
 
 themeList.push({
   title: "Happy Mother's Day!",
-  image: "http://i.imgur.com/4b2HTkh.jpg"
+  image: "http://i.imgur.com/4b2HTkh.jpg",
+  mobileImage: "http://i.imgur.com/FRtxh5R.png"
 });
 
 themeList.push({
   title: "Happy Halloween!",
-  image: "http://i.imgur.com/L4nV0bn.jpg"
+  image: "http://i.imgur.com/L4nV0bn.jpg",
+  mobileImage: "http://i.imgur.com/FB7HWFV.png"
 });
 
 themeList.push({
   title: "Happy Thanksgiving!",
-  image: "http://i.imgur.com/UEXKnXD.jpg"
+  image: "http://i.imgur.com/UEXKnXD.jpg",
+  mobileImage: "http://i.imgur.com/R4UexRS.png"
 });
 
 themeList.push({
   title: "Happy Presidents' Day!",
-  image: "http://i.imgur.com/8WoDdXx.jpg"
+  image: "http://i.imgur.com/8WoDdXx.jpg",
+  mobileImage: "http://i.imgur.com/dpft9nG.png"
 });
 
 themeList.push({
   title: "Happy Arbor Day!",
-  image: "http://i.imgur.com/3XAme7U.jpg"
+  image: "http://i.imgur.com/3XAme7U.jpg",
+  mobileImage: "http://i.imgur.com/4ou8IvW.png"
 });
 
 themeList.push({
   title: "Happy Valentine's Day!",
-  image: "http://i.imgur.com/BvXPIQl.jpg"
+  image: "http://i.imgur.com/BvXPIQl.jpg",
+  mobileImage: "http://i.imgur.com/oPvelJl.png"
 });
 
 themeList.push({
   title: "Good Morning!",
-  image: "http://i.imgur.com/pT0klwW.jpg"
+  image: "http://i.imgur.com/pT0klwW.jpg",
+  mobileImage: "http://i.imgur.com/r7yRTIq.png"
 });
 
 
