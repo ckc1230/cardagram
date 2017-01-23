@@ -69,13 +69,15 @@ function ThemeEditController($http, $routeParams, $location) {
     }
   }
   vm.loadBackground = function() {
-    var backgroundTxt = "";
-    if(vm.isMobile()) {
-      backgroundTxt += vm.theme.mobileImage;
-    } else {
-      backgroundTxt += vm.theme.image;
+    if(vm.theme) {
+      var backgroundTxt = "";
+      if(vm.isMobile()) {
+        backgroundTxt += vm.theme.mobileImage;
+      } else {
+        backgroundTxt += vm.theme.image;
+      }
+      return "background-image: url('"+backgroundTxt+"')";
     }
-    return "background-image: url('"+backgroundTxt+"')";
   }
   vm.saveECard = function() {
     var newECard = {

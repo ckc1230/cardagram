@@ -61,13 +61,15 @@ function ECardsShowController($http, $routeParams, $location) {
     }
   }
   vm.loadBackground = function() {
-    var backgroundTxt = "";
-    if(vm.isMobile()) {
-      backgroundTxt += vm.ecard.theme.mobileImage;
-    } else {
-      backgroundTxt += vm.ecard.theme.image;
+    if(vm.ecard) {
+      var backgroundTxt = "";
+      if(vm.isMobile()) {
+        backgroundTxt += vm.ecard.theme.mobileImage;
+      } else {
+        backgroundTxt += vm.ecard.theme.image;
+      }
+      return "background-image: url('"+backgroundTxt+"')";
     }
-    return "background-image: url('"+backgroundTxt+"')";
   }
   vm.getFrontPrompt = function(question) {
     var parts = question.prompt.split('_____');
