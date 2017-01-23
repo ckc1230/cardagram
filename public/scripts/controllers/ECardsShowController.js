@@ -36,13 +36,20 @@ function ECardsShowController($http, $routeParams, $location) {
     })
     return fullTexts;
   }
+  vm.isMobile = function() {
+    var desktopSmall = window.matchMedia('(max-width: 400px)');
+    var mobile = window.matchMedia('@media screen and (max-width: 400px)');
+    var backgroundImg = "";
+    if(mobile.matches || desktopSmall.matches) {
+      return true;
+    } else {
+      return false;
+    }
+  }
   vm.getBackground = function() {
     if(vm.ecard) {
       window.addEventListener('resize', function(){
-        // var desktopSmall = window.matchMedia('(max-width: 400px)');
-        // var mobile = window.matchMedia('@media screen and (max-width: 400px)');
         var backgroundImg = "";
-        // if(mobile.matches || desktopSmall.matches) {
         if(vm.isMobile()) {
           backgroundImg += vm.ecard.theme.mobileImage;
         } else {
@@ -53,15 +60,14 @@ function ECardsShowController($http, $routeParams, $location) {
       }, true);
     }
   }
-  vm.isMobile = function() {
-    var desktopSmall = window.matchMedia('(max-width: 400px)');
-    var mobile = window.matchMedia('@media screen and (max-width: 400px)');
-    var backgroundImg = "";
-    if(mobile.matches || desktopSmall.matches) {
-      return true;
+  vm.loadBackground = function() {
+    var backgroundTxt = "";
+    if(vm.isMobile()) {
+      backgroundTxt += vm.ecard.theme.mobileImage;
     } else {
-      return false;
+      backgroundTxt += vm.ecard.theme.image;
     }
+    return "background-image: url('"+backgroundTxt+"')";
   }
   vm.getFrontPrompt = function(question) {
     var parts = question.prompt.split('_____');
