@@ -841,7 +841,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     height: 250px;
     margin: 0 auto;
   }
-  #theme-img-show {
+  #theme-img-show{
     height: 250px;
   }
   #question-bubble-1 {
@@ -1017,6 +1017,6 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     text-align: center;
   }
   .theme-img-index {
-    width: 95%;
+    width: 90%;
   }
 }
