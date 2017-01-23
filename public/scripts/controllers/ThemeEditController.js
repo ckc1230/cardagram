@@ -38,10 +38,45 @@ function ThemeEditController($http, $routeParams, $location) {
     url: '/api/themes/' + $routeParams.id
   }).then(function successCallback(response) {
     vm.theme = response.data;
+    window.onload = function() {
+      vm.getBackground();
+    };
   }, function errorCallback(response) {
     console.log('There was an error getting the data', response);
   });
-
+  vm.isMobile = function() {
+    var desktopSmall = window.matchMedia('(max-width: 400px)');
+    var mobile = window.matchMedia('@media screen and (max-width: 400px)');
+    var backgroundImg = "";
+    if(mobile.matches || desktopSmall.matches) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  vm.getBackground = function() {
+    if(vm.theme) {
+      window.addEventListener('resize', function(){
+        var backgroundImg = "";
+        if(vm.isMobile()) {
+          backgroundImg += vm.theme.mobileImage;
+        } else {
+          backgroundImg += vm.theme.image;
+        }
+        document.getElementById('theme-img-show').style.backgroundImage = "url('"+backgroundImg+"')";
+        var bubbleOpen = false;
+      }, true);
+    }
+  }
+  vm.loadBackground = function() {
+    var backgroundTxt = "";
+    if(vm.isMobile()) {
+      backgroundTxt += vm.theme.mobileImage;
+    } else {
+      backgroundTxt += vm.theme.image;
+    }
+    return "background-image: url('"+backgroundTxt+"')";
+  }
   vm.saveECard = function() {
     var newECard = {
       message: vm.theme.message,
