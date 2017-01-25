@@ -10,6 +10,11 @@ function ECardsIndexController($http) {
   vm.ecards = [];
   vm.themes = [];
 
+  angular.element(document).ready(function () {
+    document.getElementById('home-breadcrumb').style.width = '100%';
+    document.getElementById('themes-breadcrumb').className = 'hidden breadcrumb';
+  });
+
   $http({
     method: 'GET',
     url: '/api/ecards'

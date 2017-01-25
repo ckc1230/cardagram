@@ -1,3 +1,7 @@
+.hidden {
+  display: none !important;
+}
+
 textarea {
 	resize: none;
 }
@@ -16,6 +20,62 @@ input {
   font-family: 'Carter One', cursive;
 }
 
+.prompt {
+  font-family: 'Just Another Hand', cursive;
+}
+
+.response {
+  font-family: 'Dawning of a New Day', cursive;
+  text-decoration: underline;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.breadcrumb-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.plain-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.row {
+  padding: 2%;
+}
+
+.breadcrumb {
+  display: inline-block;
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+}
+
+#home-breadcrumb {
+  width: 100%;
+  text-align: center;
+}
+
+#themes-breadcrumb {
+  text-align: right;
+  width: 69%;
+}
+
+#back-to-themes {
+  right: 0;
+  padding: 8px;
+  top: 0;
+  text-decoration: none;
+}
+
 .response-red-background:before {
   background: rgba(255,0,0,0.2);
   padding: 0 5px;
@@ -31,29 +91,10 @@ input {
   border-radius: 5px;
 }
 
-.container {
-	width: 800px;
-	margin: 0 auto;
-}
-
-.center {
-	margin: 0 auto;
-	text-align: center;
-}
-
-.plain-text a {
-	text-decoration: none;
-	color: black;
-}
-
-.row {
-  padding: 2%;
-}
 .main-header h1 {
 	display: inline;
 	vertical-align: middle;
 	line-height: 50px;
-	font-family: 'Carter One', cursive;
 }
 
 .main-header img {
@@ -62,21 +103,17 @@ input {
 	line-height: 50px;
 }
 
-.menu-title {
-  font-family: 'Carter One', cursive;
-}
-
 #overlay {
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color: black;
-    opacity:0.7;
-    z-index:1001;
-    transition: background 1s ease-in-out;
-    -webkit-transition: background 1s ease-in-out;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: black;
+  opacity:0.7;
+  z-index:1001;
+  transition: background 1s ease-in-out;
+  -webkit-transition: background 1s ease-in-out;
 }
 
 #info-box {
@@ -100,7 +137,6 @@ input {
 #info-box h1 {
   margin: 0;
   text-align: center;
-  font-family: 'Carter One', cursive;
 }
 
 #info-box ol {
@@ -110,16 +146,15 @@ input {
 }
 
 @keyframes slideFromTop {
-    0%   {top: 0%;}
-    50% {top: 50%;}
-    75% {top: 43%;}
-    /*85% {top: 46%;}*/
-    100% {top:45%;}
+  0%   {top: 0%;}
+  50% {top: 50%;}
+  75% {top: 43%;}
+  100% {top:45%;}
 }
 
 .highlight {
-   opacity:1;
-    z-index:1002;
+  opacity:1;
+  z-index:1002;
 }
 
 .theme-img-index img {
@@ -182,14 +217,14 @@ input {
 }
 
 @keyframes zIndexUp {
-    0%   {z-index: 0;}
-    100% {z-index: 1;}
+  0%   {z-index: 0;}
+  100% {z-index: 1;}
 }
 
 #question-bubble-2 {
 	width: 180px;
 	height: 180px;
-	bottom: 25%;
+	bottom: 27%;
 	left: 25%;
 }
 
@@ -219,7 +254,6 @@ input {
 	text-align: center;
 	bottom: 80%;
 	position: absolute;	
-  font-family: 'Carter One', cursive;
 }
 
 .ecard-msg {
@@ -234,7 +268,6 @@ input {
 }
 
 #message-text-area, .msg-preview {
-  font-family: 'Just Another Hand', cursive;
   padding: 1%;
   height: 3em;
   text-align: center;
@@ -305,14 +338,6 @@ input {
 #send-modal p {
   text-align: center;
   vertical-align: middle;
-}
-.prompt {
-  font-family: 'Just Another Hand', cursive;
-}
-
-.response {
-  font-family: 'Dawning of a New Day', cursive;
-  text-decoration: underline;
 }
 
 .question-form {
@@ -488,7 +513,6 @@ input {
   font-size: 15px;
   font-weight: bold;	
   display: inline-block;
-	font-family: 'Carter One', cursive;
 	border-radius: 5%;
 	color: #C0C0C0;
 }
@@ -544,51 +568,52 @@ input {
 	width: 100%;
 }
 
+.cardagram-btn {
+  background: #B8FDFE;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
 #get-started-div button {
 	z-index: 99;
-	color: black;
 	position: relative;
 	top: 70%;
 	padding: 20px;
-	font-weight: bold;
 	font-size: 20px;
-	background: #B8FDFE;
-	border: 2px solid black;
-	border-radius: 5%;
-	font-family: 'Carter One', cursive;
 }
 
-#get-started-div button:hover {
+.cardagram-btn:hover {
 	border: 3px solid #FEB8FB;
 	box-shadow: 0 0 10px #FEB8FB;
 	cursor: pointer;
 }
 
-#get-started-div button:active {
-	outline: none;
+.cardagram-btn:active {
+	outline: none !important;
 }
 
 #main-blurb {
 	font-size: 20px;
-	font-family: 'Carter One', cursive;
 }
 
 .slides {
-    padding: 0;
-    width: 100%;
-    height: 550px;
-    display: block;
-    position: relative;
-    margin-top: 5px;
+  padding: 0;
+  width: 100%;
+  height: 550px;
+  display: block;
+  position: relative;
+  margin-top: 5px;
 }
 
 .slides * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .slides input { display: none; }
@@ -596,14 +621,14 @@ input {
 .slide-container { display: block; }
 
 .slide {
-    top: 0;
-    opacity: 0;
-    width: 100%;
-    height: 500px;
-    display: block;
-    position: absolute;
-    transform: scale(0);
-    transition: all .7s ease-in-out;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: absolute;
+  transform: scale(0);
+  transition: all .7s ease-in-out;
 }
 
 .slide img {
@@ -666,23 +691,20 @@ input {
 }
 
 .nav label {
-    width: 100px;
-    height: 100%;
-    display: none;
-    position: absolute;
-
-	  opacity: 0;
-    z-index: 9;
-    cursor: pointer;
-
-    transition: opacity .5s;
-
-    color: #FFF;
-    font-size: 156pt;
-    text-align: center;
-    line-height: 380px;
-    background-color: rgba(255, 255, 255, .3);
-    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+  width: 100px;
+  height: 100%;
+  display: none;
+  position: absolute;
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+  transition: opacity .5s;
+  color: #FFF;
+  font-size: 156pt;
+  text-align: center;
+  line-height: 380px;
+  background-color: rgba(255, 255, 255, .3);
+  text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
 
 .slide:hover + .nav label { opacity: 0.5; }
@@ -692,11 +714,9 @@ input {
 .nav .next { right: 0; }
 
 input:checked + .slide-container  .slide {
-    opacity: 1;
-
-    transform: scale(1);
-
-    transition: opacity 1s ease-in-out;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
 }
 
 input:checked + .slide-container .nav label { display: block; }
@@ -748,6 +768,11 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     height: 375px;
     margin: 0 auto;
   }
+
+  .breadcrumb-container {
+    width: 600px;
+  }
+
   #question-bubble-1 {
     width: 75px;
     height: 75px;
@@ -812,8 +837,6 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   #info-box h1 {
     font-size: 20px;
   }
-
-
 }
 
 @media screen and (max-width: 770px) {
@@ -841,6 +864,23 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     height: 250px;
     margin: 0 auto;
   }
+
+  .breadcrumb-container {
+    width: 400px;
+    font-size: .75em;
+  }
+
+  .breadcrumb-container button {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  .progress-bar-step {
+    font-size: .75em;
+    padding: 5px;
+    margin: 10px 5px;
+  }
+
   #theme-img-show{
     height: 250px;
   }
@@ -933,6 +973,13 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     width: 300px;
     height: 480px;
     margin: 0 auto;
+  }
+  .breadcrumb-container {
+    width: 300px;
+    font-size: .55em;
+  }
+  .breadcrumb-container button {
+    font-size: 1.2em;
   }
   #theme-img-show {
     height: 480px;
