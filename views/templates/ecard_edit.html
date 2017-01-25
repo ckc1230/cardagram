@@ -1,7 +1,7 @@
 <form name="theme-edit-form">
 	<div class="container">
 		<div id='theme-img-show' style={{eCardEditCtrl.loadBackground()}}>
-			<div class="ecard-title">
+			<div class="ecard-title cardagram-font">
 				<h1>{{eCardEditCtrl.ecard.theme.title}}</h1>
 			</div>
 			<div ng-repeat="question in eCardEditCtrl.ecard.theme.questions">
@@ -10,7 +10,7 @@
 				</a>
 			</div>
 			<div class="ecard-msg">
-	 			<p><textarea id="message-text-area" maxlength="165" rows="3" cols="50" placeholder="Add your Message" ng-model="eCardEditCtrl.ecard.theme.message"></textarea></p>
+	 			<p><textarea id="message-text-area" class="prompt" maxlength="165" rows="3" cols="50" placeholder="Add your Message" ng-model="eCardEditCtrl.ecard.theme.message"></textarea></p>
 			</div>
 		</div>
 	</div>
