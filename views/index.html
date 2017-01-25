@@ -24,11 +24,16 @@
   </head>
 
   <body>
-    <div class="center plain-text main-header">
-      <a href="/">
-        <img src="http://i.imgur.com/RcpnMvn.png" alt="">
-        <h1 class="cardagram-font">Cardagram</h1>
-      </a>
+    <div class="breadcrumb-container">
+      <div id="home-breadcrumb" class="breadcrumb plain-text main-header">
+        <a href="/">
+          <img src="http://i.imgur.com/RcpnMvn.png" alt="">
+          <h1 class="cardagram-font">Cardagram</h1>
+        </a>
+      </div>
+      <div id="themes-breadcrumb" class="breadcrumb">
+        <button id="back-to-themes" class="cardagram-btn clear-message-btn cardagram-font">Back to Themes</button>
+      </div>
     </div>
     <div ng-view></div>
   </body>
