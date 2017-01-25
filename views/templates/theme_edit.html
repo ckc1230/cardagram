@@ -1,7 +1,7 @@
 <div id="overlay"></div>
 <div id="info-box">
 	<div>
-		<h1>Creating A Cardagram</h1>
+		<h1 class="cardagram-font">Creating A Cardagram</h1>
 		<ol>
 			<li>Click on 1 of the 5 Bubble-Grams</li>
 			<li>Each Bubble-Gram has a phrase for you to complete</li>
@@ -15,7 +15,7 @@
 <form name="theme-edit-form">
 	<div class="container">
 		<div id='theme-img-show' style={{themeEditCtrl.loadBackground()}}>
-			<div class="ecard-title">
+			<div class="ecard-title cardagram-font">
 				<h1>{{themeEditCtrl.theme.title}}</h1>
 			</div>
 			<a ng-click="themeEditCtrl.openModal(1)">
@@ -30,13 +30,13 @@
 			<a ng-click="themeEditCtrl.openModal(5)">
 				<div class="question-bubble-pending" id="question-bubble-5" data-color="red" style="background-image: url({{themeEditCtrl.theme.questions[4].image}})"></div></a>
 			<div class="ecard-msg">
-	 			<p><textarea  id="message-text-area" maxlength="165" rows="3" cols="50" placeholder="Add your Message" ng-model="themeEditCtrl.theme.message" ng-show="themeEditCtrl.bubblesComplete"></textarea></p>
+	 			<p><textarea  id="message-text-area" class="prompt" maxlength="165" rows="3" cols="50" placeholder="Add your Message" ng-model="themeEditCtrl.theme.message" ng-show="themeEditCtrl.bubblesComplete"></textarea></p>
 			</div>
 		</div>
 	</div>
 
 	<div class="center">
-		<div class="progress-bar">
+		<div class="progress-bar cardagram-font">
 			<div class="progress-bar-step active-step">Customize Your Bubble-Grams</div>
 			<div class="progress-bar-step" id="write-message-step">Write A Message</div>
 	  	<input class="progress-bar-step" id="preview-cardagram-btn" value="Preview Cardagram" type="submit" ng-disabled="!(themeEditCtrl.bubblesComplete && themeEditCtrl.theme.message.length > 0)" ng-click="themeEditCtrl.saveECard()" ng-class="{true: 'active-step click-me', false: ''}[themeEditCtrl.theme.message.length > 0 && themeEditCtrl.bubblesComplete]">
@@ -48,7 +48,7 @@
 	      <div class="questions" id="question-{{question.count}}" hidden>
 	        <span ng-click="themeEditCtrl.cancelResponse(question)" class='close'>&times;</span>
 	        <div class="question-header">
-	          <h1>Customize your message</h1>
+	          <h1>Customize your Bubble-Gram</h1>
 					</div>
 
 					<div class="question-form">
