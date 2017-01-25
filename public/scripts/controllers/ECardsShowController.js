@@ -107,16 +107,7 @@ function ECardsShowController($http, $routeParams, $location) {
 
   vm.openLinkModal = function() {
     document.getElementById('link-modal').style.display = "block";
-    vm.closeChooseModal();
-  }
-
-  vm.cancelLinkModal = function() {
-    document.getElementById('link-modal').style.display = "none";   
-  }
-
-  vm.closeLinkModal = function() {
     vm.ecard.ecardSent = true;
-    console.log("vm.ecard:",vm.ecard);
     $http({
       method: 'PUT',
       url: '/api/ecards/' + $routeParams.id,
@@ -126,6 +117,10 @@ function ECardsShowController($http, $routeParams, $location) {
     }, function errorCallback(response) {
       console.log('There was an error getting the data', response);
     });
+    vm.closeChooseModal();
+  }
+
+  vm.closeLinkModal = function() {
     document.getElementById('link-modal').style.display = "none";
   }
 
