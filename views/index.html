@@ -16,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script>
 
     <script type="text/javascript" src="/scripts/app.js"></script>
+    <script src='/scripts/controllers/MainController.js'></script>
     <script src='/scripts/controllers/ECardsIndexController.js'></script>
     <script src='/scripts/controllers/ECardsShowController.js'></script>
     <script src='/scripts/controllers/ThemeEditController.js'></script>
@@ -31,8 +32,8 @@
           <h1 class="cardagram-font">Cardagram</h1>
         </a>
       </div>
-      <div id="themes-breadcrumb" class="breadcrumb">
-        <button id="back-to-themes" class="cardagram-btn clear-message-btn cardagram-font">Back to Themes</button>
+      <div id="themes-breadcrumb" class="hidden breadcrumb">
+        <a href="/ecards" id="back-to-themes" class="cardagram-btn clear-message-btn cardagram-font">Back to Themes</a>
       </div>
     </div>
     <div ng-view></div>

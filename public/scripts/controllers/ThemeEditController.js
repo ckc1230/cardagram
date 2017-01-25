@@ -15,6 +15,10 @@ function ThemeEditController($http, $routeParams, $location) {
     document.getElementById('question-bubble-1').addEventListener("click", vm.closeInfoBox)
     document.getElementById('overlay').addEventListener("click", vm.closeInfoBox);
     document.getElementById('info-box').addEventListener("click", vm.closeInfoBox);
+    document.getElementById('home-breadcrumb').style.width = '30%';
+    setTimeout(function() {
+      document.getElementById('themes-breadcrumb').className = 'breadcrumb';
+    },1000);
   });
 
   vm.closeInfoBox = function() {
