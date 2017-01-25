@@ -3,8 +3,8 @@
 	<div>
 		<h1>Creating A Cardagram</h1>
 		<ol>
-			<li>Click on 1 of the 5 Note-Bubbles</li>
-			<li>Each Note-Bubble has a phrase for you to complete</li>
+			<li>Click on 1 of the 5 Bubble-Grams</li>
+			<li>Each Bubble-Gram has a phrase for you to complete</li>
 			<li>You can also choose to link a personalized image</li>
 			<li>Once all 5 are completed, write a message to tie it all together</li>
 			<li>Preview your Cardagram and Send</li>
@@ -37,7 +37,7 @@
 
 	<div class="center">
 		<div class="progress-bar">
-			<div class="progress-bar-step active-step">Customize Your Note-Bubbles</div>
+			<div class="progress-bar-step active-step">Customize Your Bubble-Grams</div>
 			<div class="progress-bar-step" id="write-message-step">Write A Message</div>
 	  	<input class="progress-bar-step" id="preview-cardagram-btn" value="Preview Cardagram" type="submit" ng-disabled="!(themeEditCtrl.bubblesComplete && themeEditCtrl.theme.message.length > 0)" ng-click="themeEditCtrl.saveECard()" ng-class="{true: 'active-step click-me', false: ''}[themeEditCtrl.theme.message.length > 0 && themeEditCtrl.bubblesComplete]">
 		</div>
