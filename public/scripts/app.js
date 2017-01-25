@@ -9,6 +9,7 @@ function config(   $routeProvider,  $locationProvider   ) {
   $routeProvider
     .when('/', {
       templateUrl: '/templates/main',
+      controller: 'MainController',
       css: '/styles/style.css'
     })
     .when('/ecards', {

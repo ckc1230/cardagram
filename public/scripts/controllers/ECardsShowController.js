@@ -5,6 +5,11 @@ angular
 ECardsShowController.$inject = ['$http', '$routeParams', '$location'];
 
 function ECardsShowController($http, $routeParams, $location) {
+  angular.element(document).ready(function () {
+    document.getElementById('home-breadcrumb').style.width = '100%';
+    document.getElementById('themes-breadcrumb').className = 'hidden breadcrumb';
+  });
+
   var vm = this;
   vm.bubbleOpen = false;
   $http({
