@@ -587,14 +587,14 @@ themeList.push({
   title: "Happy Lunar New Year 2017!",
   image: "http://i.imgur.com/EJ9yrUX.jpg",
   mobileImage: "",
-  thumbnailImage: "http://i.imgur.com/LFQtufJ.jpg"
+  thumbnailImage: "http://i.imgur.com/ZnjE0tl.jpg"
 });
 
 themeList.push({
   title: "Happy Anniversary!",
-  image: "http://i.imgur.com/PhF1r4r.jpg",
+  image: "http://i.imgur.com/2fdvPzs.jpg",
   mobileImage: "http://i.imgur.com/dpft9nG.png",
-  thumbnailImage: "http://i.imgur.com/iGP4oW7.jpg"
+  thumbnailImage: "http://i.imgur.com/I9eCzY8.jpg"
 });
 
 /* ECARDS */
