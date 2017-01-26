@@ -427,6 +427,90 @@ questionList.push({
   count: 5
 })
 
+/* Lunar New Year */
+
+questionList.push({
+  prompt: "Yesterday is a memory, today is a gift, tomorrow is _____.",
+  response: "",
+  image: "http://i.huffpost.com/gadgets/slideshows/334665/slide_334665_3356243_free.jpg",
+  theme: "Happy Lunar New Year 2017!",
+  count: 1
+})
+
+questionList.push({
+  prompt: "May the New Year be vibrant with _____!",
+  response: "",
+  image: "http://s2.dmcdn.net/ReyMX.jpg",
+  theme: "Happy Lunar New Year 2017!",
+  count: 2
+})
+
+questionList.push({
+  prompt: "I hope that the year of Rooster brings with it _____.",
+  response: "",
+  image: "http://media.istockphoto.com/vectors/year-of-the-rooster-papercut-vector-id599123888?s=235x235",
+  theme: "Happy Lunar New Year 2017!",
+  count: 3
+})
+
+questionList.push({
+  prompt: "Lots of luck and _____ in the New Year.",
+  response: "",
+  image: "http://static1.squarespace.com/static/52536652e4b007332ef4ecf4/52dec946e4b0ca499f87bce7/5876926859cc688e12949602/1484656205967/TEALEAVES-LuckyEnvelope-CNY-Rooster2017-3.jpg?format=1000w",
+  theme: "Happy Lunar New Year 2017!",
+  count: 4
+})
+
+questionList.push({
+  prompt: "My New Year's wish for you is _____.",
+  response: "",
+  image: "http://uschina.usc.edu/Files/images/2013-01/Chinese%20new%20year%20signs-Chun.jpg",
+  theme: "Happy Lunar New Year 2017!",
+  count: 5
+})
+
+/* Happy Anniversary */
+
+questionList.push({
+  prompt: "My favorite memory of us this past year was _____.",
+  response: "",
+  image: "http://static.tumblr.com/d4d3de52da11ba57196c6e09baa0ba9f/qctr7so/Tr5oaxxas/tumblr_static_1aie2khzxqg0g4o40gc08ow4k.jpg",
+  theme: "Happy Anniversary!",
+  count: 1
+})
+
+questionList.push({
+  prompt: "Because of you, I strive to _____.",
+  response: "",
+  image: "http://cdn-media-1.lifehack.org/wp-content/files/2012/04/how_to_better_yourself.jpg",
+  theme: "Happy Anniversary!",
+  count: 2
+})
+
+questionList.push({
+  prompt: "I hope that we _____ within the upcoming year.",
+  response: "",
+  image: "http://theplanetd.com/images/Sabah-diving-Borneo-divers.jpg",
+  theme: "Happy Anniversary!",
+  count: 3
+})
+
+questionList.push({
+  prompt: "Unlike me, you are amazing at _____.",
+  response: "",
+  image: "http://www.vivalasvegasweddings.com/images/flowers/3-Rose-Bouquet-Red-Freesia-LG.jpg",
+  theme: "Happy Anniversary!",
+  count: 4
+})
+
+questionList.push({
+  prompt: "We always have the greatest time _____ together.",
+  response: "",
+  image: "http://il2.picdn.net/shutterstock/videos/4224349/thumb/5.jpg",
+  theme: "Happy Anniversary!",
+  count: 5
+})
+
 /* THEMES */
 
 themeList.push({
@@ -499,6 +583,19 @@ themeList.push({
   thumbnailImage: "http://i.imgur.com/kqVwdyl.jpg"
 });
 
+themeList.push({
+  title: "Happy Lunar New Year 2017!",
+  image: "http://i.imgur.com/EJ9yrUX.jpg",
+  mobileImage: "",
+  thumbnailImage: "http://i.imgur.com/LFQtufJ.jpg"
+});
+
+themeList.push({
+  title: "Happy Anniversary!",
+  image: "http://i.imgur.com/PhF1r4r.jpg",
+  mobileImage: "http://i.imgur.com/dpft9nG.png",
+  thumbnailImage: "http://i.imgur.com/iGP4oW7.jpg"
+});
 
 /* ECARDS */
 
