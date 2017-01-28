@@ -579,21 +579,21 @@ themeList.push({
 themeList.push({
   title: "Good Morning!",
   image: "http://i.imgur.com/dXAO1yc.jpg",
-  mobileImage: "http://i.imgur.com/r7yRTIq.png",
+  mobileImage: "http://i.imgur.com/Tb52JlA.jpg",
   thumbnailImage: "http://i.imgur.com/kqVwdyl.jpg"
 });
 
 themeList.push({
   title: "Happy Lunar New Year 2017!",
   image: "http://i.imgur.com/EJ9yrUX.jpg",
-  mobileImage: "",
+  mobileImage: "http://i.imgur.com/bmwgVUS.jpg",
   thumbnailImage: "http://i.imgur.com/ZnjE0tl.jpg"
 });
 
 themeList.push({
   title: "Happy Anniversary!",
   image: "http://i.imgur.com/2fdvPzs.jpg",
-  mobileImage: "http://i.imgur.com/dpft9nG.png",
+  mobileImage: "http://i.imgur.com/pjdZhor.jpg",
   thumbnailImage: "http://i.imgur.com/I9eCzY8.jpg"
 });
 
