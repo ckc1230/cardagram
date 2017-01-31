@@ -7,7 +7,7 @@
       <div class='question-bubble' id='question-bubble-{{question.count}}'
         ng-mouseover='eCardCtrl.bubblePop(question.count)' ng-mouseout='eCardCtrl.bubblePop(question.count)'
         ng-click='eCardCtrl.mobilePop(question.count)'
-        style='background-image: url({{eCardCtrl.ecard.theme.questions[question.count-1].image}})'>
+        style='background-image: url({{eCardCtrl.ecard.theme.questions[question.count].image}})'>
         <div class='full-message' id='full-message-{{question.count}}' hidden>
           <div class='full-message-text'>
             <span class='prompt'>{{eCardCtrl.getFrontPrompt(question)}}</span>
