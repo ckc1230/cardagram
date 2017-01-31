@@ -420,7 +420,7 @@ questionList.push({
 })
 
 questionList.push({
-  prompt: "Look in the mirror and and remember _____.",
+  prompt: "Look in the mirror and remember _____.",
   response: "",
   image: "http://www.marketoracle.co.uk/images/janice_cat.jpg",
   theme: "Good Morning!",
