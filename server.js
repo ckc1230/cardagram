@@ -4,11 +4,12 @@ var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var nodemailer = require('nodemailer');
+var router = express.Router();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
-
 
 /* DATABASE */
 
@@ -88,6 +89,38 @@ app.get('/api/questions', function indexQuestions(req, res) {
 app.get('*', function homepage(req,res) {
   res.sendFile(__dirname + '/views/index.html')
 })
+
+/* MAILER */
+
+app.post('/emails', sendEmail);
+
+function sendEmail(req,res) {
+
+  var transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: 'cardagram.cards@gmail.com',
+      pass: process.env.PW
+    }
+  })
+
+  var mailOptions = {
+    from: req.body.from,
+    to: req.body.to,
+    subject: req.body.subject,
+    text: req.body.text
+  }
+
+  transporter.sendMail(mailOptions, function(error, info) {
+    if (error) {
+      console.log(error);
+      res.json({response: 'error'});
+    } else {
+      console.log('Message sent: ' + info.response);
+      res.json({response: info.response});
+    }
+  })
+} 
 
 /* SERVER SET UP */ 
 
