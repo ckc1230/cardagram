@@ -88,39 +88,12 @@ function ECardsShowController($http, $routeParams, $location) {
     return parts[1];
   }
 
-  vm.openChooseModal = function() {
-    document.getElementById('choose-modal').style.display = "block";
-  }
-
-  vm.closeChooseModal = function() {
-    document.getElementById('choose-modal').style.display = "none";
-  }
-
   vm.openModal = function() {
     document.getElementById('send-modal').style.display = "block";
-    vm.closeChooseModal();
   }
 
   vm.closeModal = function() {
     document.getElementById('send-modal').style.display = "none";
-  }
-
-  vm.openLinkModal = function() {
-    document.getElementById('link-modal').style.display = "block";
-    vm.ecard.ecardSent = true;
-    $http({
-      method: 'PUT',
-      url: '/api/ecards/' + $routeParams.id,
-      data: vm.ecard
-    }).then(function successCallback(response) {
-    }, function errorCallback(response) {
-      console.log('There was an error getting the data', response);
-    });
-    vm.closeChooseModal();
-  }
-
-  vm.closeLinkModal = function() {
-    document.getElementById('link-modal').style.display = "none";
   }
 
   vm.sendECard = function() {

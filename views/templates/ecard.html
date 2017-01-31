@@ -27,45 +27,11 @@
 
 <div class='center' ng-hide='eCardCtrl.ecard.ecardSent'>
   <input class='clear-message-btn' value='Edit' type='submit' ng-click='eCardCtrl.editECard()'>
-  <input class='preview-btn' value='Send' type='submit' ng-click='eCardCtrl.openChooseModal()'>
+  <input class='preview-btn' value='Send' type='submit' ng-click='eCardCtrl.openModal()'>
 </div>
 
 <div class='center plain-text cardagram-font' ng-show='eCardCtrl.ecard.ecardSent' class='ng-hide'>
   <a href='/'><h2>Create your own Cardagram!</h2></a>
-</div>
-
-<div id="choose-modal" class="modal">
-  <div id='send-modal-content' class='modal-content'>
-  <span ng-click='eCardCtrl.closeChooseModal()' class='close'>&times;</span>
-    <div class='question-header'>
-      <h2>Choose Method of Delivery</h2>
-    </div>
-
-    <div class="choose-modal-button" ng-click='eCardCtrl.openModal()'>
-      <h1 class="choose-modal-text">Send With Default Email Client</h1>
-    </div>
-
-    <div class="choose-modal-button" ng-click='eCardCtrl.openLinkModal()'>
-      <h1 class="choose-modal-text">Generate Link</h1>
-    </div>
-
-  </div>
-</div>
-
-<div id="link-modal" class="modal">
-  <div id='send-modal-content' class='modal-content'>
-    <div class='question-header'>
-      <h2>Thank You for Using Cardagram</h2>
-    </div>
-
-    <div>
-      <h3>Here is your Cardagram's link:</h3>
-    </div>
-    <input type="text" id="url-reveal" ng-value='eCardCtrl.getURL()'>
-      <h5>Please be sure to copy this link before closing the window.</h5>
-    <input class="preview-btn" id='link-modal-done' value='Done' ng-click='eCardCtrl.closeLinkModal()'>
-
-  </div>
 </div>
 
 <div id='send-modal' class='modal'>
