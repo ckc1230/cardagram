@@ -88,40 +88,12 @@ function ECardsShowController($http, $routeParams, $location) {
     return parts[1];
   }
 
-  vm.openChooseModal = function() {
-    document.getElementById('choose-modal').style.display = "block";
-  }
-
-  vm.closeChooseModal = function() {
-    document.getElementById('choose-modal').style.display = "none";
-  }
-
   vm.openModal = function() {
     document.getElementById('send-modal').style.display = "block";
-    vm.closeChooseModal();
   }
 
   vm.closeModal = function() {
     document.getElementById('send-modal').style.display = "none";
-  }
-
-  vm.openLinkModal = function() {
-    document.getElementById('link-modal').style.display = "block";
-    vm.ecard.ecardSent = true;
-    $http({
-      method: 'PUT',
-      url: '/api/ecards/' + $routeParams.id,
-      data: vm.ecard
-    }).then(function successCallback(response) {
-      console.log("response",response);
-    }, function errorCallback(response) {
-      console.log('There was an error getting the data', response);
-    });
-    vm.closeChooseModal();
-  }
-
-  vm.closeLinkModal = function() {
-    document.getElementById('link-modal').style.display = "none";
   }
 
   vm.sendECard = function() {
@@ -131,16 +103,15 @@ function ECardsShowController($http, $routeParams, $location) {
         "Don't forget to explore!\n Enjoy!\n\n" +
         '- Your friends at Cardagram';
 
-    // vm.ecard.ecardSent = true;
-    // $http({
-    //   method: 'PUT',
-    //   url: '/api/ecards/' + $routeParams.id,
-    //   data: vm.ecard
-    // }).then(function successCallback(response) {
-    //   console.log("response",response);
-    // }, function errorCallback(response) {
-    //   console.log('There was an error getting the data', response);
-    // });
+    vm.ecard.ecardSent = true;
+    $http({
+      method: 'PUT',
+      url: '/api/ecards/' + $routeParams.id,
+      data: vm.ecard
+    }).then(function successCallback(response) {
+    }, function errorCallback(response) {
+      console.log('There was an error getting the data', response);
+    });
 
     var mailOptions = {
       from: 'cardagram.cards@gmail.com',
@@ -148,7 +119,6 @@ function ECardsShowController($http, $routeParams, $location) {
       subject: vm.ecard.theme.title,
       text: formattedBody
     }
-    console.log(mailOptions);
     
     $http({
       method: 'POST',
@@ -160,6 +130,28 @@ function ECardsShowController($http, $routeParams, $location) {
       console.log('There was an error getting the data', response);
     });
 
+    var senderBody = 'Hi ' + vm.senderName + '!\n\n ' +
+      'Thanks for using Cardagram! Here is the card you sent to ' + vm.receiverName + ':\n' +
+        window.location.href + ' \n\n ' +
+        "Don't forget us on your next special occasion!\n\n" +
+        '- Your friends at Cardagram';
+
+    var senderOptions = {
+      from: 'cardagram.cards@gmail.com',
+      to: vm.senderEmail,
+      subject: 'Thank You for Creating a Cardagram!',
+      text: senderBody
+    }
+
+    $http({
+      method: 'POST',
+      url: '/emails',
+      data: senderOptions
+    }).then(function successCallback(response) {
+      console.log("response",response);
+    }, function errorCallback(response) {
+      console.log('There was an error getting the data', response);
+    });
 
     vm.closeModal();
   }
