@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .hidden {
   display: none !important;
 }
@@ -637,7 +641,7 @@ input {
 }
 
 .slide img {
-    width: 1250px;
+    width: 1300px;
     height: 100%;
     margin: 0 auto;
     position: relative;
