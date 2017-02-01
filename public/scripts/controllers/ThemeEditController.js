@@ -10,11 +10,16 @@ function ThemeEditController($http, $routeParams, $location) {
   vm.showImage = false;
   vm.tempImage = "";
   vm.bubblesComplete = false;
+  introClosed = false;
+  modalClosed = false;
+  tabCount = 1;
+  modalCount = 1;
 
   angular.element(document).ready(function () {
     document.getElementById('overlay').addEventListener("click", vm.closeInfoBox);
     document.getElementById('info-box').addEventListener("click", vm.closeInfoBox);
     document.getElementById('home-breadcrumb').style.width = '30%';
+    document.addEventListener("keydown", closeIntro, false);
     setTimeout(function() {
       document.getElementById('question-bubble-1').className += ' highlight';
       document.getElementById('question-bubble-1').addEventListener("click", vm.closeInfoBox);
@@ -22,10 +27,64 @@ function ThemeEditController($http, $routeParams, $location) {
     },1000);
   });
 
+  function keyDownTextField(e) {
+    var keyCode = e.keyCode;
+
+    // While on the Main Display
+    if (modalClosed) {
+      // Hit 'Tab'
+      if(keyCode == 9) {
+        e.preventDefault()
+        if (tabCount > 5) {
+          tabCount = 1;
+        } 
+        var bubbles = document.getElementsByClassName('question-bubble-pending');
+        for (var i=0; i< bubbles.length; i++) {
+          if (bubbles[i].dataset.color === 'green') {
+            bubbles[i].style.border = "1px solid green";
+            bubbles[i].style.boxShadow = "0 0 10px green";
+          } else {
+            bubbles[i].style.border = "1px solid red";
+            bubbles[i].style.boxShadow = "0 0 10px red";
+          }
+        };
+        document.getElementById('question-bubble-' + tabCount).style.border = "5px solid white";
+        document.getElementById('question-bubble-' + tabCount).style.boxShadow = "0 0 10px white";
+        modalCount = tabCount;
+        tabCount++;
+      }
+
+      // Hit 'Enter'
+      if(keyCode == 13) {
+        e.preventDefault()
+        vm.openModal(modalCount);
+      }
+    } 
+
+    // While on Bubble-Gram Modal
+    else {
+      // Hit 'Escape'
+      if (keyCode == 27) {
+        vm.closeModal();
+      }
+    }
+  }
+
+  function closeIntro(e) {
+    if (!introClosed) {
+      if (e.keyCode === 13 || e.keyCode === 27) {
+        vm.closeInfoBox();
+      }
+    }
+  }
+
   vm.closeInfoBox = function() {
+    introClosed = true;
+    modalClosed = true;
     document.getElementById('overlay').style.display = "none";
     document.getElementById('info-box').style.display = "none";
     document.getElementById('question-bubble-1').className = 'question-bubble-pending';  
+    document.addEventListener("keydown", keyDownTextField, false);
   }
 
   var writingSFX = [
@@ -97,6 +156,7 @@ function ThemeEditController($http, $routeParams, $location) {
   }
   
   vm.openModal = function(count) {
+    modalClosed = false;
     document.getElementById('question-modal').style.display = "block";
     var questionId = "question-"+count;
     document.getElementById(questionId).style.display = "block";
@@ -104,6 +164,7 @@ function ThemeEditController($http, $routeParams, $location) {
   } 
 
   vm.closeModal = function() {
+    modalClosed = true;
     document.getElementById('question-modal').style.display = "none";
     var questions = document.getElementsByClassName('questions');
     for(var i=0; i < questions.length; i++) {
