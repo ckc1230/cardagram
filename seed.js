@@ -328,7 +328,7 @@ questionList = [{
 },
 
 {
-  prompt: "Arbor day reminds us to care for our planet and environement. It reminds me of the time you took care of me by _____",
+  prompt: "Arbor day reminds us to care for our planet and environement. It reminds me of the time you took care of me by _____.",
   response: "",
   image: "http://www.mfc.ms.gov/sites/default/files/kids_trees_0.jpg",
   theme: "Happy Arbor Day!",
