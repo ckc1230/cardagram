@@ -10,6 +10,56 @@ function ECardEditController($http, $routeParams, $location) {
   vm.showImage = false;
   vm.tempImage = "";
   vm.bubblesComplete = true;
+  modalClosed = true;
+  tabCount = 1;
+  modalCount = 1;
+
+  angular.element(document).ready(function () {
+    document.addEventListener("keydown", keyDownTextField, false);
+  });
+
+  function keyDownTextField(e) {
+    var keyCode = e.keyCode;
+
+    // While on the Main Display
+    if (modalClosed) {
+      // Hit 'Tab'
+      if(keyCode == 9) {
+        e.preventDefault()
+        if (tabCount > 5) {
+          tabCount = 1;
+        } 
+        var bubbles = document.getElementsByClassName('question-bubble-done');
+        for (var i=0; i< bubbles.length; i++) {
+          if (bubbles[i].dataset.color === 'green') {
+            bubbles[i].style.border = "1px solid green";
+            bubbles[i].style.boxShadow = "0 0 10px green";
+          } else {
+            bubbles[i].style.border = "1px solid red";
+            bubbles[i].style.boxShadow = "0 0 10px red";
+          }
+        };
+        document.getElementById('question-bubble-' + tabCount).style.border = "5px solid white";
+        document.getElementById('question-bubble-' + tabCount).style.boxShadow = "0 0 10px white";
+        modalCount = tabCount;
+        tabCount++;
+      }
+
+      // Hit 'Enter'
+      if(keyCode == 13) {
+        e.preventDefault()
+        vm.openModal(modalCount);
+      }
+    } 
+    
+    // While on Bubble-Gram Modal
+    else {
+      // Hit 'Escape'
+      if (keyCode == 27) {
+        vm.closeModal();
+      }
+    }
+  }
 
   var writingSFX = [
     new Audio('http://s0.vocaroo.com/media/download_temp/Vocaroo_s08ILxxVkmHQ.mp3'),
@@ -81,6 +131,7 @@ function ECardEditController($http, $routeParams, $location) {
   }
 
   vm.openModal = function(count) {
+    modalClosed = false;
     document.getElementById('question-modal').style.display = "block";
     var questionId = "question-"+count;
     document.getElementById(questionId).style.display = "block";
@@ -88,6 +139,7 @@ function ECardEditController($http, $routeParams, $location) {
   } 
   
   vm.closeModal = function() {
+    modalClosed = true;
     document.getElementById('question-modal').style.display = "none";
     var questions = document.getElementsByClassName('questions');
     for(var i=0; i < questions.length; i++) {
