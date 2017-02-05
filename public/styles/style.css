@@ -1116,6 +1116,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
   #get-started-div {
     top: 70%;
+    margin-left: -10px;
   }
 
 }
