@@ -1076,3 +1076,46 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     width: 90%;
   }
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  #main-landing {
+    display: none;
+  }
+  #mobile-landing {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 10px solid black;
+    width: 100%;
+    height: 110vh;
+    margin-top: -50px;
+    background: linear-gradient(
+      rgba(184,253,254, 0.1),
+      rgba(0,0,0, 0.1),
+      rgba(254,184,251, 0.1)
+    ), url("http://i.imgur.com/A67Ouju.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+  }
+  #mobile-landing h1 {
+    padding-top: 150px;
+    font-size: 50px;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  }
+  #mobile-landing ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  }
+  #get-started-div {
+    top: 70%;
+  }
+
+}
