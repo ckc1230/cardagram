@@ -1114,9 +1114,15 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     font-size: 20px;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
-  #get-started-div {
-    top: 70%;
-    margin-left: -10px;
+  #get-started-div-mobile {
+    margin: 50px 0 0 -10px;
+    position: relative;
+    width: 100%;
+  }
+  #get-started-div-mobile button {
+    z-index: 99;
+    padding: 20px;
+    font-size: 20px;
   }
 
 }
