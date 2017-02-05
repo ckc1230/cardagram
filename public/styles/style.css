@@ -1094,9 +1094,9 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     margin-top: -50px;
     background: linear-gradient(
       rgba(184,253,254, 0.1),
-      rgba(0,0,0, 0.1),
+      rgba(0,0,0, 0.2),
       rgba(254,184,251, 0.1)
-    ), url("http://i.imgur.com/A67Ouju.jpg") no-repeat;
+    ), url("http://i.imgur.com/ZFAmh2f.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
