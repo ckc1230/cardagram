@@ -980,7 +980,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     width: 95%;
   }
   #info-box {
-    top: 30%;
+    top: 25%;
   }
   .highlight {
     z-index: 1;
@@ -991,9 +991,9 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
   @keyframes slideFromTop {
     0%   {top: 0%;}
-    50% {top: 40%;}
-    75% {top: 25%;}
-    100% {top: 30%;}
+    50% {top: 35%;}
+    75% {top: 23%;}
+    100% {top: 25%;}
   }
   .modal-content h1 {
     font-size: 1.6em;
@@ -1158,5 +1158,38 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     padding: 20px;
     font-size: 20px;
   }
-
+  #info-box div {
+    width: 60%;
+  }
+  #info-box h1 {
+    font-size: 18px;
+  }
+  #info-box ol {
+    font-size: 16px;
+  }
+  #info-box li {
+    margin: 10px 0;
+  }
+  #send-modal-content {
+    position: absolute;
+    width: 55%;
+    top: 40%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    height: auto;
+  }
+  #send-modal-content h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  #send-modal-content p {
+    font-size: 1em;
+  }
+  #send-modal-content .preview-btn {
+    margin-top: 30px;
+  }
+  .sent-create-msg {
+    font-size: 1.2em;
+  }
 }
