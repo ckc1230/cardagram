@@ -94,7 +94,7 @@ function ECardsShowController($http, $routeParams, $location) {
     var formattedBody = 'Hi ' + vm.receiverName + '!\n\n' +
       vm.senderName + ' sent you a very special interactive ecard! You can view it here:\n' +
         window.location.href + ' \n\n' +
-        "Make sure to hover over the Bubble-Grams to see " + vm.senderName + "'s personalized messages for you!\n Enjoy!\n\n" +
+        "Make sure to hover over the Bubble-Grams to see " + vm.senderName + "'s personalized messages for you!\nEnjoy!\n\n" +
         '- Your friends at Cardagram\n' +
         'https://cardagram.herokuapp.com/';
     vm.ecard.ecardSent = true;
