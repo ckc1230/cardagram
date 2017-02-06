@@ -17,7 +17,7 @@ p {
 input {
   padding: 5px;
   border: 1px solid grey;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 .cardagram-font {
@@ -492,7 +492,7 @@ input {
 	background: white;
 	font-size: 15px;
 	font-weight: bold;
-	border-radius: 5%;
+	border-radius: 5px;
 }
 
 .preview-btn {
@@ -873,12 +873,10 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     height: 250px;
     margin: 0 auto;
   }
-
   .breadcrumb-container {
     width: 400px;
     font-size: .75em;
   }
-
   .breadcrumb-container button {
     font-size: 1em;
     padding: 5px;
@@ -887,9 +885,8 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   .progress-bar-step {
     font-size: .75em;
     padding: 5px;
-    margin: 10px 5px;
+    margin: 10px 5px 0 5px;
   }
-
   #theme-img-show{
     height: 250px;
   }
@@ -958,22 +955,55 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     margin: 0 auto;
   }
   .question-image-div img {
-    height: 120px;
+    height: 100px;
     width: 120px;
   }
   .question-image-container {
     margin: 0;
+    padding-top: 10px;
   }
   .question-image-input {
     vertical-align: top;
     padding-top: 0%;
     text-align: center;
   }
+  .question-image-input button {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgba(0,0,0,0.1);
+  }
+  .question-response {
+    padding-top: 0;
+  }
   .theme-img-index {
     width: 95%;
   }
   #info-box {
     top: 30%;
+  }
+  .highlight {
+    z-index: 1;
+  }
+  #back-to-themes {
+    font-size: 12px;
+    padding: 3px;
+  }
+  @keyframes slideFromTop {
+    0%   {top: 0%;}
+    50% {top: 40%;}
+    75% {top: 25%;}
+    100% {top: 30%;}
+  }
+  .modal-content h1 {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+  }
+  .close {
+    line-height: 28px;
+  }
+  .instructions {
+    padding-left: 25px;
   }
 }
 
@@ -1061,7 +1091,6 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     margin: 0 auto;
   }
   .question-image-div img {
-    height: 120px;
     width: 120px;
   }
   .question-image-container {
@@ -1087,10 +1116,8 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
   #mobile-landing {
     display: inline-block;
-    box-sizing: border-box;
-    border: 10px solid black;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     margin-top: -50px;
     background: linear-gradient(
       rgba(184,253,254, 0.1),
@@ -1103,8 +1130,15 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     text-align: center;
     color: white;
   }
+  #mobile-landing-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
   #mobile-landing h1 {
-    padding-top: 130px;
+    margin-top: 0;
     font-size: 50px;
     text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
   }
@@ -1115,7 +1149,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
   #get-started-div-mobile {
-    margin: 50px 0 0 -10px;
+    margin: 40px 0 0 -10px;
     position: relative;
     width: 100%;
   }

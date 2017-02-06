@@ -390,7 +390,7 @@ questionList = [{
 {
   prompt: "Before you start your day, I wanted to tell you _____.",
   response: "",
-  image: "http://rlv.zcache.com/encourage_mint_poster-r29972264b982449b86a31cc8c78648e1_wv3_8byvr_324.jpg",
+  image: "http://i.imgur.com/NPy7ikd.jpg",
   theme: "Good Morning!",
   count: 1
 },
