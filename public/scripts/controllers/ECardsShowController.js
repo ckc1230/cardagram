@@ -91,11 +91,12 @@ function ECardsShowController($http, $routeParams, $location) {
     document.getElementById('send-modal').style.display = "none";
   }
   vm.sendECard = function() {
-    var formattedBody = 'Hi ' + vm.receiverName + '!\n\n ' +
+    var formattedBody = 'Hi ' + vm.receiverName + '!\n\n' +
       vm.senderName + ' sent you a very special interactive ecard! You can view it here:\n' +
-        window.location.href + ' \n\n ' +
-        "Don't forget to explore!\n Enjoy!\n\n" +
-        '- Your friends at Cardagram';
+        window.location.href + ' \n\n' +
+        "Make sure to hover over the Bubble-Grams to see " + vm.senderName + "'s personalized messages for you!\nEnjoy!\n\n" +
+        '- Your friends at Cardagram\n' +
+        'https://cardagram.herokuapp.com/';
     vm.ecard.ecardSent = true;
     $http({
       method: 'PUT',
@@ -121,11 +122,12 @@ function ECardsShowController($http, $routeParams, $location) {
     }, function errorCallback(response) {
       console.log('There was an error getting the data', response);
     });
-    var senderBody = 'Hi ' + vm.senderName + '!\n\n ' +
+    var senderBody = 'Hi ' + vm.senderName + '!\n\n' +
       'Thanks for using Cardagram! Here is the card you sent to ' + vm.receiverName + ':\n' +
-        window.location.href + ' \n\n ' +
+        window.location.href + ' \n\n' +
         "Don't forget us on your next special occasion!\n\n" +
-        '- Your friends at Cardagram';
+        '- Your friends at Cardagram\n' +
+        'https://cardagram.herokuapp.com/';
     var senderOptions = {
       from: 'cardagram.cards@gmail.com',
       to: vm.senderEmail,
