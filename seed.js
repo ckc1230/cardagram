@@ -520,7 +520,7 @@ questionList = [{
 },
 
 {
-  prompt: "Remember that time we _____ together?",
+  prompt: "Remember that time we _____?",
   response: "",
   image: "http://www.newsarama.com/images/i/000/158/608/i02/boyega-chewbacca-ford.jpg",
   theme: "Thanks For Being My Friend!",
@@ -528,25 +528,25 @@ questionList = [{
 },
 
 {
-  prompt: "If we were a superhero duo, we'd be called _____.",
+  prompt: "I can totally see us being characters on an episode of _____.",
   response: "",
-  image: "http://www.thepetmatchmaker.com/wp-content/uploads/2014/01/cosplay-batman-and-robin-cats-01-1.jpg",
+  image: "http://images.eonline.com/eol_images/Entire_Site/201529//rs_640x518-150309154701-Friends-cast-friends-19956673-2100-1700.jpg",
   theme: "Thanks For Being My Friend!",
   count: 3
 },
 
 {
-  prompt: "Let's take a roadtrip to _____ soon.",
+  prompt: "You are such a _____ friend.",
   response: "",
-  image: "https://s-media-cache-ak0.pinimg.com/originals/a5/96/dc/a596dc7f3293e0cbb89a3514106a5af3.jpg",
+  image: "https://tribzap2it.files.wordpress.com/2015/11/toy-story-woody-buzz-lightyear.jpg",
   theme: "Thanks For Being My Friend!",
   count: 4
 },
 
 {
-  prompt: "You are such a _____ friend.",
+  prompt: "If we were a superhero duo, we'd be called _____.",
   response: "",
-  image: "http://images.eonline.com/eol_images/Entire_Site/2014210/rs_560x448-140310155346-1024-2red-pandas-cincinnati-zoo.ls.31014.jpg",
+  image: "http://www.thepetmatchmaker.com/wp-content/uploads/2014/01/cosplay-batman-and-robin-cats-01-1.jpg",
   theme: "Thanks For Being My Friend!",
   count: 5
 }]
@@ -641,7 +641,7 @@ themeList = [{
   title: "Thanks For Being My Friend!",
   image: "http://i.imgur.com/RdhiOuj.jpg",
   mobileImage: "http://i.imgur.com/ldTnPR3.jpg",
-  thumbnailImage: "http://i.imgur.com/OHOTj0H.jpg"
+  thumbnailImage: "http://i.imgur.com/lbOQQ4r.jpg"
 }];
 
 // Creating Questions
