@@ -640,7 +640,7 @@ themeList = [{
 {
   title: "Thanks For Being My Friend!",
   image: "http://i.imgur.com/RdhiOuj.jpg",
-  mobileImage: "http://i.imgur.com/4zAEQ7o.jpg",
+  mobileImage: "http://i.imgur.com/ldTnPR3.jpg",
   thumbnailImage: "http://i.imgur.com/OHOTj0H.jpg"
 }];
 
