@@ -509,6 +509,46 @@ questionList = [{
   image: "http://il2.picdn.net/shutterstock/videos/4224349/thumb/5.jpg",
   theme: "Happy Anniversary!",
   count: 5
+},
+
+{
+  prompt: "The best way to describe our friendship would have to be _____.",
+  response: "",
+  image: "http://pleated-jeans.com/wp-content/uploads/2015/06/35_peasandcarrot-1.jpg",
+  theme: "Thanks For Being My Friend!",
+  count: 1
+},
+
+{
+  prompt: "Remember that time we _____ together?",
+  response: "",
+  image: "http://www.newsarama.com/images/i/000/158/608/i02/boyega-chewbacca-ford.jpg",
+  theme: "Thanks For Being My Friend!",
+  count: 2
+},
+
+{
+  prompt: "If we were a superhero duo, we'd be called _____.",
+  response: "",
+  image: "http://www.thepetmatchmaker.com/wp-content/uploads/2014/01/cosplay-batman-and-robin-cats-01-1.jpg",
+  theme: "Thanks For Being My Friend!",
+  count: 3
+},
+
+{
+  prompt: "Let's take a roadtrip to _____ soon.",
+  response: "",
+  image: "https://s-media-cache-ak0.pinimg.com/originals/a5/96/dc/a596dc7f3293e0cbb89a3514106a5af3.jpg",
+  theme: "Thanks For Being My Friend!",
+  count: 4
+},
+
+{
+  prompt: "You are such a _____ friend.",
+  response: "",
+  image: "http://images.eonline.com/eol_images/Entire_Site/2014210/rs_560x448-140310155346-1024-2red-pandas-cincinnati-zoo.ls.31014.jpg",
+  theme: "Thanks For Being My Friend!",
+  count: 5
 }]
 
 /* THEMES */
@@ -595,6 +635,13 @@ themeList = [{
   image: "http://i.imgur.com/2fdvPzs.jpg",
   mobileImage: "http://i.imgur.com/pjdZhor.jpg",
   thumbnailImage: "http://i.imgur.com/I9eCzY8.jpg"
+},
+
+{
+  title: "Thanks For Being My Friend!",
+  image: "http://i.imgur.com/RdhiOuj.jpg",
+  mobileImage: "http://i.imgur.com/4zAEQ7o.jpg",
+  thumbnailImage: "http://i.imgur.com/OHOTj0H.jpg"
 }];
 
 // Creating Questions
