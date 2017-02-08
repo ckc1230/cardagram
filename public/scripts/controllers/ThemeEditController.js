@@ -155,6 +155,7 @@ function ThemeEditController($http, $routeParams, $location) {
     $http
       .post('/api/ecards',newECard)
       .then(function(response) {
+        document.removeEventListener("keydown", keyDownTextField);
         $location.path('/ecards/'+response.data._id);
     });
   }
