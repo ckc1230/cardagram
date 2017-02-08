@@ -128,6 +128,7 @@ function ECardEditController($http, $routeParams, $location) {
       url: '/api/ecards/' + $routeParams.id,
       data: vm.ecard
     }).then(function successCallback(response) {
+      document.removeEventListener("keydown", keyDownTextField);
       $location.path('/ecards/'+response.data._id);
     }, function errorCallback(response) {
       console.log('There was an error getting the data', response);
