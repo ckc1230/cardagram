@@ -66,6 +66,7 @@ input {
 #home-breadcrumb {
   width: 100%;
   text-align: center;
+  margin: 5px 0px;
 }
 
 #themes-breadcrumb {
