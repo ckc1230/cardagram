@@ -193,6 +193,7 @@ input {
 
 .question-bubble-pending {
 	border-radius: 50%;
+  box-sizing: border-box;
 	border: 1px solid red;
 	position: absolute;
 	display: block;
@@ -206,9 +207,17 @@ input {
 .question-bubble-done {
 	border: 1px solid green;
   box-shadow: 0 0 10px green;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 1.5s ease;
 }
 
-.question-bubble:hover, .question-bubble-pending:hover, .question-bubble-pending:hover {
+.question-bubble:hover, .question-bubble-pending:hover, .question-bubble-done:hover {
 	cursor: pointer;
 }
 

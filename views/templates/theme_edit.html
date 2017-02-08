@@ -20,8 +20,8 @@
 			</div>
 			<div ng-repeat='question in themeEditCtrl.theme.questions'>
 				<a ng-click="themeEditCtrl.openModal(question.count)">
-					<div class="question-bubble-pending" id="question-bubble-{{question.count}}"
-						data-color="red" style="background-image: url({{question.image}})"></div>
+					<div id="question-bubble-{{question.count}}" style="background-image: url({{question.image}})" 
+					ng-class="{true: 'question-bubble-done', false: 'question-bubble-pending'}[question.response.length > 0]"></div>
 				</a>
 			</div>
 			<div class="ecard-msg">

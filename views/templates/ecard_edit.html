@@ -6,7 +6,7 @@
 			</div>
 			<div ng-repeat="question in eCardEditCtrl.ecard.theme.questions">
 				<a ng-click="eCardEditCtrl.openModal(question.count)">
-					<div class="question-bubble question-bubble-done" id="question-bubble-{{question.count}}" data-color="green" style="background-image: url({{question.image}})"></div>
+					<div id="question-bubble-{{question.count}}" style="background-image: url({{question.image}})" ng-class="{true: 'question-bubble-done', false: 'question-bubble-pending'}[question.response.length > 0]"></div>
 				</a>
 			</div>
 			<div class="ecard-msg">
