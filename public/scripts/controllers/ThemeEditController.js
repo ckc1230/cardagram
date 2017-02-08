@@ -23,8 +23,10 @@ function ThemeEditController($http, $routeParams, $location) {
     setTimeout(function() {
       document.getElementById('question-bubble-1').className += ' highlight';
       document.getElementById('question-bubble-1').addEventListener("click", vm.closeInfoBox);
-      document.getElementById('themes-breadcrumb').className = 'breadcrumb';
     },100);
+    setTimeout(function() {
+      document.getElementById('themes-breadcrumb').className = 'breadcrumb';
+    },1000);
   });
 
   function keyDownTextField(e) {
