@@ -29,18 +29,9 @@ function ECardEditController($http, $routeParams, $location) {
         if (tabCount > 5) {
           tabCount = 1;
         } 
-        var bubbles = document.getElementsByClassName('question-bubble-done');
-        for (var i=0; i< bubbles.length; i++) {
-          if (bubbles[i].dataset.color === 'green') {
-            bubbles[i].style.border = "1px solid green";
-            bubbles[i].style.boxShadow = "0 0 10px green";
-          } else {
-            bubbles[i].style.border = "1px solid red";
-            bubbles[i].style.boxShadow = "0 0 10px red";
-          }
-        };
-        document.getElementById('question-bubble-' + tabCount).style.border = "5px solid white";
-        document.getElementById('question-bubble-' + tabCount).style.boxShadow = "0 0 10px white";
+        resetBubbleColors();
+        document.getElementById('question-bubble-' + tabCount).style.border = "1px solid white";
+        document.getElementById('question-bubble-' + tabCount).style.boxShadow = "0 0 5px 5px white inset";
         modalCount = tabCount;
         tabCount++;
       }
@@ -58,6 +49,19 @@ function ECardEditController($http, $routeParams, $location) {
       if (keyCode == 27) {
         vm.closeModal();
       }
+    }
+  }
+
+  function resetBubbleColors() {
+    var bubblesDone = document.getElementsByClassName('question-bubble-done');
+    for (var i=0; i< bubblesDone.length; i++) {
+      bubblesDone[i].style.border = "1px solid green";
+      bubblesDone[i].style.boxShadow = "0 0 10px green";
+    }
+    var bubblesPending = document.getElementsByClassName('question-bubble-pending');
+    for (var i=0; i< bubblesPending.length; i++) {
+      bubblesPending[i].style.border = "1px solid red";
+      bubblesPending[i].style.boxShadow = "0 0 10px red";
     }
   }
 
@@ -145,6 +149,7 @@ function ECardEditController($http, $routeParams, $location) {
     for(var i=0; i < questions.length; i++) {
       questions[i].style.display = 'none';
     }
+    resetBubbleColors();
   }
 
   vm.clearResponse = function(count) {
@@ -152,17 +157,6 @@ function ECardEditController($http, $routeParams, $location) {
   }
 
   vm.saveResponse = function(count) {
-    var questionId = "question-bubble-"+count;
-    if (vm.ecard.theme.questions[count-1].response != "") {
-      document.getElementById(questionId).style.border = "1px solid green";
-      document.getElementById(questionId).style.boxShadow = "0 0 10px green";
-      document.getElementById(questionId).dataset.color = "green"
-
-    } else {
-      document.getElementById(questionId).style.border = "1px solid red";
-      document.getElementById(questionId).style.boxShadow = "0 0 10px red"; 
-      document.getElementById(questionId).dataset.color = "red"    
-    }
     vm.checkBubbles();
     vm.closeModal();
   }
@@ -183,13 +177,9 @@ function ECardEditController($http, $routeParams, $location) {
   }
 
   vm.checkBubbles = function() {
-    if (document.getElementById('question-bubble-1').dataset.color === "green" &&
-        document.getElementById('question-bubble-2').dataset.color === "green" &&
-        document.getElementById('question-bubble-3').dataset.color === "green" &&
-        document.getElementById('question-bubble-4').dataset.color === "green" &&
-        document.getElementById('question-bubble-5').dataset.color === "green") {
+    var bubblesDone = document.getElementsByClassName('question-bubble-done');
+    if (bubblesDone.length === 5) {
       vm.bubblesComplete = true;
-
     } else {
       vm.bubblesComplete = false;
     }
