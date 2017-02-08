@@ -6,6 +6,13 @@ function ECardsShowController($http, $routeParams, $location) {
   angular.element(document).ready(function () {
     document.getElementById('home-breadcrumb').style.width = '100%';
     document.getElementById('themes-breadcrumb').className = 'hidden breadcrumb';
+    setTimeout(function() {
+      var bubble3 = document.getElementById('question-bubble-3');
+      bubble3.classList.add('jump');
+      setTimeout(function() {
+        bubble3.classList.remove('jump');
+      },3000);
+    },1000);
   });
   var vm = this;
   vm.bubbleOpen = false;
@@ -17,13 +24,6 @@ function ECardsShowController($http, $routeParams, $location) {
     var questions = vm.ecard.theme.questions;
     vm.ecard.customTexts = getFullText(questions);
     window.onload = function() {
-      var bubble1 = document.getElementById('question-bubble-1');
-      setTimeout(function() {
-        bubble1.classList.add('jump');
-        setTimeout(function() {
-          bubble1.classList.remove('jump');
-        },1000);
-      },1000);
       vm.getBackground();
     };
   }, function errorCallback(response) {
