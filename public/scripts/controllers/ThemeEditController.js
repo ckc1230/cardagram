@@ -21,10 +21,6 @@ function ThemeEditController($http, $routeParams, $location) {
     document.getElementById('home-breadcrumb').style.width = '30%';
     document.addEventListener("keydown", closeIntro, false);
     setTimeout(function() {
-      document.getElementById('question-bubble-1').className += ' highlight';
-      document.getElementById('question-bubble-1').addEventListener("click", vm.closeInfoBox);
-    },100);
-    setTimeout(function() {
       document.getElementById('themes-breadcrumb').className = 'breadcrumb';
     },1000);
   });
@@ -87,10 +83,14 @@ function ThemeEditController($http, $routeParams, $location) {
   vm.closeInfoBox = function() {
     introClosed = true;
     modalClosed = true;
-    document.getElementById('question-bubble-1').className = 'question-bubble-pending';  
     document.getElementById('overlay').style.display = "none";
     document.getElementById('info-box').style.display = "none";
     document.addEventListener("keydown", keyDownTextField, false);
+    var bubble = document.getElementById('question-bubble-1');
+    bubble.classList.add('jump');
+    setTimeout(function() {
+      bubble.classList.remove('jump');
+    },3000);
   }
 
   var writingSFX = [
