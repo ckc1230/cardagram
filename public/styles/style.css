@@ -332,6 +332,7 @@ input {
   padding: 20px;
   border: 1px solid #888;
   width: 70%;
+  min-width: 200px;
 }
 
 .close {
@@ -352,6 +353,8 @@ input {
   width: 40%;
   height: 50%;
   text-align: center;
+  min-height: 300px;
+  min-width: 225px;
 }
 
 #send-modal p {
@@ -486,6 +489,10 @@ input {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+
+.send-input {
+  width: 150px;
 }
 
 .save-message-btn {
