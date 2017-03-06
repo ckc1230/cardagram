@@ -549,6 +549,46 @@ questionList = [{
   image: "http://www.thepetmatchmaker.com/wp-content/uploads/2014/01/cosplay-batman-and-robin-cats-01-1.jpg",
   theme: "Thanks For Being My Friend!",
   count: 5
+},
+
+{
+  prompt: "I hope you find _____ at the end of the rainbow.",
+  response: "",
+  image: "http://www.clipartkid.com/images/643/trends-for-empty-pot-of-gold-clipart-frMKa8-clipart.jpg",
+  theme: "Happy St. Patrick's Day!",
+  count: 1
+},
+
+{
+  prompt: "Cheers to _____!",
+  response: "",
+  image: "https://s-media-cache-ak0.pinimg.com/originals/3a/f4/3e/3af43e8d5380827df08b5b2f06735567.jpg",
+  theme: "Happy St. Patrick's Day!",
+  count: 2
+},
+
+{
+  prompt: "Remember the Paddy's Day we _____ ?",
+  response: "",
+  image: "https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F4ff9aa99-19c7-496d-982a-9d616cd5fcf1.jpg",
+  theme: "Happy St. Patrick's Day!",
+  count: 3
+},
+
+{
+  prompt: "Wishing you _____ and a bit of the Irish luck!",
+  response: "",
+  image: "http://www.realirishcasino.com/wp-content/uploads/2012/05/irish-lucky-hat.jpg",
+  theme: "Happy St. Patrick's Day!",
+  count: 4
+},
+
+{
+  prompt: "If we catch a leprechaun today, I wish _____ for you.",
+  response: "",
+  image: "http://www.njfamily.com/NJ-Family/March-2013/Leprechaun-Tricks/Leprechaun.jpg",
+  theme: "Happy St. Patrick's Day!",
+  count: 5
 }]
 
 /* THEMES */
@@ -642,6 +682,13 @@ themeList = [{
   image: "http://i.imgur.com/RdhiOuj.jpg",
   mobileImage: "http://i.imgur.com/ldTnPR3.jpg",
   thumbnailImage: "http://i.imgur.com/lbOQQ4r.jpg"
+},
+
+{
+  title: "Happy St. Patrick's Day!",
+  image: "http://i.imgur.com/Vjuo2fq.jpg",
+  mobileImage: "http://i.imgur.com/9JaSaLc.jpg",
+  thumbnailImage: "http://i.imgur.com/BtGn0HE.jpg"
 }];
 
 // Creating Questions
