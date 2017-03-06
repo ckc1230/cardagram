@@ -18,7 +18,6 @@ input {
   padding: 5px;
   border: 1px solid grey;
   border-radius: 5px;
-  font-size: 16px;
 }
 
 .cardagram-font {
@@ -1162,6 +1161,10 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+
+  input {
+    font-size: 16px;
+  }
 
   #main-landing {
     display: none;
