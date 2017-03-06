@@ -681,14 +681,14 @@ themeList = [{
   title: "Thanks For Being My Friend!",
   image: "http://i.imgur.com/RdhiOuj.jpg",
   mobileImage: "http://i.imgur.com/ldTnPR3.jpg",
-  thumbnailImage: "http://i.imgur.com/lbOQQ4r.jpg"
+  thumbnailImage: "http://i.imgur.com/CqQIoOK.jpg"
 },
 
 {
   title: "Happy St. Patrick's Day!",
   image: "http://i.imgur.com/Vjuo2fq.jpg",
   mobileImage: "http://i.imgur.com/9JaSaLc.jpg",
-  thumbnailImage: "http://i.imgur.com/BtGn0HE.jpg"
+  thumbnailImage: "http://i.imgur.com/sSkJKGU.jpg"
 }];
 
 // Creating Questions
