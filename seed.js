@@ -677,112 +677,128 @@ themeList = [{
   title: "Happy Birthday!",
   image: "http://i.imgur.com/LyCAoB8.jpg",
   mobileImage: "http://i.imgur.com/vcWB9fD.png",
-  thumbnailImage: "http://i.imgur.com/LFQtufJ.jpg"
+  thumbnailImage: "http://i.imgur.com/LFQtufJ.jpg",
+  category: "special"
 },
 
 {
   title: "Happy New Year!",
   image: "http://i.imgur.com/w09TAJO.jpg",
   mobileImage: "http://i.imgur.com/oE5IEUE.png",
-  thumbnailImage: "http://i.imgur.com/5NvM3wN.jpg"
+  thumbnailImage: "http://i.imgur.com/5NvM3wN.jpg",
+  category: "holiday"
 },
 
 {
   title: "Happy Father's Day!",
   image: "http://i.imgur.com/zCUKzZy.jpg",
   mobileImage: "http://i.imgur.com/7ZD4VJ4.png",
-  thumbnailImage: "http://i.imgur.com/eGzadPy.jpg"
+  thumbnailImage: "http://i.imgur.com/eGzadPy.jpg",
+  category: "holiday"
 },
 
 {
   title: "Happy Mother's Day!",
   image: "http://i.imgur.com/3PwGrid.jpg",
   mobileImage: "http://i.imgur.com/FRtxh5R.png",
-  thumbnailImage: "http://i.imgur.com/OArPZoL.jpg"
+  thumbnailImage: "http://i.imgur.com/OArPZoL.jpg",
+  category: "holiday"
 },
 
 {
   title: "Happy Halloween!",
   image: "http://i.imgur.com/L4nV0bn.jpg",
   mobileImage: "http://i.imgur.com/FB7HWFV.png",
-  thumbnailImage: "http://i.imgur.com/KgzbUmE.jpg"
+  thumbnailImage: "http://i.imgur.com/KgzbUmE.jpg",
+  category: "holiday"
 },
 
 {
   title: "Happy Thanksgiving!",
   image: "http://i.imgur.com/UEXKnXD.jpg",
   mobileImage: "http://i.imgur.com/R4UexRS.png",
-  thumbnailImage: "http://i.imgur.com/lmsRKWS.jpg"
+  thumbnailImage: "http://i.imgur.com/lmsRKWS.jpg",
+  category: "holiday"
 },
 
 {
   title: "Happy Presidents' Day!",
   image: "http://i.imgur.com/8WoDdXx.jpg",
   mobileImage: "http://i.imgur.com/dpft9nG.png",
-  thumbnailImage: "http://i.imgur.com/iGP4oW7.jpg"
+  thumbnailImage: "http://i.imgur.com/iGP4oW7.jpg",
+  category: "holiday"
 },
 
 {
   title: "Happy Arbor Day!",
   image: "http://i.imgur.com/3XAme7U.jpg",
   mobileImage: "http://i.imgur.com/4ou8IvW.png",
-  thumbnailImage: "http://i.imgur.com/RskhMJT.jpg"
+  thumbnailImage: "http://i.imgur.com/RskhMJT.jpg",
+  category: "holiday"
 },
 
 {
   title: "Happy Valentine's Day!",
   image: "http://i.imgur.com/BvXPIQl.jpg",
   mobileImage: "http://i.imgur.com/oPvelJl.png",
-  thumbnailImage: "http://i.imgur.com/cEdhqUk.jpg"
+  thumbnailImage: "http://i.imgur.com/cEdhqUk.jpg",
+  category: "holiday"
 },
 
 {
   title: "Good Morning!",
   image: "http://i.imgur.com/dXAO1yc.jpg",
   mobileImage: "http://i.imgur.com/Tb52JlA.jpg",
-  thumbnailImage: "http://i.imgur.com/kqVwdyl.jpg"
+  thumbnailImage: "http://i.imgur.com/kqVwdyl.jpg",
+  category: "daily"
 },
 
 {
   title: "Happy Lunar New Year 2017!",
   image: "http://i.imgur.com/EJ9yrUX.jpg",
   mobileImage: "http://i.imgur.com/bmwgVUS.jpg",
-  thumbnailImage: "http://i.imgur.com/ZnjE0tl.jpg"
+  thumbnailImage: "http://i.imgur.com/ZnjE0tl.jpg",
+  category: "holiday"
 },
 
 {
   title: "Happy Anniversary!",
   image: "http://i.imgur.com/2fdvPzs.jpg",
   mobileImage: "http://i.imgur.com/pjdZhor.jpg",
-  thumbnailImage: "http://i.imgur.com/I9eCzY8.jpg"
+  thumbnailImage: "http://i.imgur.com/I9eCzY8.jpg",
+  category: "special"
 },
 
 {
   title: "Thanks For Being My Friend!",
   image: "http://i.imgur.com/RdhiOuj.jpg",
   mobileImage: "http://i.imgur.com/ldTnPR3.jpg",
-  thumbnailImage: "http://i.imgur.com/CqQIoOK.jpg"
+  thumbnailImage: "http://i.imgur.com/CqQIoOK.jpg",
+  category: "daily"
 },
 
 {
   title: "Happy St. Patrick's Day!",
   image: "http://i.imgur.com/Vjuo2fq.jpg",
   mobileImage: "http://i.imgur.com/9JaSaLc.jpg",
-  thumbnailImage: "http://i.imgur.com/sSkJKGU.jpg"
+  thumbnailImage: "http://i.imgur.com/sSkJKGU.jpg",
+  category: "holiday"
 },
 
 {
   title: "Happy Pi Day!",
   image: "http://i.imgur.com/rPP5ZBE.jpg",
   mobileImage: "http://i.imgur.com/4cNp9Xo.jpg",
-  thumbnailImage: "http://i.imgur.com/KM6cZpn.jpg"
+  thumbnailImage: "http://i.imgur.com/KM6cZpn.jpg",
+  category: "holiday"
 },
 
 {
   title: "Happy Manatee Day!",
   image: "http://i.imgur.com/93sStLL.jpg",
   mobileImage: "http://i.imgur.com/DcqhkRV.jpg",
-  thumbnailImage: "http://i.imgur.com/kQNNpJD.jpg"
+  thumbnailImage: "http://i.imgur.com/kQNNpJD.jpg",
+  category: "holiday"
 }];
 
 // Creating Questions
