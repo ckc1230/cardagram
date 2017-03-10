@@ -589,6 +589,86 @@ questionList = [{
   image: "http://www.njfamily.com/NJ-Family/March-2013/Leprechaun-Tricks/Leprechaun.jpg",
   theme: "Happy St. Patrick's Day!",
   count: 5
+},
+
+{
+  prompt: "If we could share one pie, it would have to be _____ pie.",
+  response: "",
+  image: "https://geekyantics.files.wordpress.com/2014/05/sharing-pizza-712x378-guy-kawasaki-share-a-bigger-pie.jpg",
+  theme: "Happy Pi Day!",
+  count: 1
+},
+
+{
+  prompt: "You’re _____ like a pie.",
+  response: "",
+  image: "http://del.h-cdn.co/assets/15/38/1600x1066/gallery-1442506898-pumpkin-pie-smile.jpg",
+  theme: "Happy Pi Day!",
+  count: 2
+},
+
+{
+  prompt: "I like my men like how I like my pies: _____.",
+  response: "",
+  image: "https://i.ytimg.com/vi/Xhp0RfywePg/hqdefault.jpg",
+  theme: "Happy Pi Day!",
+  count: 3
+},
+
+{
+  prompt: "Cutie-Pi, Sugar-Pi, _____-Pi.",
+  response: "",
+  image: "https://image.spreadshirtmedia.com/image-server/v1/compositions/1006309185/views/1,width=800,height=800,appearanceId=63,version=1478262588/cute-cutie-pie-doodle-women-s-t-shirts-women-s-t-shirt.jpg",
+  theme: "Happy Pi Day!",
+  count: 4
+},
+
+{
+  prompt: "Pi is irrational. You are _____.",
+  response: "",
+  image: "http://www.slowfamilyonline.com/wordpress/wp-content/uploads/2011/03/1299826812-88.jpg",
+  theme: "Happy Pi Day!",
+  count: 5
+},
+
+{
+  prompt: "Remember that time we _____ with a manatee?",
+  response: "",
+  image: "https://s-media-cache-ak0.pinimg.com/236x/97/aa/cd/97aacd47d7b15a3108f42309cd713fec.jpg",
+  theme: "Happy Manatee Day!",
+  count: 1
+},
+
+{
+  prompt: "Sea cow? More like _____ cow.",
+  response: "",
+  image: "http://manateetoursusa.com/wp-content/uploads/2015/11/DSC00309.jpg",
+  theme: "Happy Manatee Day!",
+  count: 2
+},
+
+{
+  prompt: "I don’t know, man. A tea _____.",
+  response: "",
+  image: "https://i.ytimg.com/vi/r7FVxkSh8AU/hqdefault.jpg",
+  theme: "Happy Manatee Day!",
+  count: 3
+},
+
+{
+  prompt: "You’re like a manatee: _____.",
+  response: "",
+  image: "http://orig06.deviantart.net/d5d3/f/2011/161/a/c/manatee_for_rie_by_cysco_inu-d3ijp42.png",
+  theme: "Happy Manatee Day!",
+  count: 4
+},
+
+{
+  prompt: "Just as manatees were mistaken for mermaids, you’re often mistaken for _____.",
+  response: "",
+  image: "https://s-media-cache-ak0.pinimg.com/564x/52/9e/2f/529e2fbc4f2400bd20202623d92b7302.jpg",
+  theme: "Happy Manatee Day!",
+  count: 5
 }]
 
 /* THEMES */
@@ -689,6 +769,20 @@ themeList = [{
   image: "http://i.imgur.com/Vjuo2fq.jpg",
   mobileImage: "http://i.imgur.com/9JaSaLc.jpg",
   thumbnailImage: "http://i.imgur.com/sSkJKGU.jpg"
+},
+
+{
+  title: "Happy Pi Day!",
+  image: "http://i.imgur.com/rPP5ZBE.jpg",
+  mobileImage: "http://i.imgur.com/4cNp9Xo.jpg",
+  thumbnailImage: "http://i.imgur.com/KM6cZpn.jpg"
+},
+
+{
+  title: "Happy Manatee Day!",
+  image: "http://i.imgur.com/93sStLL.jpg",
+  mobileImage: "http://i.imgur.com/DcqhkRV.jpg",
+  thumbnailImage: "http://i.imgur.com/kQNNpJD.jpg"
 }];
 
 // Creating Questions
