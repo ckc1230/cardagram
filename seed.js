@@ -709,6 +709,46 @@ questionList = [{
   image: "https://s-media-cache-ak0.pinimg.com/564x/52/9e/2f/529e2fbc4f2400bd20202623d92b7302.jpg",
   theme: "Happy Manatee Day!",
   count: 5
+},
+
+{
+  prompt: "Hump day? More like _____ day!",
+  response: "",
+  image: "http://i.imgur.com/Tmk7Yz7.jpg",
+  theme: "Happy Wednesday!",
+  count: 1
+},
+
+{
+  prompt: "Sometimes we just need a little distraction. We just need _____.",
+  response: "",
+  image: "https://s-media-cache-ak0.pinimg.com/736x/9a/79/ca/9a79ca92ddf4bd6f8a2658495660b09d.jpg",
+  theme: "Happy Wednesday!",
+  count: 2
+},
+
+{
+  prompt: "Here’s some motivation for the rest of the week: _____.",
+  response: "",
+  image: "https://cdn3.littlethings.com/app/uploads/2014/09/rxDvM.jpg",
+  theme: "Happy Wednesday!",
+  count: 3
+},
+
+{
+  prompt: "Though Wednesday Addams seldom shows emotion and is generally bitter, she wishes you _____.",
+  response: "",
+  image: "http://cdn.reelingback.com/uploadimg/addams_family.jpg",
+  theme: "Happy Wednesday!",
+  count: 4
+},
+
+{
+  prompt: "Whoooaa, we’re halfway there. WHHOOAAA living on _____!",
+  response: "",
+  image: "http://fakemalaysianews.com/wp-content/uploads/2015/09/bon-jovi-616523051.jpg",
+  theme: "Happy Wednesday!",
+  count: 5
 }]
 
 /* THEMES */
@@ -847,6 +887,14 @@ themeList = [{
   mobileImage: "http://i.imgur.com/DcqhkRV.jpg",
   thumbnailImage: "http://i.imgur.com/kQNNpJD.jpg",
   category: "holiday"
+},
+
+{
+  title: "Happy Wednesday!",
+  image: "http://i.imgur.com/XyKp1lY.jpg",
+  mobileImage: "http://i.imgur.com/h6svgsm.jpg",
+  thumbnailImage: "http://i.imgur.com/0vVC5oY.jpg",
+  category: "daily"
 }];
 
 // Creating Questions
