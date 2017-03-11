@@ -712,6 +712,46 @@ questionList = [{
 },
 
 {
+  prompt: "Monday FUN-day! Go _____!",
+  response: "",
+  image: "https://www.funnypica.com/wp-content/uploads/2015/05/Funny-Panda-Pictures-26-570x428.jpg",
+  theme: "Happy Monday!",
+  count: 1
+},
+
+{
+  prompt: "Monday rearranged spells “DYNAMO”. You are a dynamo at _____.",
+  response: "",
+  image: "http://i.imgur.com/dNPpo01.jpg",
+  theme: "Happy Monday!",
+  count: 2
+},
+
+{
+  prompt: "It’s okay. We’ve all been there. Just _____.",
+  response: "",
+  image: "https://chucklesandlaughs.files.wordpress.com/2015/07/01.jpeg",
+  theme: "Happy Monday!",
+  count: 3
+},
+
+{
+  prompt: "I hope you begin your week with _____.",
+  response: "",
+  image: "https://cdn.shutterstock.com/shutterstock/videos/4654400/thumb/1.jpg",
+  theme: "Happy Monday!",
+  count: 4
+},
+
+{
+  prompt: "Apparently people tend to shop online more on Mondays. I hope you _____ more this Monday.",
+  response: "",
+  image: "http://i.imgur.com/FDZ0GIA.jpg",
+  theme: "Happy Monday!",
+  count: 5
+},
+
+{
   prompt: "Today may or may not be Mardi Gras (“Fat Tuesday”). But I hope that for you, it is “_____ Tuesday”!",
   response: "",
   image: "https://s-media-cache-ak0.pinimg.com/736x/9a/2e/b4/9a2eb40942fb40273251ea43788c13ba.jpg",
@@ -760,7 +800,7 @@ questionList = [{
 },
 
 {
-  prompt: "Sometimes we just need a little distraction. We just need _____.",
+  prompt: "Sometimes we just need a little distraction. Something like _____.",
   response: "",
   image: "http://i.imgur.com/zNoTO8p.jpg",
   theme: "Happy Wednesday!",
@@ -927,6 +967,14 @@ themeList = [{
   mobileImage: "http://i.imgur.com/DcqhkRV.jpg",
   thumbnailImage: "http://i.imgur.com/kQNNpJD.jpg",
   category: "holiday"
+},
+
+{
+  title: "Happy Monday!",
+  image: "http://i.imgur.com/JuOGsND.jpg",
+  mobileImage: "http://i.imgur.com/mbiktWh.jpg",
+  thumbnailImage: "http://i.imgur.com/RldGSnM.jpg",
+  category: "daily"
 },
 
 {
