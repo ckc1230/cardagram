@@ -712,6 +712,46 @@ questionList = [{
 },
 
 {
+  prompt: "Today may or may not be Mardi Gras (“Fat Tuesday”). But I hope that for you, it is “_____ Tuesday”!",
+  response: "",
+  image: "https://s-media-cache-ak0.pinimg.com/736x/9a/2e/b4/9a2eb40942fb40273251ea43788c13ba.jpg",
+  theme: "Happy Tuesday!",
+  count: 1
+},
+
+{
+  prompt: "Aren’t you glad it’s not Monday? Aren’t you glad _____?",
+  response: "",
+  image: "https://www.elephantsinthepantry.co.uk/wp-content/uploads/2015/08/11896276_403067436567261_3648774825972633768_o.jpg",
+  theme: "Happy Tuesday!",
+  count: 2
+},
+
+{
+  prompt: "“Tuesday” is derived from “Tiw’s Day” (the Norse god of victory and glory). May you have a victory over _____!",
+  response: "",
+  image: "http://corporateinsight.com/wp-content/themes/ci/img/hubspot/CI_Blog/Images/401krace.jpg",
+  theme: "Happy Tuesday!",
+  count: 3
+},
+
+{
+  prompt: "What lies behind us? Monday. What lies ahead? _____.",
+  response: "",
+  image: "http://www.newparadiselaboratories.org/uploads/media_items/the-future-1.499.399.s.jpg",
+  theme: "Happy Tuesday!",
+  count: 4
+},
+
+{
+  prompt: "Tuesdays. Twosdays. Two _____ for you!",
+  response: "",
+  image: "http://img01.burrpimg.com/mobi/f3db5b567412ff313533f6fc9e5b6302.jpg",
+  theme: "Happy Tuesday!",
+  count: 5
+},
+
+{
   prompt: "Hump day? More like _____ day!",
   response: "",
   image: "http://i.imgur.com/Tmk7Yz7.jpg",
@@ -887,6 +927,14 @@ themeList = [{
   mobileImage: "http://i.imgur.com/DcqhkRV.jpg",
   thumbnailImage: "http://i.imgur.com/kQNNpJD.jpg",
   category: "holiday"
+},
+
+{
+  title: "Happy Tuesday!",
+  image: "http://i.imgur.com/TnkwZTt.jpg",
+  mobileImage: "http://i.imgur.com/YfSiER5.jpg",
+  thumbnailImage: "http://i.imgur.com/F2Kbr3q.jpg",
+  category: "daily"
 },
 
 {
