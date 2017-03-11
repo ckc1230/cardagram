@@ -46,6 +46,11 @@ function ECardsIndexController($http) {
 
   vm.changeTheme = function(category) {
     vm.activeTheme = category;
+    var tabs = document.getElementsByTagName('LI');
+    for(var i=0; i<tabs.length; i++) {
+      tabs[i].classList.remove('active-tab');
+    }
+    document.getElementById(category).classList.add('active-tab');
   };
 
 };

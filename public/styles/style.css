@@ -81,6 +81,30 @@ input {
   text-decoration: none;
 }
 
+#theme-tabs {
+  text-align: center;
+  padding: 0;
+}
+
+#theme-tabs li {
+  display: inline-block;
+  padding: 5px;
+  background-color: #B8FDFE;
+  margin: 0 20px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#theme-tabs li:hover {
+  border: 2px solid #FEB8FB;
+}
+
+.active-tab {
+  background-color: #FEB8FB !important;
+  border-color: black !important;
+}
+
 .response-red-background:before {
   background: rgba(255,0,0,0.2);
   padding: 0 5px;
