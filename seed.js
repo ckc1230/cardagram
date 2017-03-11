@@ -650,7 +650,7 @@ questionList = [{
 {
   prompt: "This achievement really exemplifies your _____.",
   response: "",
-  image: "http://somethingyousaid.com/wp-content/uploads/2014/01/thumbs-up-orangutan.jpg",
+  image: "http://i.imgur.com/KuohE6O.jpg",
   theme: "Congratulations!",
   count: 3
 },
