@@ -1035,7 +1035,7 @@ themeList = [{
 
 {
   title: "Happy Thursday!",
-  image: "http://i.imgur.com/HXgPlNH.jpg",
+  image: "http://i.imgur.com/dP6V1Cd.jpg",
   mobileImage: "http://i.imgur.com/oQj5tu8.jpg",
   thumbnailImage: "http://i.imgur.com/2Kggvnn.jpg",
   category: "daily"
