@@ -722,7 +722,7 @@ questionList = [{
 {
   prompt: "Sometimes we just need a little distraction. We just need _____.",
   response: "",
-  image: "https://s-media-cache-ak0.pinimg.com/736x/9a/79/ca/9a79ca92ddf4bd6f8a2658495660b09d.jpg",
+  image: "http://i.imgur.com/zNoTO8p.jpg",
   theme: "Happy Wednesday!",
   count: 2
 },
@@ -738,7 +738,7 @@ questionList = [{
 {
   prompt: "Though Wednesday Addams seldom shows emotion and is generally bitter, she wishes you _____.",
   response: "",
-  image: "http://cdn.reelingback.com/uploadimg/addams_family.jpg",
+  image: "http://i.imgur.com/KLLdmsf.jpg",
   theme: "Happy Wednesday!",
   count: 4
 },
