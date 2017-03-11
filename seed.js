@@ -632,6 +632,46 @@ questionList = [{
 },
 
 {
+  prompt: "I’m proud of you for _____.",
+  response: "",
+  image: "http://www.cutestpaw.com/wp-content/uploads/2012/10/High-five-me.jpg",
+  theme: "Congratulations!",
+  count: 1
+},
+
+{
+  prompt: "I hope that in thinking back to this day, you will always remember _____.",
+  response: "",
+  image: "https://cdn.shutterstock.com/shutterstock/videos/10741625/thumb/4.jpg",
+  theme: "Congratulations!",
+  count: 2
+},
+
+{
+  prompt: "This achievement really exemplifies your _____.",
+  response: "",
+  image: "http://somethingyousaid.com/wp-content/uploads/2014/01/thumbs-up-orangutan.jpg",
+  theme: "Congratulations!",
+  count: 3
+},
+
+{
+  prompt: "This calls for _____!",
+  response: "",
+  image: "http://static.ddmcdn.com/gif/blogs/dnews-files-2013-05-drinking-champagne-improves-memory-660-jpg.jpg",
+  theme: "Congratulations!",
+  count: 4
+},
+
+{
+  prompt: "To _____ ahead!",
+  response: "",
+  image: "https://s3.amazonaws.com/fathom_media/cache/9b/c0/9bc0f889e3c41896f82cb0c973d3c947.jpg",
+  theme: "Congratulations!",
+  count: 5
+},
+
+{
   prompt: "Remember that time we _____ with a manatee?",
   response: "",
   image: "https://s-media-cache-ak0.pinimg.com/236x/97/aa/cd/97aacd47d7b15a3108f42309cd713fec.jpg",
@@ -766,6 +806,14 @@ themeList = [{
   image: "http://i.imgur.com/2fdvPzs.jpg",
   mobileImage: "http://i.imgur.com/pjdZhor.jpg",
   thumbnailImage: "http://i.imgur.com/I9eCzY8.jpg",
+  category: "special"
+},
+
+{
+  title: "Congratulations!",
+  image: "http://i.imgur.com/HQOHsnG.jpg",
+  mobileImage: "http://i.imgur.com/af3ZXPj.jpg",
+  thumbnailImage: "http://i.imgur.com/y1Mu88x.jpg",
   category: "special"
 },
 
