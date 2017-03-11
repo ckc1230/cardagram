@@ -672,7 +672,7 @@ questionList = [{
 },
 
 {
-  prompt: "Remember that time we _____ with a manatee?",
+  prompt: "Remember that time we _____ a manatee?",
   response: "",
   image: "https://s-media-cache-ak0.pinimg.com/236x/97/aa/cd/97aacd47d7b15a3108f42309cd713fec.jpg",
   theme: "Happy Manatee Day!",
@@ -736,7 +736,7 @@ questionList = [{
 },
 
 {
-  prompt: "I hope you begin your week with _____.",
+  prompt: "I hope your week starts off with _____.",
   response: "",
   image: "https://cdn.shutterstock.com/shutterstock/videos/4654400/thumb/1.jpg",
   theme: "Happy Monday!",
