@@ -8,6 +8,7 @@ var ThemeSchema = new Schema({
   image: String,
   mobileImage: String,
   thumbnailImage: String,
+  category: String,
   questions: [{ type : Schema.Types.Object, ref: 'Question' }]
 });
 

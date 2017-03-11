@@ -5,15 +5,17 @@ angular
 ECardsIndexController.$inject = ['$http'];
 
 function ECardsIndexController($http) {
-  var vm = this;
-  vm.newECard = {};
-  vm.ecards = [];
-  vm.themes = [];
-
   angular.element(document).ready(function () {
     document.getElementById('home-breadcrumb').style.width = '100%';
     document.getElementById('themes-breadcrumb').className = 'hidden breadcrumb';
   });
+
+  var vm = this;
+  vm.activeTheme = "holiday";
+  vm.newECard = {};
+  vm.ecards = [];
+  vm.themes = [];
+
 
   $http({
     method: 'GET',
@@ -40,6 +42,15 @@ function ECardsIndexController($http) {
         vm.ecards.push(response.data);
         vm.newECard = {};
       });
+  };
+
+  vm.changeTheme = function(category) {
+    vm.activeTheme = category;
+    var tabs = document.getElementsByTagName('LI');
+    for(var i=0; i<tabs.length; i++) {
+      tabs[i].classList.remove('active-tab');
+    }
+    document.getElementById(category).classList.add('active-tab');
   };
 
 };

@@ -1,3 +1,8 @@
-<div class='theme-img-index' ng-repeat='theme in eCardsCtrl.themes'>
+<ul id='theme-tabs' class='cardagram-font'>
+  <li id="holiday" class='active-tab' ng-click='eCardsCtrl.changeTheme("holiday")'>Holidays</li>
+  <li id="special" ng-click='eCardsCtrl.changeTheme("special")'>Special Occasions</li>
+  <li id="daily" ng-click='eCardsCtrl.changeTheme("daily")'>Daily Greetings</li>
+</ul>
+<div class='theme-img-index' ng-repeat='theme in eCardsCtrl.themes | filter: {category: eCardsCtrl.activeTheme}'>
   <a href='/themes/{{theme._id}}/edit'><img src={{theme.thumbnailImage}}></a>
 </div>
