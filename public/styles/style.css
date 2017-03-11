@@ -98,6 +98,7 @@ input {
 
 #theme-tabs li:hover {
   border: 2px solid #FEB8FB;
+  box-shadow: 0 0 10px #FEB8FB;
 }
 
 .active-tab {
@@ -551,7 +552,7 @@ input {
   font-size: 15px;
   font-weight: bold;	
   display: inline-block;
-	border-radius: 5%;
+	border-radius: 5px;
 	color: #C0C0C0;
 }
 
@@ -611,7 +612,7 @@ input {
   color: black;
   font-weight: bold;
   border: 2px solid black;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 #get-started-div button {
@@ -1270,5 +1271,15 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
   .sent-create-msg {
     font-size: 1.2em;
+  }
+  #theme-tabs li {
+    width: 25%;
+    height: 50px;
+    margin: 0 5px;
+    padding: 2px;
+    vertical-align: top;
+  }
+  #holiday {
+    line-height: 50px;
   }
 }
