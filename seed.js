@@ -632,6 +632,46 @@ questionList = [{
 },
 
 {
+  prompt: "I’m proud of you for _____.",
+  response: "",
+  image: "http://www.cutestpaw.com/wp-content/uploads/2012/10/High-five-me.jpg",
+  theme: "Congratulations!",
+  count: 1
+},
+
+{
+  prompt: "I hope that in thinking back to this day, you will always remember _____.",
+  response: "",
+  image: "https://cdn.shutterstock.com/shutterstock/videos/10741625/thumb/4.jpg",
+  theme: "Congratulations!",
+  count: 2
+},
+
+{
+  prompt: "This achievement really exemplifies your _____.",
+  response: "",
+  image: "http://i.imgur.com/KuohE6O.jpg",
+  theme: "Congratulations!",
+  count: 3
+},
+
+{
+  prompt: "This calls for _____!",
+  response: "",
+  image: "http://static.ddmcdn.com/gif/blogs/dnews-files-2013-05-drinking-champagne-improves-memory-660-jpg.jpg",
+  theme: "Congratulations!",
+  count: 4
+},
+
+{
+  prompt: "To _____ ahead!",
+  response: "",
+  image: "https://s3.amazonaws.com/fathom_media/cache/9b/c0/9bc0f889e3c41896f82cb0c973d3c947.jpg",
+  theme: "Congratulations!",
+  count: 5
+},
+
+{
   prompt: "Remember that time we _____ with a manatee?",
   response: "",
   image: "https://s-media-cache-ak0.pinimg.com/236x/97/aa/cd/97aacd47d7b15a3108f42309cd713fec.jpg",
@@ -668,6 +708,126 @@ questionList = [{
   response: "",
   image: "https://s-media-cache-ak0.pinimg.com/564x/52/9e/2f/529e2fbc4f2400bd20202623d92b7302.jpg",
   theme: "Happy Manatee Day!",
+  count: 5
+},
+
+{
+  prompt: "Monday FUN-day! Go _____!",
+  response: "",
+  image: "https://www.funnypica.com/wp-content/uploads/2015/05/Funny-Panda-Pictures-26-570x428.jpg",
+  theme: "Happy Monday!",
+  count: 1
+},
+
+{
+  prompt: "Monday rearranged spells “DYNAMO”. You are a dynamo at _____.",
+  response: "",
+  image: "http://i.imgur.com/dNPpo01.jpg",
+  theme: "Happy Monday!",
+  count: 2
+},
+
+{
+  prompt: "It’s okay. We’ve all been there. Just _____.",
+  response: "",
+  image: "https://chucklesandlaughs.files.wordpress.com/2015/07/01.jpeg",
+  theme: "Happy Monday!",
+  count: 3
+},
+
+{
+  prompt: "I hope you begin your week with _____.",
+  response: "",
+  image: "https://cdn.shutterstock.com/shutterstock/videos/4654400/thumb/1.jpg",
+  theme: "Happy Monday!",
+  count: 4
+},
+
+{
+  prompt: "Apparently people tend to shop online more on Mondays. I hope you _____ more this Monday.",
+  response: "",
+  image: "http://i.imgur.com/FDZ0GIA.jpg",
+  theme: "Happy Monday!",
+  count: 5
+},
+
+{
+  prompt: "Today may or may not be Mardi Gras (“Fat Tuesday”). But I hope that for you, it is “_____ Tuesday”!",
+  response: "",
+  image: "https://s-media-cache-ak0.pinimg.com/736x/9a/2e/b4/9a2eb40942fb40273251ea43788c13ba.jpg",
+  theme: "Happy Tuesday!",
+  count: 1
+},
+
+{
+  prompt: "Aren’t you glad it’s not Monday? Aren’t you glad _____?",
+  response: "",
+  image: "https://www.elephantsinthepantry.co.uk/wp-content/uploads/2015/08/11896276_403067436567261_3648774825972633768_o.jpg",
+  theme: "Happy Tuesday!",
+  count: 2
+},
+
+{
+  prompt: "“Tuesday” is derived from “Tiw’s Day” (the Norse god of victory and glory). May you have a victory over _____!",
+  response: "",
+  image: "http://corporateinsight.com/wp-content/themes/ci/img/hubspot/CI_Blog/Images/401krace.jpg",
+  theme: "Happy Tuesday!",
+  count: 3
+},
+
+{
+  prompt: "What lies behind us? Monday. What lies ahead? _____.",
+  response: "",
+  image: "http://www.newparadiselaboratories.org/uploads/media_items/the-future-1.499.399.s.jpg",
+  theme: "Happy Tuesday!",
+  count: 4
+},
+
+{
+  prompt: "Tuesdays. Twosdays. Two _____ for you!",
+  response: "",
+  image: "http://img01.burrpimg.com/mobi/f3db5b567412ff313533f6fc9e5b6302.jpg",
+  theme: "Happy Tuesday!",
+  count: 5
+},
+
+{
+  prompt: "Hump day? More like _____ day!",
+  response: "",
+  image: "http://i.imgur.com/Tmk7Yz7.jpg",
+  theme: "Happy Wednesday!",
+  count: 1
+},
+
+{
+  prompt: "Sometimes we just need a little distraction. Something like _____.",
+  response: "",
+  image: "http://i.imgur.com/zNoTO8p.jpg",
+  theme: "Happy Wednesday!",
+  count: 2
+},
+
+{
+  prompt: "Here’s some motivation for the rest of the week: _____.",
+  response: "",
+  image: "https://cdn3.littlethings.com/app/uploads/2014/09/rxDvM.jpg",
+  theme: "Happy Wednesday!",
+  count: 3
+},
+
+{
+  prompt: "Though Wednesday Addams seldom shows emotion and is generally bitter, she wishes you _____.",
+  response: "",
+  image: "http://i.imgur.com/KLLdmsf.jpg",
+  theme: "Happy Wednesday!",
+  count: 4
+},
+
+{
+  prompt: "Whoooaa, we’re halfway there. WHHOOAAA living on _____!",
+  response: "",
+  image: "http://fakemalaysianews.com/wp-content/uploads/2015/09/bon-jovi-616523051.jpg",
+  theme: "Happy Wednesday!",
   count: 5
 }]
 
@@ -770,6 +930,14 @@ themeList = [{
 },
 
 {
+  title: "Congratulations!",
+  image: "http://i.imgur.com/HQOHsnG.jpg",
+  mobileImage: "http://i.imgur.com/af3ZXPj.jpg",
+  thumbnailImage: "http://i.imgur.com/y1Mu88x.jpg",
+  category: "special"
+},
+
+{
   title: "Thanks For Being My Friend!",
   image: "http://i.imgur.com/RdhiOuj.jpg",
   mobileImage: "http://i.imgur.com/ldTnPR3.jpg",
@@ -799,6 +967,30 @@ themeList = [{
   mobileImage: "http://i.imgur.com/DcqhkRV.jpg",
   thumbnailImage: "http://i.imgur.com/kQNNpJD.jpg",
   category: "holiday"
+},
+
+{
+  title: "Happy Monday!",
+  image: "http://i.imgur.com/JuOGsND.jpg",
+  mobileImage: "http://i.imgur.com/mbiktWh.jpg",
+  thumbnailImage: "http://i.imgur.com/RldGSnM.jpg",
+  category: "daily"
+},
+
+{
+  title: "Happy Tuesday!",
+  image: "http://i.imgur.com/TnkwZTt.jpg",
+  mobileImage: "http://i.imgur.com/YfSiER5.jpg",
+  thumbnailImage: "http://i.imgur.com/F2Kbr3q.jpg",
+  category: "daily"
+},
+
+{
+  title: "Happy Wednesday!",
+  image: "http://i.imgur.com/XyKp1lY.jpg",
+  mobileImage: "http://i.imgur.com/h6svgsm.jpg",
+  thumbnailImage: "http://i.imgur.com/0vVC5oY.jpg",
+  category: "daily"
 }];
 
 // Creating Questions
