@@ -829,6 +829,46 @@ questionList = [{
   image: "http://fakemalaysianews.com/wp-content/uploads/2015/09/bon-jovi-616523051.jpg",
   theme: "Happy Wednesday!",
   count: 5
+},
+
+{
+  prompt: "The penultimate weekday. Your ultimate _____.",
+  response: "",
+  image: "http://i.imgur.com/QUISsUD.jpg",
+  theme: "Happy Thursday!",
+  count: 1
+},
+
+{
+  prompt: "It’s Friday Eve! That means at midnight, we get to open _____.",
+  response: "",
+  image: "http://i.imgur.com/mRhZwbn.jpg",
+  theme: "Happy Thursday!",
+  count: 2
+},
+
+{
+  prompt: "This first Miss America was crowned on a Thursday. On this Thursday, I would like to crown you _____.",
+  response: "",
+  image: "http://i.imgur.com/SBqnowx.jpg",
+  theme: "Happy Thursday!",
+  count: 3
+},
+
+{
+  prompt: "Odin’s Beard! Thor would like to tell you _____.",
+  response: "",
+  image: "http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1476286161i/20823236.jpg",
+  theme: "Happy Thursday!",
+  count: 4
+},
+
+{
+  prompt: "Instead of eating your Last Supper, I hope you get to eat _____.",
+  response: "",
+  image: "http://www.newsgd.com/specials/tourismexpo/content/images/attachement/jpg/site26/20150908/d8cb8a47665a1758b80402.jpg",
+  theme: "Happy Thursday!",
+  count: 5
 }]
 
 /* THEMES */
@@ -990,6 +1030,14 @@ themeList = [{
   image: "http://i.imgur.com/XyKp1lY.jpg",
   mobileImage: "http://i.imgur.com/h6svgsm.jpg",
   thumbnailImage: "http://i.imgur.com/0vVC5oY.jpg",
+  category: "daily"
+},
+
+{
+  title: "Happy Thursday!",
+  image: "http://i.imgur.com/HXgPlNH.jpg",
+  mobileImage: "http://i.imgur.com/oQj5tu8.jpg",
+  thumbnailImage: "http://i.imgur.com/2Kggvnn.jpg",
   category: "daily"
 }];
 
