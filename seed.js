@@ -869,6 +869,46 @@ questionList = [{
   image: "http://www.newsgd.com/specials/tourismexpo/content/images/attachement/jpg/site26/20150908/d8cb8a47665a1758b80402.jpg",
   theme: "Happy Thursday!",
   count: 5
+},
+
+{
+  prompt: "7AM waking up in the morning, _____.",
+  response: "",
+  image: "http://i.imgur.com/CQ8nHDb.jpg",
+  theme: "Happy Friday!",
+  count: 1
+},
+
+{
+  prompt: "If we switched bodies on Freaky Friday, I would _____.",
+  response: "",
+  image: "http://cdn2.diagnosislife.com/wp-content/uploads/2014/04/Freaky-Friday-movie-still.jpg",
+  theme: "Happy Friday!",
+  count: 2
+},
+
+{
+  prompt: "It’s Friday, Friday. Gotta _____ on Friday.",
+  response: "",
+  image: "http://i.imgur.com/kBdGKSd.jpg",
+  theme: "Happy Friday!",
+  count: 3
+},
+
+{
+  prompt: "I hope your week ends with _____!",
+  response: "",
+  image: "http://all4desktop.com/data_images/original/4239185-fireworks.jpg",
+  theme: "Happy Friday!",
+  count: 4
+},
+
+{
+  prompt: "Friday FRYdays! Getting my fry on. Let’s fry some _____.",
+  response: "",
+  image: "http://www.healthcastle.com/sites/default/files/imagecache/article-lead-image-570x200/fried_foods_570.jpg",
+  theme: "Happy Friday!",
+  count: 5
 }]
 
 /* THEMES */
@@ -1038,6 +1078,14 @@ themeList = [{
   image: "http://i.imgur.com/dP6V1Cd.jpg",
   mobileImage: "http://i.imgur.com/oQj5tu8.jpg",
   thumbnailImage: "http://i.imgur.com/2Kggvnn.jpg",
+  category: "daily"
+},
+
+{
+  title: "Happy Friday!",
+  image: "http://i.imgur.com/i58Bm2H.jpg",
+  mobileImage: "http://i.imgur.com/ldtWbfD.jpg",
+  thumbnailImage: "http://i.imgur.com/tUliPku.jpg",
   category: "daily"
 }];
 
