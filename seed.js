@@ -880,7 +880,7 @@ questionList = [{
 },
 
 {
-  prompt: "If we switched bodies on Freaky Friday, I would _____.",
+  prompt: "If we switched bodies on Freaky Friday, we would _____.",
   response: "",
   image: "http://cdn2.diagnosislife.com/wp-content/uploads/2014/04/Freaky-Friday-movie-still.jpg",
   theme: "Happy Friday!",
