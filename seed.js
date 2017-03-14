@@ -872,9 +872,9 @@ questionList = [{
 },
 
 {
-  prompt: "7AM waking up in the morning, _____.",
+  prompt: "I hope your week ends with _____!",
   response: "",
-  image: "http://i.imgur.com/CQ8nHDb.jpg",
+  image: "http://all4desktop.com/data_images/original/4239185-fireworks.jpg",
   theme: "Happy Friday!",
   count: 1
 },
@@ -896,9 +896,9 @@ questionList = [{
 },
 
 {
-  prompt: "I hope your week ends with _____!",
+  prompt: "TGIF! Looking forward to _____!",
   response: "",
-  image: "http://all4desktop.com/data_images/original/4239185-fireworks.jpg",
+  image: "http://i.imgur.com/dQZzg6r.jpg",
   theme: "Happy Friday!",
   count: 4
 },
