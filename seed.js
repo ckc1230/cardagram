@@ -872,9 +872,9 @@ questionList = [{
 },
 
 {
-  prompt: "I hope your week ends with _____!",
+  prompt: "It’s Friday, Friday. Gotta _____ on Friday.",
   response: "",
-  image: "http://all4desktop.com/data_images/original/4239185-fireworks.jpg",
+  image: "http://cdn.hercampus.com/s3fs-public/2013/12/09/alg-rebecca-black-jpg.jpg",
   theme: "Happy Friday!",
   count: 1
 },
@@ -888,23 +888,23 @@ questionList = [{
 },
 
 {
-  prompt: "It’s Friday, Friday. Gotta _____ on Friday.",
+  prompt: "TGIF! Why don't we _____ this weekend?!?!",
   response: "",
-  image: "http://i.imgur.com/kBdGKSd.jpg",
+  image: "http://i.imgur.com/dQZzg6r.jpg",
   theme: "Happy Friday!",
   count: 3
 },
 
 {
-  prompt: "TGIF! Looking forward to _____!",
+  prompt: "I hope your week ends with _____!",
   response: "",
-  image: "http://i.imgur.com/dQZzg6r.jpg",
+  image: "http://i.imgur.com/rracCki.jpg",
   theme: "Happy Friday!",
   count: 4
 },
 
 {
-  prompt: "Friday FRYdays! Getting my fry on. Let’s get some _____.",
+  prompt: "Friday FRYdays! Getting my fry on. Nothing like golden-brown, beer-battered _____.",
   response: "",
   image: "http://www.healthcastle.com/sites/default/files/imagecache/article-lead-image-570x200/fried_foods_570.jpg",
   theme: "Happy Friday!",
@@ -1085,7 +1085,7 @@ themeList = [{
   title: "Happy Friday!",
   image: "http://i.imgur.com/i58Bm2H.jpg",
   mobileImage: "http://i.imgur.com/ldtWbfD.jpg",
-  thumbnailImage: "http://i.imgur.com/tUliPku.jpg",
+  thumbnailImage: "http://i.imgur.com/xDKQVF0.jpg",
   category: "daily"
 }];
 
