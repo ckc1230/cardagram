@@ -832,9 +832,9 @@ questionList = [{
 },
 
 {
-  prompt: "The penultimate weekday. Your ultimate _____.",
+  prompt: "Odin’s Beard, it's Thor's Day! Thor would like to tell you _____.",
   response: "",
-  image: "http://i.imgur.com/QUISsUD.jpg",
+  image: "http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1476286161i/20823236.jpg",
   theme: "Happy Thursday!",
   count: 1
 },
@@ -848,25 +848,25 @@ questionList = [{
 },
 
 {
-  prompt: "This first Miss America was crowned on a Thursday. On this Thursday, I would like to crown you _____.",
+  prompt: "#TBT! Remember that time _____.",
   response: "",
-  image: "http://i.imgur.com/SBqnowx.jpg",
+  image: "http://i.imgur.com/THaC3qJ.jpg",
   theme: "Happy Thursday!",
   count: 3
 },
 
 {
-  prompt: "Odin’s Beard! Thor would like to tell you _____.",
+  prompt: "Thursday is the penultimate weekday: your ultimate _____.",
   response: "",
-  image: "http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1476286161i/20823236.jpg",
+  image: "http://i.imgur.com/QUISsUD.jpg",
   theme: "Happy Thursday!",
   count: 4
 },
 
 {
-  prompt: "Instead of eating your Last Supper, I hope you get to eat _____.",
+  prompt: "This first Miss America was crowned on a Thursday. On this Thursday, I would like to crown you _____.",
   response: "",
-  image: "http://www.newsgd.com/specials/tourismexpo/content/images/attachement/jpg/site26/20150908/d8cb8a47665a1758b80402.jpg",
+  image: "http://i.imgur.com/SBqnowx.jpg",
   theme: "Happy Thursday!",
   count: 5
 },
@@ -880,7 +880,7 @@ questionList = [{
 },
 
 {
-  prompt: "If we switched bodies on Freaky Friday, I would _____.",
+  prompt: "If we switched bodies on Freaky Friday, we would _____.",
   response: "",
   image: "http://cdn2.diagnosislife.com/wp-content/uploads/2014/04/Freaky-Friday-movie-still.jpg",
   theme: "Happy Friday!",
@@ -904,7 +904,7 @@ questionList = [{
 },
 
 {
-  prompt: "Friday FRYdays! Getting my fry on. Let’s fry some _____.",
+  prompt: "Friday FRYdays! Getting my fry on. Let’s get some _____.",
   response: "",
   image: "http://www.healthcastle.com/sites/default/files/imagecache/article-lead-image-570x200/fried_foods_570.jpg",
   theme: "Happy Friday!",
@@ -1077,7 +1077,7 @@ themeList = [{
   title: "Happy Thursday!",
   image: "http://i.imgur.com/dP6V1Cd.jpg",
   mobileImage: "http://i.imgur.com/oQj5tu8.jpg",
-  thumbnailImage: "http://i.imgur.com/2Kggvnn.jpg",
+  thumbnailImage: "http://i.imgur.com/y24W7Lf.jpg",
   category: "daily"
 },
 
