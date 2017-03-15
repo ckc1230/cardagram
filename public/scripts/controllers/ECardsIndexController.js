@@ -31,6 +31,14 @@ function ECardsIndexController($http) {
     url: '/api/themes'
   }).then(function successCallback(response) {
     vm.themes = response.data;
+    vm.themes.sort(function(a,b) {
+      var dateA = a.date;
+      var dateB = b.date;
+
+      if(dateA < dateB) return -1;
+      if(dateA > dateB) return 1;
+      return 0;
+    });
   }, function errorCallback(response) {
     console.log('There was an error getting the data', response);
   });
