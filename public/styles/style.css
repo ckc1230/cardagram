@@ -69,6 +69,10 @@ input {
   margin: 5px 0px;
 }
 
+#home-breadcrumb img {
+  height: 80px;
+}
+
 #themes-breadcrumb {
   text-align: right;
   width: 69%;
@@ -620,7 +624,7 @@ input {
 	position: relative;
 	top: 70%;
 	padding: 20px;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 .cardagram-btn:hover {
@@ -640,7 +644,7 @@ input {
 .slides {
   padding: 0;
   width: 100%;
-  height: 550px;
+  height: 500px;
   display: block;
   position: relative;
   margin-top: 5px;
@@ -663,7 +667,7 @@ input {
   top: 0;
   opacity: 0;
   width: 100%;
-  height: 500px;
+  height: 450px;
   display: block;
   position: absolute;
   transform: scale(0);
@@ -671,7 +675,8 @@ input {
 }
 
 .slide img {
-    width: 1300px;
+    width: 100%;
+    min-width: 1300px;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -689,7 +694,7 @@ input {
 .slide-text-para {
 	position: absolute; 
 	z-index: 4; 
-	top: 30%;
+	top: 35%;
 	left: 20%;
 	color: white;
 	font-size: 45px;
@@ -790,6 +795,40 @@ input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4 {
 	background: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 1600px) {
+  .slide-text-header {
+    left: 20%;
+  }
+  .slide {
+    overflow: auto;
+    height: 600px;
+  }
+  .slide h3 {
+    left: 23%;
+  }
+  .slide img {
+    width: 100%;
+    min-width: 1600px;
+    height: 600px;
+  }
+  .slides {
+    height: 600px;
+  }
+  .nav-dots {
+    bottom: -8%;
+  }
+  #home-breadcrumb img {
+    height: 100px;
+  }
+  #main-blurb {
+    font-size: 30px;
+    margin-top: 80px;
+  }
+  #get-started-div button {
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width: 905px) {
