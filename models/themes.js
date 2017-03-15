@@ -9,6 +9,7 @@ var ThemeSchema = new Schema({
   mobileImage: String,
   thumbnailImage: String,
   category: String,
+  date: String,
   questions: [{ type : Schema.Types.Object, ref: 'Question' }]
 });
 

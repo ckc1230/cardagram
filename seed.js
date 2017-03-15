@@ -918,7 +918,8 @@ themeList = [{
   image: "http://i.imgur.com/LyCAoB8.jpg",
   mobileImage: "http://i.imgur.com/vcWB9fD.png",
   thumbnailImage: "http://i.imgur.com/LFQtufJ.jpg",
-  category: "special"
+  category: "special",
+  date: "0000000001"
 },
 
 {
@@ -926,7 +927,8 @@ themeList = [{
   image: "http://i.imgur.com/w09TAJO.jpg",
   mobileImage: "http://i.imgur.com/oE5IEUE.png",
   thumbnailImage: "http://i.imgur.com/5NvM3wN.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "0101000000"
 },
 
 {
@@ -934,7 +936,8 @@ themeList = [{
   image: "http://i.imgur.com/zCUKzZy.jpg",
   mobileImage: "http://i.imgur.com/7ZD4VJ4.png",
   thumbnailImage: "http://i.imgur.com/eGzadPy.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "0622000000"
 },
 
 {
@@ -942,7 +945,8 @@ themeList = [{
   image: "http://i.imgur.com/3PwGrid.jpg",
   mobileImage: "http://i.imgur.com/FRtxh5R.png",
   thumbnailImage: "http://i.imgur.com/OArPZoL.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "0514000000"
 },
 
 {
@@ -950,7 +954,8 @@ themeList = [{
   image: "http://i.imgur.com/L4nV0bn.jpg",
   mobileImage: "http://i.imgur.com/FB7HWFV.png",
   thumbnailImage: "http://i.imgur.com/KgzbUmE.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "1031000000"
 },
 
 {
@@ -958,7 +963,8 @@ themeList = [{
   image: "http://i.imgur.com/UEXKnXD.jpg",
   mobileImage: "http://i.imgur.com/R4UexRS.png",
   thumbnailImage: "http://i.imgur.com/lmsRKWS.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "1128000000"
 },
 
 {
@@ -966,7 +972,8 @@ themeList = [{
   image: "http://i.imgur.com/8WoDdXx.jpg",
   mobileImage: "http://i.imgur.com/dpft9nG.png",
   thumbnailImage: "http://i.imgur.com/iGP4oW7.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "0221000000"
 },
 
 {
@@ -974,7 +981,8 @@ themeList = [{
   image: "http://i.imgur.com/3XAme7U.jpg",
   mobileImage: "http://i.imgur.com/4ou8IvW.png",
   thumbnailImage: "http://i.imgur.com/RskhMJT.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "0428000000"
 },
 
 {
@@ -982,7 +990,8 @@ themeList = [{
   image: "http://i.imgur.com/BvXPIQl.jpg",
   mobileImage: "http://i.imgur.com/oPvelJl.png",
   thumbnailImage: "http://i.imgur.com/cEdhqUk.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "0214000000"
 },
 
 {
@@ -990,7 +999,8 @@ themeList = [{
   image: "http://i.imgur.com/dXAO1yc.jpg",
   mobileImage: "http://i.imgur.com/Tb52JlA.jpg",
   thumbnailImage: "http://i.imgur.com/kqVwdyl.jpg",
-  category: "daily"
+  category: "daily",
+  date: "0000000006"
 },
 
 {
@@ -998,7 +1008,8 @@ themeList = [{
   image: "http://i.imgur.com/EJ9yrUX.jpg",
   mobileImage: "http://i.imgur.com/bmwgVUS.jpg",
   thumbnailImage: "http://i.imgur.com/ZnjE0tl.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "0128000000"
 },
 
 {
@@ -1006,7 +1017,8 @@ themeList = [{
   image: "http://i.imgur.com/2fdvPzs.jpg",
   mobileImage: "http://i.imgur.com/pjdZhor.jpg",
   thumbnailImage: "http://i.imgur.com/I9eCzY8.jpg",
-  category: "special"
+  category: "special",
+  date: "0000000003"
 },
 
 {
@@ -1014,7 +1026,8 @@ themeList = [{
   image: "http://i.imgur.com/HQOHsnG.jpg",
   mobileImage: "http://i.imgur.com/af3ZXPj.jpg",
   thumbnailImage: "http://i.imgur.com/y1Mu88x.jpg",
-  category: "special"
+  category: "special",
+  date: "0000000002"
 },
 
 {
@@ -1022,7 +1035,8 @@ themeList = [{
   image: "http://i.imgur.com/RdhiOuj.jpg",
   mobileImage: "http://i.imgur.com/ldTnPR3.jpg",
   thumbnailImage: "http://i.imgur.com/CqQIoOK.jpg",
-  category: "daily"
+  category: "daily",
+  date: "0000000007"
 },
 
 {
@@ -1030,7 +1044,8 @@ themeList = [{
   image: "http://i.imgur.com/Vjuo2fq.jpg",
   mobileImage: "http://i.imgur.com/9JaSaLc.jpg",
   thumbnailImage: "http://i.imgur.com/sSkJKGU.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "0317000000"
 },
 
 {
@@ -1038,7 +1053,8 @@ themeList = [{
   image: "http://i.imgur.com/rPP5ZBE.jpg",
   mobileImage: "http://i.imgur.com/4cNp9Xo.jpg",
   thumbnailImage: "http://i.imgur.com/KM6cZpn.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "0314000000"
 },
 
 {
@@ -1046,7 +1062,8 @@ themeList = [{
   image: "http://i.imgur.com/93sStLL.jpg",
   mobileImage: "http://i.imgur.com/DcqhkRV.jpg",
   thumbnailImage: "http://i.imgur.com/kQNNpJD.jpg",
-  category: "holiday"
+  category: "holiday",
+  date: "0329000000"
 },
 
 {
@@ -1054,7 +1071,8 @@ themeList = [{
   image: "http://i.imgur.com/JuOGsND.jpg",
   mobileImage: "http://i.imgur.com/mbiktWh.jpg",
   thumbnailImage: "http://i.imgur.com/RldGSnM.jpg",
-  category: "daily"
+  category: "daily",
+  date: "0000000001"
 },
 
 {
@@ -1062,7 +1080,8 @@ themeList = [{
   image: "http://i.imgur.com/TnkwZTt.jpg",
   mobileImage: "http://i.imgur.com/YfSiER5.jpg",
   thumbnailImage: "http://i.imgur.com/F2Kbr3q.jpg",
-  category: "daily"
+  category: "daily",
+  date: "0000000002"
 },
 
 {
@@ -1070,7 +1089,8 @@ themeList = [{
   image: "http://i.imgur.com/XyKp1lY.jpg",
   mobileImage: "http://i.imgur.com/h6svgsm.jpg",
   thumbnailImage: "http://i.imgur.com/0vVC5oY.jpg",
-  category: "daily"
+  category: "daily",
+  date: "0000000003"
 },
 
 {
@@ -1078,7 +1098,8 @@ themeList = [{
   image: "http://i.imgur.com/dP6V1Cd.jpg",
   mobileImage: "http://i.imgur.com/oQj5tu8.jpg",
   thumbnailImage: "http://i.imgur.com/y24W7Lf.jpg",
-  category: "daily"
+  category: "daily",
+  date: "0000000004"
 },
 
 {
@@ -1086,7 +1107,8 @@ themeList = [{
   image: "http://i.imgur.com/i58Bm2H.jpg",
   mobileImage: "http://i.imgur.com/ldtWbfD.jpg",
   thumbnailImage: "http://i.imgur.com/xDKQVF0.jpg",
-  category: "daily"
+  category: "daily",
+  date: "0000000005"
 }];
 
 // Creating Questions
