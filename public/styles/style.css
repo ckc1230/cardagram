@@ -539,12 +539,11 @@ input {
   font-weight: bold;
 }
 
-#preview-cardagram-btn:hover, 
 #preview-edit-cardagram-btn:hover {
 	cursor: pointer;
 }
 
-#preview-edit-cardagram-btn:disabled, #preview-cardagram-btn:disabled {
+#preview-edit-cardagram-btn:disabled {
   background: white;
   cursor: not-allowed;
 }
@@ -573,6 +572,10 @@ input {
 .click-me {
 	box-shadow: 0 0 10px yellow;
   background: lightgreen;
+}
+
+.click-me:hover {
+  cursor: pointer;
 }
 
 #question-popup {

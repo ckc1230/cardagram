@@ -150,16 +150,18 @@ function ThemeEditController($http, $routeParams, $location) {
     }
   }
   vm.saveECard = function() {
-    var newECard = {
-      message: vm.theme.message,
-      theme: vm.theme
+    if (vm.bubblesComplete && vm.theme.message) {
+      var newECard = {
+        message: vm.theme.message,
+        theme: vm.theme
+      }
+      $http
+        .post('/api/ecards',newECard)
+        .then(function(response) {
+          document.removeEventListener("keydown", keyDownTextField);
+          $location.path('/ecards/'+response.data._id);
+      });
     }
-    $http
-      .post('/api/ecards',newECard)
-      .then(function(response) {
-        document.removeEventListener("keydown", keyDownTextField);
-        $location.path('/ecards/'+response.data._id);
-    });
   }
   
   vm.openModal = function(count) {
