@@ -31,6 +31,19 @@ function ECardsIndexController($http) {
     url: '/api/themes'
   }).then(function successCallback(response) {
     vm.themes = response.data;
+    sortThemes();
+  }, function errorCallback(response) {
+    console.log('There was an error getting the data', response);
+  });
+
+  var sortThemes = function() {
+    var date = new Date();
+    var dateToday = ("0"+(date.getMonth()+1).toString()).slice(-2) + date.getDate() + 
+        date.getHours() + date.getMinutes() + date.getSeconds();
+    var today = {
+      date: dateToday
+    }
+    vm.themes.push(today);
     vm.themes.sort(function(a,b) {
       var dateA = a.date;
       var dateB = b.date;
@@ -39,9 +52,11 @@ function ECardsIndexController($http) {
       if(dateA > dateB) return 1;
       return 0;
     });
-  }, function errorCallback(response) {
-    console.log('There was an error getting the data', response);
-  });
+    var indexOfToday = vm.themes.indexOf(today);
+    var temp = vm.themes.splice(indexOfToday);
+    vm.themes = temp.concat(vm.themes);
+    vm.themes.shift();
+  }
 
   vm.createECard = function () {
     $http
