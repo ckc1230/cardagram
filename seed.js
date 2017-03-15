@@ -119,7 +119,7 @@ questionList = [{
 {
   prompt: "I love the way you _____.",
   response: "",
-  image: "http://2.bp.blogspot.com/-i4ajtFfZtZw/VUjaCQ5knYI/AAAAAAAAH8g/Q8xTUOgRMvU/s1600/walking%2Bdesert.png",
+  image: "http://i.imgur.com/qNacxoB.jpg",
   theme: "Happy Mother's Day!",
   count: 4
 },
