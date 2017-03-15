@@ -201,7 +201,7 @@ questionList = [{
 },
 
 {
-  prompt: "Out scariest Halloween was that time when _____.",
+  prompt: "Our scariest Halloween was that time when _____.",
   response: "",
   image: "http://cdn.wallpapersafari.com/31/30/BMAJPh.jpg",
   theme: "Happy Halloween!",
@@ -864,7 +864,7 @@ questionList = [{
 },
 
 {
-  prompt: "This first Miss America was crowned on a Thursday. On this Thursday, I would like to crown you _____.",
+  prompt: "The first Miss America was crowned on a Thursday. On this Thursday, I would like to crown you _____.",
   response: "",
   image: "http://i.imgur.com/SBqnowx.jpg",
   theme: "Happy Thursday!",
