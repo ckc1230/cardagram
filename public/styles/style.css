@@ -406,8 +406,9 @@ input {
 	width: 200px;
 	border-radius: 50%;
 	overflow: hidden;
-  display: flex;
-  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .question-image-div img {
@@ -517,35 +518,47 @@ input {
 	padding: 10px;
 	background: lightgreen;
 	border: 2px solid black;
+  border-radius: 5px;
 	font-size: 15px;
 	font-weight: bold;
+  cursor: pointer;
+}
+
+.ecard-show-btn {
+  width: 100px;
+  display: inline-block;
+  height: 20px;
+  font-family: 'Carter One', cursive;
+  line-height: 20px;
+  margin-top: 2%;
+  cursor: pointer;
 }
 
 .clear-message-btn {
-	padding: 10px;
-	border: 2px solid black;
-	background: white;
-	font-size: 15px;
-	font-weight: bold;
-	border-radius: 5px;
+  padding: 10px;
+  border: 2px solid black;
+  background: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .preview-btn {
   margin-top: 2%;
   padding: 10px;
-  background: lightgreen;
   border: 2px solid black;
+  background: lightgreen;
   font-size: 15px;
   font-weight: bold;
+  font-family: 'Carter One', cursive;
+  border-radius: 5px;
 }
 
-#preview-edit-cardagram-btn:hover {
-	cursor: pointer;
-}
-
-#preview-edit-cardagram-btn:disabled {
+#preview-edit-cardagram-btn {
   background: white;
-  cursor: not-allowed;
+	cursor: not-allowed;
+  width: 150px;
+  margin: 20px auto;
 }
 
 .progress-bar-step {
@@ -571,11 +584,11 @@ input {
 
 .click-me {
 	box-shadow: 0 0 10px yellow;
-  background: lightgreen;
+  background: lightgreen !important;
 }
 
 .click-me:hover {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 #question-popup {
@@ -727,7 +740,7 @@ input {
   width: 60px;
 }
 
-#link-modal-done:hover, .choose-modal-button:hover, .preview-btn:hover, .clear-message-btn:hover {
+#link-modal-done:hover, .choose-modal-button:hover, .clear-message-btn:hover {
   cursor: pointer;
 }
 
@@ -971,10 +984,6 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     width: 150px;
     height: 150px;
   }
-  .question-image-div {
-    width: 175px;
-    height: 175px;
-  }
   .question-image-input {
     vertical-align: top;
     padding-top: 15%;
@@ -1065,15 +1074,6 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     display: inline-block;
     text-align: center;
     font-size: 0.75em;
-  }
-  .question-image-div {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-  }
-  .question-image-div img {
-    height: 100px;
-    width: 120px;
   }
   .question-image-container {
     margin: 0;
@@ -1294,6 +1294,15 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
   #info-box li {
     margin: 10px 0;
+  }
+  .ecard-show-btn  {
+    padding: 5px !important;
+  }
+  .save-message-btn, .clear-message-btn {
+    padding: 5px;
+    display: inline-block;
+    width: 35%;
+    text-align: center;
   }
   .progress-bar-step {
     width: 20%;

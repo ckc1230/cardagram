@@ -50,8 +50,7 @@
 					<div class="row">
 						<div class="question-column question-image">
 							<div class="question-section question-image-container">
-								<div class="question-image-div">
-									<img src={{question.image}} alt="">
+								<div class="question-image-div" style="background-image: url({{question.image}})">
 								</div>
 							</div>
 								<div class="question-section question-image-input">
@@ -79,7 +78,7 @@
 					<div class="row">
 						<div class="question-buttons">
 							<button ng-click="themeEditCtrl.clearResponse(question.count)" class="clear-message-btn">Clear Message</button>
-		        	<input type="submit" ng-click="themeEditCtrl.saveResponse(question.count)" value="Save Message" class="save-message-btn">
+		        	<button ng-click="themeEditCtrl.saveResponse(question.count)" class="save-message-btn">Save Message</button>
 						</div>
 					</div>
 				</div>
