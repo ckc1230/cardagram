@@ -123,16 +123,18 @@ function ECardEditController($http, $routeParams, $location) {
     }
   }
   vm.saveECard = function() {
-    $http({
-      method: 'PUT',
-      url: '/api/ecards/' + $routeParams.id,
-      data: vm.ecard
-    }).then(function successCallback(response) {
-      document.removeEventListener("keydown", keyDownTextField);
-      $location.path('/ecards/'+response.data._id);
-    }, function errorCallback(response) {
-      console.log('There was an error getting the data', response);
-    });
+    if (vm.bubblesComplete && vm.ecard.theme.message.length > 0) {
+      $http({
+        method: 'PUT',
+        url: '/api/ecards/' + $routeParams.id,
+        data: vm.ecard
+      }).then(function successCallback(response) {
+        document.removeEventListener("keydown", keyDownTextField);
+        $location.path('/ecards/'+response.data._id);
+      }, function errorCallback(response) {
+        console.log('There was an error getting the data', response);
+      });
+    }
   }
 
   vm.openModal = function(count) {

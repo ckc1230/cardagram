@@ -1,4 +1,3 @@
-<form name="theme-edit-form">
 	<div class="container">
 		<div id='theme-img-show' style={{eCardEditCtrl.loadBackground()}}>
 			<div class="ecard-title cardagram-font">
@@ -16,7 +15,7 @@
 	</div>
 
 	<div class="center">
-	  <input class="preview-btn" id="preview-edit-cardagram-btn" value="Preview Cardagram" type="submit" ng-click="eCardEditCtrl.saveECard()" ng-disabled="!(eCardEditCtrl.bubblesComplete && eCardEditCtrl.ecard.theme.message.length > 0)">
+	  <div class="preview-btn" id="preview-edit-cardagram-btn" ng-click="eCardEditCtrl.saveECard()" ng-class="{true: 'click-me', false: ''}[eCardEditCtrl.ecard.theme.message.length > 0 && eCardEditCtrl.bubblesComplete]">Preview Cardagram</div>
 	</div>
 
 <div id="question-modal" class="modal">
@@ -62,7 +61,7 @@
 					<div class="row">
 						<div class="question-buttons">
 							<button ng-click="eCardEditCtrl.clearResponse(question.count)" class="clear-message-btn">Clear Message</button>
-	        		<input type="submit" ng-click="eCardEditCtrl.saveResponse(question.count)" value="Save Message" class="save-message-btn">
+	        		<button ng-click="eCardEditCtrl.saveResponse(question.count)" value="Save Message" class="save-message-btn">Save Message</button>
 						</div>
 					</div>
 				</div>

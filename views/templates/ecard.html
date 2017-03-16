@@ -26,8 +26,8 @@
 </div>
 
 <div class='center' ng-hide='eCardCtrl.ecard.ecardSent'>
-  <input class='clear-message-btn' value='Edit' type='submit' ng-click='eCardCtrl.editECard()'>
-  <input class='preview-btn' value='Send' type='submit' ng-click='eCardCtrl.openModal()'>
+  <div class='ecard-show-btn clear-message-btn' ng-click='eCardCtrl.editECard()'>Edit</div>
+  <div class='ecard-show-btn preview-btn' ng-click='eCardCtrl.openModal()'>Send</div>
 </div>
 
 <div class='center plain-text cardagram-font' ng-show='eCardCtrl.ecard.ecardSent' class='ng-hide'>
