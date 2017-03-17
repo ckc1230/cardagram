@@ -1306,11 +1306,9 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   .progress-bar-step {
     width: 20%;
     font-size: 10px;
-    height: 45px;
+    min-height: 20px;
     vertical-align: top;
-  }
-  #write-message-step, #preview-cardagram-btn {
-    padding: 10px 0 0 0;
+    line-height: 10px;
   }
   #send-modal-content {
     position: absolute;
