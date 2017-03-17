@@ -1233,7 +1233,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
     font-size: 16px;
   }
   #home-breadcrumb img {
-    height: 45px;
+    height: 40px;
   }
   #main-landing {
     display: none;
@@ -1336,13 +1336,14 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
   #theme-tabs li {
     width: 25%;
-    height: 50px;
+    height: 36px;
     margin: 0 5px;
     padding: 2px;
     vertical-align: top;
+    line-height: 18px;
   }
   #holiday {
-    line-height: 50px;
+    line-height: 36px !important;
   }
 }
 
