@@ -692,6 +692,7 @@ input {
 
 .slide img {
   width: 100%;
+  min-width: 1300px;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -879,6 +880,12 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .slide img {
+    min-width: 1000px;
+  }
+}
+
 @media screen and (max-width: 905px) {
   .question-buttons button {
     margin: 2%;
@@ -964,6 +971,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   #info-box h1 {
     font-size: 20px;
   }
+  
   @keyframes slideFromTop {
     0%   {top: 0%;}
     50% {top: 35%;}
