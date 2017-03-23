@@ -18,7 +18,7 @@ function ThemeEditController($http, $routeParams, $location) {
   angular.element(document).ready(function () {
     document.getElementById('overlay').addEventListener("click", vm.closeInfoBox);
     document.getElementById('info-box').addEventListener("click", vm.closeInfoBox);
-    document.getElementById('home-breadcrumb').style.width = '30%';
+    document.getElementById('home-breadcrumb').style.width = '45%';
     document.addEventListener("keydown", closeIntro, false);
     setTimeout(function() {
       document.getElementById('themes-breadcrumb').className = 'breadcrumb';
