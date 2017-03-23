@@ -1269,6 +1269,31 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   .theme-img-index {
     width: 90%;
   }
+  #theme-tabs li {
+    width: 25%;
+    height: 36px;
+    margin: 0 5px;
+    padding: 2px;
+    vertical-align: top;
+    line-height: 18px;
+  }
+  #holiday {
+    line-height: 36px !important;
+  }
+  .progress-bar-step {
+    width: 20%;
+    font-size: 10px;
+    min-height: 20px;
+    vertical-align: top;
+    line-height: 10px;
+  }
+  .save-message-btn, .clear-message-btn {
+    padding: 5px;
+    display: inline-block;
+    width: 35%;
+    text-align: center;
+  }
+   
 }
 @media only screen 
   and (min-device-width: 320px) 
