@@ -1181,6 +1181,10 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   .breadcrumb-container button {
     font-size: 1.2em;
   }
+  #home-breadcrumb img {
+    height: 40px;
+    width: 200px;
+  }
   #theme-img-show {
     height: 480px;
   }
@@ -1277,6 +1281,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
   #home-breadcrumb img {
     height: 40px;
+    width: 200px;
   }
   #main-landing {
     display: none;
