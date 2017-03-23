@@ -762,7 +762,7 @@ questionList = [{
 {
   prompt: "Aren’t you glad it’s not Monday? Aren’t you glad _____?",
   response: "",
-  image: "https://www.elephantsinthepantry.co.uk/wp-content/uploads/2015/08/11896276_403067436567261_3648774825972633768_o.jpg",
+  image: "http://i.imgur.com/uSIIoxl.jpg",
   theme: "Happy Tuesday!",
   count: 2
 },
