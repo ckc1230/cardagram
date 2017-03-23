@@ -75,7 +75,7 @@ input {
 
 #themes-breadcrumb {
   text-align: right;
-  width: 69%;
+  width: 54%;
 }
 
 #back-to-themes {
@@ -1137,6 +1137,9 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   }
   #info-box {
     top: 25%;
+  }
+  #home-breadcrumb img {
+    width: 300px;
   }
   #back-to-themes {
     font-size: 12px;
