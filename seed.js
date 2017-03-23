@@ -909,6 +909,132 @@ questionList = [{
   image: "http://www.healthcastle.com/sites/default/files/imagecache/article-lead-image-570x200/fried_foods_570.jpg",
   theme: "Happy Friday!",
   count: 5
+},
+
+/* Walk To Work Day */ 
+
+{
+  prompt: "I'm walking on sunshine! Whoa! And don't it feel _____?",
+  response: "",
+  image: "http://www.yuppee.com/wp-content/uploads/2013/05/sunny-day.jpg",
+  theme: "Happy Walk To Work Day!",
+  count: 1
+},
+
+{
+  prompt: "I would walk 500 miles and I will walk 500 more just to _____.",
+  response: "",
+  image: "http://images2.mtv.com/uri/mgid:uma:video:mtv.com:924680?width=657&height=370&crop=true&quality=0.85",
+  theme: "Happy Walk To Work Day!",
+  count: 2
+},
+
+{
+  prompt: "After work, we can reward ourselves with a walk to _____.",
+  response: "",
+  image: "http://i.imgur.com/ekPVo7t.jpg",
+  theme: "Happy Walk To Work Day!",
+  count: 3
+},
+
+{
+  prompt: "You can walk the walk, but can you _____?",
+  response: "",
+  image: "http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/walkhed.png",
+  theme: "Happy Walk To Work Day!",
+  count: 4
+},
+
+{
+  prompt: "Thanks for helping the environment today! You're _____!",
+  response: "",
+  image: "http://alexhowe.com/wp-content/uploads/2016/04/Grass-V6.jpg",
+  theme: "Happy Walk To Work Day!",
+  count: 5
+},
+
+/* Easter */ 
+
+{
+  prompt: "Hallelujah, _____ is risen!",
+  response: "",
+  image: "http://i.imgur.com/DZ2g9Dl.jpg",
+  theme: "Happy Easter!",
+  count: 1
+},
+
+{
+  prompt: "Instead of Easter Eggs, we should hunt for _____.",
+  response: "",
+  image: "http://i.dailymail.co.uk/i/pix/2013/02/26/article-2284800-1277C143000005DC-1000_638x430.jpg",
+  theme: "Happy Easter!",
+  count: 2
+},
+
+{
+  prompt: "I hope the Easter Bunny brings you _____.",
+  response: "",
+  image: "http://i.imgur.com/uZrujvK.jpg",
+  theme: "Happy Easter!",
+  count: 3
+},
+
+{
+  prompt: "Easter, a season for _____.",
+  response: "",
+  image: "https://draxe.com/wp-content/uploads/2015/01/sunflower-closeup-480x294.jpg",
+  theme: "Happy Easter!",
+  count: 4
+},
+
+{
+  prompt: "And on third day, _____.",
+  response: "",
+  image: "http://i.imgur.com/iEg34Fw.jpg",
+  theme: "Happy Easter!",
+  count: 5
+},
+
+/* May the Fourth */ 
+
+{
+  prompt: "_____. You will never find a more wretched hive of scum and villainy.",
+  response: "",
+  image: "https://lumiere-a.akamaihd.net/v1/images/Obi-Wan-Kenobi_6d775533.jpeg?region=0%2C0%2C1536%2C864&width=768",
+  theme: "May the Fourth Be With You",
+  count: 1
+},
+
+{
+  prompt: "I’ve got a bad feeling about _____.",
+  response: "",
+  image: "http://www.jdubuzz.com/files/2016/05/han-solo.jpg",
+  theme: "May the Fourth Be With You",
+  count: 2
+},
+
+{
+  prompt: "Why, you stuck up... half-witted... scruffy-looking…_____!",
+  response: "",
+  image: "http://i.imgur.com/YGIOmYV.jpg",
+  theme: "May the Fourth Be With You",
+  count: 3
+},
+
+{
+  prompt: "I find your lack of _____ disturbing.",
+  response: "",
+  image: "http://i.imgur.com/NUBJqHo.jpg",
+  theme: "May the Fourth Be With You",
+  count: 4
+},
+
+{
+  prompt: "Do _____ or do not. There is no try.",
+  response: "",
+  image: "http://img.cinemablend.com/cb/d/2/2/1/4/7/d22147c71c1e53d6f3344a0f8709c4023b59653e6f5fed733f333a83b19b6ac7.jpg",
+  theme: "May the Fourth Be With You",
+  count: 5
 }]
 
 /* THEMES */
@@ -1109,6 +1235,33 @@ themeList = [{
   thumbnailImage: "http://i.imgur.com/xDKQVF0.jpg",
   category: "daily",
   date: "0000000005"
+},
+
+{
+  title: "Happy Walk To Work Day!",
+  image: "http://i.imgur.com/KYkf1mb.jpg",
+  mobileImage: "http://i.imgur.com/lkExN5k.jpg",
+  thumbnailImage: "http://i.imgur.com/gflCJza.jpg",
+  category: "holiday",
+  date: "0406000000"
+},
+
+{
+  title: "Happy Easter!",
+  image: "http://i.imgur.com/z3wSjgz.jpg",
+  mobileImage: "http://i.imgur.com/GxUqvKY.jpg",
+  thumbnailImage: "http://i.imgur.com/W3XARcY.jpg",
+  category: "holiday",
+  date: "0425000000"
+},
+
+{
+  title: "May the Fourth Be With You",
+  image: "http://i.imgur.com/dREIXZw.jpg",
+  mobileImage: "http://i.imgur.com/x2YtJ1H.jpg",
+  thumbnailImage: "http://i.imgur.com/npOCAJ1.jpg",
+  category: "holiday",
+  date: "0504000000"
 }];
 
 // Creating Questions
