@@ -96,7 +96,7 @@ function ECardsShowController($http, $routeParams, $location) {
         window.location.href + ' \n\n' +
         "Make sure to hover over the Bubble-Grams to see " + vm.senderName + "'s personalized messages for you!\nEnjoy!\n\n" +
         '- Your friends at Cardagram\n' +
-        'https://cardagram.herokuapp.com/\n\n' + 
+        'www.cardagramcards.com\n\n' + 
         '* Please do not reply to this email. Emails sent to this address will not be answered. *';
     vm.ecard.ecardSent = true;
     $http({
@@ -128,7 +128,7 @@ function ECardsShowController($http, $routeParams, $location) {
         window.location.href + ' \n\n' +
         "Don't forget us on your next special occasion!\n\n" +
         '- Your friends at Cardagram\n' +
-        'https://cardagram.herokuapp.com/';
+        'www.cardagramcards.com';
     var senderOptions = {
       from: 'cardagram.cards@gmail.com',
       to: vm.senderEmail,
