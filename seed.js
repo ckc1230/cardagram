@@ -328,7 +328,7 @@ questionList = [{
 },
 
 {
-  prompt: "Arbor day reminds us to care for our planet and environement. It reminds me of the time you took care of me by _____.",
+  prompt: "Arbor day reminds us to care for the environment. It reminds me of the time you cared for _____.",
   response: "",
   image: "http://www.mfc.ms.gov/sites/default/files/kids_trees_0.jpg",
   theme: "Happy Arbor Day!",
@@ -1106,7 +1106,7 @@ themeList = [{
   title: "Happy Arbor Day!",
   image: "http://i.imgur.com/3XAme7U.jpg",
   mobileImage: "http://i.imgur.com/4ou8IvW.png",
-  thumbnailImage: "http://i.imgur.com/RskhMJT.jpg",
+  thumbnailImage: "http://i.imgur.com/w286haX.jpg",
   category: "holiday",
   date: "0428000000"
 },
@@ -1257,9 +1257,9 @@ themeList = [{
 
 {
   title: "May the Fourth Be With You",
-  image: "http://i.imgur.com/dREIXZw.jpg",
+  image: "http://i.imgur.com/lmyMWz9.jpg",
   mobileImage: "http://i.imgur.com/x2YtJ1H.jpg",
-  thumbnailImage: "http://i.imgur.com/0kwmreA.jpg",
+  thumbnailImage: "http://i.imgur.com/jBKiZDQ.jpg",
   category: "holiday",
   date: "0504000000"
 }];
