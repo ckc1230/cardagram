@@ -432,7 +432,7 @@ questionList = [{
 {
   prompt: "Yesterday is a memory, today is a gift, tomorrow is _____.",
   response: "",
-  image: "http://i.huffpost.com/gadgets/slideshows/334665/slide_334665_3356243_free.jpg",
+  image: "http://i.imgur.com/BA1i4M1.jpg",
   theme: "Happy Lunar New Year 2017!",
   count: 1
 },
@@ -456,7 +456,7 @@ questionList = [{
 {
   prompt: "Lots of luck and _____ in the New Year.",
   response: "",
-  image: "http://static1.squarespace.com/static/52536652e4b007332ef4ecf4/52dec946e4b0ca499f87bce7/5876926859cc688e12949602/1484656205967/TEALEAVES-LuckyEnvelope-CNY-Rooster2017-3.jpg?format=1000w",
+  image: "http://i.imgur.com/XWfeMxV.jpg",
   theme: "Happy Lunar New Year 2017!",
   count: 4
 },
@@ -554,7 +554,7 @@ questionList = [{
 {
   prompt: "I hope you find _____ at the end of the rainbow.",
   response: "",
-  image: "http://www.clipartkid.com/images/643/trends-for-empty-pot-of-gold-clipart-frMKa8-clipart.jpg",
+  image: "http://i.imgur.com/mumEg8N.jpg",
   theme: "Happy St. Patrick's Day!",
   count: 1
 },
@@ -570,7 +570,7 @@ questionList = [{
 {
   prompt: "Remember the Paddy's Day we _____ ?",
   response: "",
-  image: "https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F4ff9aa99-19c7-496d-982a-9d616cd5fcf1.jpg",
+  image: "http://i.imgur.com/ox49ofx.jpg",
   theme: "Happy St. Patrick's Day!",
   count: 3
 },
