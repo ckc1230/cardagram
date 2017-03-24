@@ -898,7 +898,7 @@ questionList = [{
 {
   prompt: "I hope your week ends with _____!",
   response: "",
-  image: "http://i.imgur.com/rracCki.jpg",
+  image: "http://i.imgur.com/DjMPc1W.jpg",
   theme: "Happy Friday!",
   count: 4
 },
