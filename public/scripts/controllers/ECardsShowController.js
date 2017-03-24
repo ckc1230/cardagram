@@ -16,6 +16,7 @@ function ECardsShowController($http, $routeParams, $location) {
   });
   var vm = this;
   vm.bubbleOpen = false;
+  vm.currentBubble;
   $http({
     method: 'GET',
     url: '/api/ecards/' + $routeParams.id
@@ -167,11 +168,12 @@ function ECardsShowController($http, $routeParams, $location) {
     question.id = 'question-popup';
     var message = document.getElementById(messageId);
     message.style.display = 'block';
+    vm.currentBubble = count;
     vm.bubbleOpen = true;
   }
-  vm.popdown = function(count) {
-    var bubbleId = 'question-bubble-' + count;
-    var messageId = 'full-message-' + count;
+  vm.popdown = function() {
+    var bubbleId = 'question-bubble-' + vm.currentBubble;
+    var messageId = 'full-message-' + vm.currentBubble;
     var question = document.getElementById('question-popup');
     question.id = bubbleId;
     var message = document.getElementById(messageId);
@@ -190,7 +192,7 @@ function ECardsShowController($http, $routeParams, $location) {
   vm.mobilePop = function(count) {
     if(vm.isMobile()) {
       if(vm.bubbleOpen) {
-        vm.popdown(count);
+        vm.popdown();
       } else {
         vm.popup(count);
       }
