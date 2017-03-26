@@ -11,7 +11,7 @@ var eCardList = [];
 questionList = [{
   prompt: "You're Awesome because _____.",
   response: "",
-  image: "http://www.kazzledazz.com/wp-content/uploads/2015/02/friendship-cover.jpeg",
+  image: "http://i.imgur.com/1xWvqdO.jpg",
   theme: "Happy Birthday!",
   count: 1
 },
@@ -19,7 +19,7 @@ questionList = [{
 {
   prompt: "My birthday wish for you is _____.",
   response: "",
-  image: "http://s.hswstatic.com/gif/birthday-candles-orig.jpg",
+  image: "http://i.imgur.com/yNErnoE.jpg",
   theme: "Happy Birthday!",
   count: 2
 },
@@ -35,7 +35,7 @@ questionList = [{
 {
   prompt: "If I could get you anything in the world, it would have to be _____.",
   response: "",
-  image: "http://www.kiplinger.com/slideshow/credit/T065-S001-15-gifts-that-keep-on-giving/images/intro.jpg",
+  image: "http://i.imgur.com/kSPtE0q.jpg",
   theme: "Happy Birthday!",
   count: 4
 },
@@ -43,7 +43,7 @@ questionList = [{
 {
   prompt: "_____ is a song that always makes me think of you.",
   response: "",
-  image: "https://girlfromthehills.files.wordpress.com/2010/07/woman-singing-microphone-vintage-525.jpg",
+  image: "http://i.imgur.com/NGHY4fh.jpg",
   theme: "Happy Birthday!",
   count: 5
 },
@@ -53,7 +53,7 @@ questionList = [{
 {
   prompt: "New Year, New _____.",
   response: "",
-  image: "http://images.fineartamerica.com/images-medium-large-5/spectacular-fireworks-square-format-ausra-paulauskaite.jpg",
+  image: "http://i.imgur.com/p6XM6uJ.jpg",
   theme: "Happy New Year!",
   count: 1
 },
@@ -77,7 +77,7 @@ questionList = [{
 {
   prompt: "My favorite memory of us together last year was _____.",
   response: "",
-  image: "http://st03.kakprosto.ru//images/article/2012/9/10/1_5255325311d295255325311d90.jpg",
+  image: "http://i.imgur.com/QowCbNy.jpg",
   theme: "Happy New Year!",
   count: 4
 },
@@ -85,7 +85,7 @@ questionList = [{
 {
   prompt: "Cheers! Let's celebrate _____!",
   response: "",
-  image: "http://www.foodanddine.com/wp-content/uploads/2014/12/hd-wallpapers-new-years-wallpaper-year-champagne-2560x1600-wallpaper.jpg",
+  image: "http://i.imgur.com/VONTAPf.jpg",
   theme: "Happy New Year!",
   count: 5
 },
@@ -95,7 +95,7 @@ questionList = [{
 {
   prompt: "You are the best at _____.",
   response: "",
-  image: "http://www.womencanbuild.org/wp-content/uploads/2015/05/Rosie_0011.jpg",
+  image: "http://i.imgur.com/AIiSHsp.jpg",
   theme: "Happy Mother's Day!",
   count: 1
 },
@@ -111,7 +111,7 @@ questionList = [{
 {
   prompt: "I want to be _____, just like you!",
   response: "",
-  image: "https://upworthy-production.s3.amazonaws.com/nugget/524474cec56137112b000d54/attachments/disney_image_2.png",
+  image: "http://i.imgur.com/jeaCmSY.jpg",
   theme: "Happy Mother's Day!",
   count: 3
 },
@@ -306,7 +306,7 @@ questionList = [{
 {
   prompt: "Trees are _____, just like you!",
   response: "",
-  image: "https://studioranslam.files.wordpress.com/2013/11/tree-face-3.jpg",
+  image: "http://i.imgur.com/AaPUmx3.jpg",
   theme: "Happy Arbor Day!",
   count: 1
 },
@@ -314,7 +314,7 @@ questionList = [{
 {
   prompt: "Our favorite memory involving a tree must be _____.",
   response: "",
-  image: "http://img09.deviantart.net/1bf9/i/2010/296/e/1/giving_tree_by_murangelo-d31bx4d.png",
+  image: "http://i.imgur.com/86RqS99.jpg",
   theme: "Happy Arbor Day!",
   count: 2
 },
@@ -322,13 +322,13 @@ questionList = [{
 {
   prompt: "If we were to plant a tree together, we would plant it at _____.",
   response: "",
-  image: "https://www.arborday.org/celebrate/images/tree-planting.jpg",
+  image: "http://i.imgur.com/j529jrG.jpg",
   theme: "Happy Arbor Day!",
   count: 3
 },
 
 {
-  prompt: "Arbor day reminds us to care for our planet and environement. It reminds me of the time you took care of me by _____.",
+  prompt: "Arbor day reminds us to care for the environment. It reminds me of the time you cared for _____.",
   response: "",
   image: "http://www.mfc.ms.gov/sites/default/files/kids_trees_0.jpg",
   theme: "Happy Arbor Day!",
@@ -338,7 +338,7 @@ questionList = [{
 {
   prompt: "Just as trees attract birds to call it home, you attract _____.",
   response: "",
-  image: "https://nkimagecollection.files.wordpress.com/2013/01/img_2887.jpg",
+  image: "http://i.imgur.com/ljnztYO.jpg",
   theme: "Happy Arbor Day!",
   count: 5
 },
@@ -422,7 +422,7 @@ questionList = [{
 {
   prompt: "Look in the mirror and remember _____.",
   response: "",
-  image: "http://www.marketoracle.co.uk/images/janice_cat.jpg",
+  image: "http://i.imgur.com/jZzIOmw.jpg",
   theme: "Good Morning!",
   count: 5
 },
@@ -432,7 +432,7 @@ questionList = [{
 {
   prompt: "Yesterday is a memory, today is a gift, tomorrow is _____.",
   response: "",
-  image: "http://i.huffpost.com/gadgets/slideshows/334665/slide_334665_3356243_free.jpg",
+  image: "http://i.imgur.com/BA1i4M1.jpg",
   theme: "Happy Lunar New Year 2017!",
   count: 1
 },
@@ -456,7 +456,7 @@ questionList = [{
 {
   prompt: "Lots of luck and _____ in the New Year.",
   response: "",
-  image: "http://static1.squarespace.com/static/52536652e4b007332ef4ecf4/52dec946e4b0ca499f87bce7/5876926859cc688e12949602/1484656205967/TEALEAVES-LuckyEnvelope-CNY-Rooster2017-3.jpg?format=1000w",
+  image: "http://i.imgur.com/XWfeMxV.jpg",
   theme: "Happy Lunar New Year 2017!",
   count: 4
 },
@@ -554,7 +554,7 @@ questionList = [{
 {
   prompt: "I hope you find _____ at the end of the rainbow.",
   response: "",
-  image: "http://www.clipartkid.com/images/643/trends-for-empty-pot-of-gold-clipart-frMKa8-clipart.jpg",
+  image: "http://i.imgur.com/mumEg8N.jpg",
   theme: "Happy St. Patrick's Day!",
   count: 1
 },
@@ -570,7 +570,7 @@ questionList = [{
 {
   prompt: "Remember the Paddy's Day we _____ ?",
   response: "",
-  image: "https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F4ff9aa99-19c7-496d-982a-9d616cd5fcf1.jpg",
+  image: "http://i.imgur.com/ox49ofx.jpg",
   theme: "Happy St. Patrick's Day!",
   count: 3
 },
@@ -882,7 +882,7 @@ questionList = [{
 {
   prompt: "If we switched bodies on Freaky Friday, we would _____.",
   response: "",
-  image: "http://cdn2.diagnosislife.com/wp-content/uploads/2014/04/Freaky-Friday-movie-still.jpg",
+  image: "http://i.imgur.com/uzgu7M7.jpg",
   theme: "Happy Friday!",
   count: 2
 },
@@ -898,7 +898,7 @@ questionList = [{
 {
   prompt: "I hope your week ends with _____!",
   response: "",
-  image: "http://i.imgur.com/rracCki.jpg",
+  image: "http://i.imgur.com/DjMPc1W.jpg",
   theme: "Happy Friday!",
   count: 4
 },
@@ -932,7 +932,7 @@ questionList = [{
 {
   prompt: "After work, we can reward ourselves with a walk to _____.",
   response: "",
-  image: "http://i.imgur.com/ekPVo7t.jpg",
+  image: "http://i.imgur.com/yu9JM7L.jpg",
   theme: "Happy Walk To Work Day!",
   count: 3
 },
@@ -1070,7 +1070,7 @@ themeList = [{
   title: "Happy Mother's Day!",
   image: "http://i.imgur.com/3PwGrid.jpg",
   mobileImage: "http://i.imgur.com/FRtxh5R.png",
-  thumbnailImage: "http://i.imgur.com/OArPZoL.jpg",
+  thumbnailImage: "http://i.imgur.com/3A0G6Gn.jpg",
   category: "holiday",
   date: "0514000000"
 },
@@ -1106,7 +1106,7 @@ themeList = [{
   title: "Happy Arbor Day!",
   image: "http://i.imgur.com/3XAme7U.jpg",
   mobileImage: "http://i.imgur.com/4ou8IvW.png",
-  thumbnailImage: "http://i.imgur.com/RskhMJT.jpg",
+  thumbnailImage: "http://i.imgur.com/w286haX.jpg",
   category: "holiday",
   date: "0428000000"
 },
@@ -1124,7 +1124,7 @@ themeList = [{
   title: "Good Morning!",
   image: "http://i.imgur.com/dXAO1yc.jpg",
   mobileImage: "http://i.imgur.com/Tb52JlA.jpg",
-  thumbnailImage: "http://i.imgur.com/kqVwdyl.jpg",
+  thumbnailImage: "http://i.imgur.com/n1EvaS2.jpg",
   category: "daily",
   date: "0000000006"
 },
@@ -1257,9 +1257,9 @@ themeList = [{
 
 {
   title: "May the Fourth Be With You",
-  image: "http://i.imgur.com/dREIXZw.jpg",
+  image: "http://i.imgur.com/lmyMWz9.jpg",
   mobileImage: "http://i.imgur.com/x2YtJ1H.jpg",
-  thumbnailImage: "http://i.imgur.com/0kwmreA.jpg",
+  thumbnailImage: "http://i.imgur.com/jBKiZDQ.jpg",
   category: "holiday",
   date: "0504000000"
 }];

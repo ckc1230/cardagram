@@ -1439,6 +1439,9 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   #holiday {
     line-height: 36px !important;
   }
+  .response-red-background:before {
+    content: '   ';
+  }
 }
 
 /* Landscape */
