@@ -2,9 +2,9 @@ angular
   .module('eCardsApp')
   .controller('ThemeEditController', ThemeEditController);
 
-ThemeEditController.$inject = ['$http', '$routeParams', '$location'];
+ThemeEditController.$inject = ['$http', '$routeParams', '$location', '$window'];
 
-function ThemeEditController($http, $routeParams, $location) {
+function ThemeEditController($http, $routeParams, $location, $window) {
   var vm = this;
   vm.tempResponse = "";
   vm.showImage = false;
@@ -23,6 +23,10 @@ function ThemeEditController($http, $routeParams, $location) {
     setTimeout(function() {
       document.getElementById('themes-breadcrumb').className = 'breadcrumb';
     },1000);
+  });
+
+  angular.element($window).bind('orientationchange', function () {
+    vm.getBackground();
   });
 
   function keyDownTextField(e) {
