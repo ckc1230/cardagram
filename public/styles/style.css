@@ -1393,6 +1393,15 @@ input#img-4:checked ~ .nav-dots label#img-dot-4 {
   .ecard-show-btn  {
     padding: 5px !important;
   }
+  .ecard-title {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+  }
+  .msg-preview {
+    width: 75%;
+  }
   .save-message-btn, .clear-message-btn {
     padding: 5px;
     display: inline-block;
