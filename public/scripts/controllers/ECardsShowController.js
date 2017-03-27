@@ -1,8 +1,8 @@
 angular
   .module('eCardsApp')
   .controller('ECardsShowController', ECardsShowController);
-ECardsShowController.$inject = ['$http', '$routeParams', '$location'];
-function ECardsShowController($http, $routeParams, $location) {
+ECardsShowController.$inject = ['$http', '$routeParams', '$location', '$window'];
+function ECardsShowController($http, $routeParams, $location, $window) {
   angular.element(document).ready(function () {
     document.getElementById('home-breadcrumb').style.width = '100%';
     document.getElementById('themes-breadcrumb').className = 'hidden breadcrumb';
@@ -13,6 +13,10 @@ function ECardsShowController($http, $routeParams, $location) {
         bubble3.classList.remove('jump');
       },3000);
     },1000);
+
+    angular.element($window).bind('orientationchange', function () {
+      vm.getBackground();
+    });
   });
   var vm = this;
   var currentBubble;
