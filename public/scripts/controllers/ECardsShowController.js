@@ -116,7 +116,22 @@ function ECardsShowController($http, $routeParams, $location, $window) {
       from: 'cardagram.cards@gmail.com',
       to: vm.receiverEmail,
       subject: vm.ecard.theme.title,
-      text: formattedBody
+      // text: "text part",
+      html: '<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title></title>' +
+      '<link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">' +
+      '<style> a { text-decoration: none; } </style></head>' +
+      '<body><table width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td>' +
+      '<table width="600" align="center" cellspacing="0" cellpadding="0" border="0"><tr><td>' +
+      '<img src="http://i.imgur.com/vg1lf2n.jpg" alt="Cardagram"></td></tr>' +
+      '<tr><td><table cellpadding="0"><tr><td width="300"><h1 style="margin-top: 0";>Hi ' + vm.receiverName + '</h1>' +
+      '<p>' + vm.senderName + ' sent you a Cardagram - a fun, interactive and customizable eCard!</p><h3><a href="' + window.location.href + '">You can view it here</a></h3>' +
+      "<p>Make sure to hover over the Bubble-Grams to see " +  vm.senderName + "'s personalized messages for you!</p>" +
+      '<p>Enjoy!</p></td>' +
+      '<td width="300" cellpadding="0">'+
+      '<img src="'+ vm.ecard.theme.thumbnailImage + '" alt="" style="width: 100%"></td>'+
+      '</tr></table></td></tr><tr><td align="right"><h3 style="margin-right: 20px">- Your friends at <a href="www.cardagramcards.com">Cardagram</a></h3>' +
+      '<p><i>* Please do not reply to this email. Emails sent to this address will not be answered. *</i></p></td></tr></table>' +
+      '</td></tr></table></body></html>'
     }
     
     $http({
@@ -138,7 +153,21 @@ function ECardsShowController($http, $routeParams, $location, $window) {
       from: 'cardagram.cards@gmail.com',
       to: vm.senderEmail,
       subject: 'Thank You for Creating a Cardagram!',
-      text: senderBody
+      html: '<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title></title>' +
+      '<link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">' +
+      '<style>a { text-decoration: none; } </style></head>' +
+      '<body><table width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td>' +
+      '<table width="600" align="center" cellspacing="0" cellpadding="0" border="0"><tr><td>' +
+      '<img src="http://i.imgur.com/vg1lf2n.jpg" alt="Cardagram"></td></tr>' +
+      '<tr><td><table cellpadding="0" cellspacing="0"><tr><td width="300"><h1 style="margin-top: 0;">Hi ' + vm.senderName + '</h1>' +
+      '<p>Thank you for using Cardagram - your online resource for creating fun, interactive and customizable eCards!</p>' + 
+      '<h3><a href="' + window.location.href + '">Here is the card</a> you sent to ' + vm.receiverName + '.</h3>' +
+      "<p>Don't forget us on your next special occasion!</p>" +
+      '<td width="300" cellpadding="0">'+
+      '<img src="'+ vm.ecard.theme.thumbnailImage + '" alt="preview" style="width: 100%"></td>'+
+      '</tr></table></td></tr><tr><td align="right"><h3 style="margin-right: 20px">- Your friends at <a href="www.cardagramcards.com">Cardagram</a></h3>' +
+      '<p><i>* Please do not reply to this email. Emails sent to this address will not be answered. *</i></p></td></tr></table>' +
+      '</td></tr></table></body></html>'
     }
     $http({
       method: 'POST',
