@@ -219,23 +219,23 @@ questionList = [{
 /* Thanksgiving */
 
 {
-  prompt: "Thinking of you on Thanksgiving because _____.",
+  prompt: "I am grateful for our memory at _____ together.",
   response: "",
-  image: "http://submar.com/wp-content/uploads/2016/11/Thanksgiving-11.23.16.png",
+  image: "http://i.imgur.com/3eyBhxv.jpg",
   theme: "Happy Thanksgiving!",
   count: 1
 },
 
 {
-  prompt: "If you were a Thanksgiving dish, you would have to be _____.",
+  prompt: "If you were a Thanksgiving dish, you would be _____.",
   response: "",
-  image: "http://images.latintimes.com/sites/latintimes.com/files/2015/11/24/thanksgiving-dinner.jpg",
+  image: "http://i.imgur.com/XWK3D6q.jpg",
   theme: "Happy Thanksgiving!",
   count: 2
 },
 
 {
-  prompt: "I am grateful for our memory at _____ together.",
+  prompt: "Thinking of you on Thanksgiving because _____.",
   response: "",
   image: "http://www.travelpaso.com/sites/pr/files/Thanksgiving-Wine_0.jpg",
   theme: "Happy Thanksgiving!",
@@ -243,9 +243,9 @@ questionList = [{
 },
 
 {
-  prompt: "Gobble gobble. If you were a turkey, you would be the most _____ turkey of all!",
+  prompt: "Gobble gobble. If you were a turkey, you would be the _____ turkey of all!",
   response: "",
-  image: "http://cdn.playbuzz.com/cdn/c630965f-45c7-465c-8967-c4eb240fdc79/b840de25-c9f9-4e93-8904-89ebcc8ab3e5.jpeg",
+  image: "http://cok.net/wp-content/uploads/2016/11/cat-turkey-friends-1-1.jpg",
   theme: "Happy Thanksgiving!",
   count: 4
 },
@@ -840,7 +840,7 @@ questionList = [{
 },
 
 {
-  prompt: "It’s Friday Eve! That means at midnight, we get to open _____.",
+  prompt: "It’s Friday Eve! That means at midnight, we get to _____.",
   response: "",
   image: "http://i.imgur.com/mRhZwbn.jpg",
   theme: "Happy Thursday!",
@@ -1088,7 +1088,7 @@ themeList = [{
   title: "Happy Thanksgiving!",
   image: "http://i.imgur.com/UEXKnXD.jpg",
   mobileImage: "http://i.imgur.com/R4UexRS.png",
-  thumbnailImage: "http://i.imgur.com/lmsRKWS.jpg",
+  thumbnailImage: "http://i.imgur.com/eA3IJia.jpg",
   category: "holiday",
   date: "1128000000"
 },
