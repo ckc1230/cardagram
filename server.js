@@ -108,7 +108,7 @@ function sendEmail(req,res) {
     from: req.body.from,
     to: req.body.to,
     subject: req.body.subject,
-    text: req.body.text
+    html: req.body.html
   }
 
   transporter.sendMail(mailOptions, function(error, info) {
