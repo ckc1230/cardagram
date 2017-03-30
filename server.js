@@ -28,19 +28,19 @@ app.get('/templates/:name', function templates(req, res) {
 
 /* API ROUTES */ 
 
-app.get('/api/ecards', function indexECards(req, res) {
-  db.ECard.find({}, function(err, allECards) {
-    if (err) { throw err; };
-    res.json(allECards);
-  });
-});
-
 app.get('/api/ecards/:id', function showECard(req, res) {
   db.ECard.findById({ _id: req.params.id }, function(err, eCard) {
     if (err) { throw err; };
     res.json(eCard);
   });
 });
+
+// app.get('/api/ecards', function indexECards(req, res) {
+//   db.ECard.find({}, function(err, allECards) {
+//     if (err) { throw err; };
+//     res.json(allECards);
+//   });
+// });
 
 app.put('/api/ecards/:id', function updateECard(req, res) {
   db.ECard.findById({ _id: req.params.id }, function(err, eCard) {
