@@ -11,7 +11,7 @@ var eCardList = [];
 questionList = [{
   prompt: "You're Awesome because _____.",
   response: "",
-  image: "http://i.imgur.com/1xWvqdO.jpg",
+  image: "http://i.imgur.com/GoNC0TS.jpg",
   theme: "Happy Birthday!",
   count: 1
 },
@@ -137,7 +137,7 @@ questionList = [{
 {
   prompt: "You're Amazing because _____.",
   response: "",
-  image: "http://charity-matters.com/wp-content/uploads/father-and-son-fathers-day.jpg",
+  image: "http://i.imgur.com/jMJltqn.jpg",
   theme: "Happy Father's Day!",
   count: 1
 },
@@ -153,7 +153,7 @@ questionList = [{
 {
   prompt: "I love when we go _____ together.",
   response: "",
-  image: "http://cdn.quotesgram.com/img/59/5/2132741069-father-and-son-fishing.jpg",
+  image: "http://i.imgur.com/jyftiQY.jpg",
   theme: "Happy Father's Day!",
   count: 3
 },
@@ -272,7 +272,7 @@ questionList = [{
 {
   prompt: "If we had a sleep-over at the White House, we would _____",
   response: "",
-  image: "http://interactive.wxxi.org/sites/default/files/images/highlights/white_house_night.jpg",
+  image: "http://i.imgur.com/NVF1KRr.jpg",
   theme: "Happy Presidents' Day!",
   count: 2
 },
@@ -280,7 +280,7 @@ questionList = [{
 {
   prompt: "Nothing says presidential like the time we _____.",
   response: "",
-  image: "http://legacy.blavity.com/wp-content/uploads/2015/10/12196274_10156203992365615_4908069978012902547_n.png",
+  image: "http://i.imgur.com/BWNCaP0.png",
   theme: "Happy Presidents' Day!",
   count: 3
 },
@@ -296,7 +296,7 @@ questionList = [{
 {
   prompt: "As running mates, our slogan would be _____.",
   response: "",
-  image: "http://ichef-1.bbci.co.uk/news/660/cpsprodpb/FA44/production/_85486046_promo_cut.jpg",
+  image: "http://i.imgur.com/J5EQdEH.jpg",
   theme: "Happy Presidents' Day!",
   count: 5
 },
@@ -330,7 +330,7 @@ questionList = [{
 {
   prompt: "Arbor day reminds us to care for the environment. It reminds me of the time you cared for _____.",
   response: "",
-  image: "http://www.mfc.ms.gov/sites/default/files/kids_trees_0.jpg",
+  image: "http://i.imgur.com/HLrPCD4.jpg",
   theme: "Happy Arbor Day!",
   count: 4
 },
@@ -380,7 +380,7 @@ questionList = [{
 {
   prompt: "I love sharing _____ with you.",
   response: "",
-  image: "http://images.huffingtonpost.com/2016-01-18-1453090253-7345058-dailyhabitsofwildlyhappycouples.jpg",
+  image: "http://i.imgur.com/lAidykF.jpg",
   theme: "Happy Valentine's Day!",
   count: 5
 },
@@ -440,7 +440,7 @@ questionList = [{
 {
   prompt: "May the New Year be vibrant with _____!",
   response: "",
-  image: "http://s2.dmcdn.net/ReyMX.jpg",
+  image: "http://i.imgur.com/AJlGY3p.jpg",
   theme: "Happy Lunar New Year 2017!",
   count: 2
 },
@@ -602,7 +602,7 @@ questionList = [{
 {
   prompt: "You’re _____ like a pie.",
   response: "",
-  image: "http://del.h-cdn.co/assets/15/38/1600x1066/gallery-1442506898-pumpkin-pie-smile.jpg",
+  image: "http://i.imgur.com/Dzvqjf9.jpg",
   theme: "Happy Pi Day!",
   count: 2
 },
@@ -730,7 +730,7 @@ questionList = [{
 {
   prompt: "It’s okay. We’ve all been there. Just _____.",
   response: "",
-  image: "https://chucklesandlaughs.files.wordpress.com/2015/07/01.jpeg",
+  image: "http://i.imgur.com/trm4OD6.jpg",
   theme: "Happy Monday!",
   count: 3
 },
@@ -818,7 +818,7 @@ questionList = [{
 {
   prompt: "Though Wednesday Addams seldom shows emotion and is generally bitter, she wishes you _____.",
   response: "",
-  image: "http://i.imgur.com/KLLdmsf.jpg",
+  image: "http://i.imgur.com/TXOGYNy.jpg",
   theme: "Happy Wednesday!",
   count: 4
 },
@@ -916,7 +916,7 @@ questionList = [{
 {
   prompt: "I'm walking on sunshine! Whoa! And don't it feel _____?",
   response: "",
-  image: "http://www.yuppee.com/wp-content/uploads/2013/05/sunny-day.jpg",
+  image: "http://imgur.com/a/P8AgG",
   theme: "Happy Walk To Work Day!",
   count: 1
 },
@@ -990,7 +990,7 @@ questionList = [{
 {
   prompt: "And on third day, _____.",
   response: "",
-  image: "http://i.imgur.com/iEg34Fw.jpg",
+  image: "http://i.imgur.com/7BlLkXG.jpg",
   theme: "Happy Easter!",
   count: 5
 },
