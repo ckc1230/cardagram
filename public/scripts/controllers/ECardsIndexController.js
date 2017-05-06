@@ -32,13 +32,18 @@ function ECardsIndexController($http) {
   }).then(function successCallback(response) {
     vm.themes = response.data;
     sortThemes();
+    testMoment();
   }, function errorCallback(response) {
     console.log('There was an error getting the data', response);
   });
 
+  var testMoment = function() {
+    console.log(moment().subtract(10, 'days').calendar());
+  }
+
   var sortThemes = function() {
     var date = new Date();
-    var dateToday = ("0"+(date.getMonth()+1).toString()).slice(-2) + date.getDate() + 
+    var dateToday = ("0"+(date.getMonth()+1).toString()).slice(-2) + "0"+(date.getDate()).toString().slice(-2) + 
         date.getHours() + date.getMinutes() + date.getSeconds();
     var today = {
       date: dateToday
@@ -58,7 +63,7 @@ function ECardsIndexController($http) {
     vm.themes.shift();
   }
 
-  vm.createECard = function () {
+  vm.createECard = function() {
     $http
       .post('/api/ecards',vm.newECard)
       .then(function(response) {
