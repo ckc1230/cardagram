@@ -65,16 +65,6 @@ function ECardEditController($http, $routeParams, $location) {
     }
   }
 
-  var writingSFX = [
-    new Audio('http://s0.vocaroo.com/media/download_temp/Vocaroo_s08ILxxVkmHQ.mp3'),
-    new Audio('http://s0.vocaroo.com/media/download_temp/Vocaroo_s0oNdT3cqAtW.mp3'),
-    new Audio('http://s0.vocaroo.com/media/download_temp/Vocaroo_s0TZRHwW9Yrp.mp3'),
-    new Audio('http://s0.vocaroo.com/media/download_temp/Vocaroo_s0WB6WYeAzta.mp3'),
-    new Audio('http://s0.vocaroo.com/media/download_temp/Vocaroo_s02CcKVh2Cst.mp3'),
-    new Audio('http://s0.vocaroo.com/media/download_temp/Vocaroo_s02TFxrZgV3H.mp3'),
-    new Audio('http://s0.vocaroo.com/media/download_temp/Vocaroo_s0xPUQ9Gthi9.mp3')
-  ];
-
   $http({
     method: 'GET',
     url: '/api/ecards/' + $routeParams.id
@@ -201,9 +191,4 @@ function ECardEditController($http, $routeParams, $location) {
   vm.confirmImage = function() {
     vm.showImage = !vm.showImage;
   }
-
-  vm.playWritingSFX = function() {
-    var sfxNumber = Math.round(Math.random()*6)
-    writingSFX[sfxNumber].play();
-  }  
 };

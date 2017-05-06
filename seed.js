@@ -187,7 +187,7 @@ questionList = [{
 {
   prompt: "Remember the Halloween that we _____?",
   response: "",
-  image: "http://thefw.com/files/2012/10/mariokart.jpg",
+  image: "http://i.imgur.com/enQ4HsM.jpg",
   theme: "Happy Halloween!",
   count: 2
 },
@@ -229,7 +229,7 @@ questionList = [{
 {
   prompt: "If you were a Thanksgiving dish, you would be _____.",
   response: "",
-  image: "http://i.imgur.com/XWK3D6q.jpg",
+  image: "http://i.imgur.com/o2trd6j.jpg",
   theme: "Happy Thanksgiving!",
   count: 2
 },
@@ -398,7 +398,7 @@ questionList = [{
 {
   prompt: "I hope your day is filled with _____!",
   response: "",
-  image: "http://cdn.earthporm.com/wp-content/uploads/2015/10/XX-Proud-Mommies5__605.jpg",
+  image: "http://i.imgur.com/vVialzd.jpg",
   theme: "Good Morning!",
   count: 2
 },
@@ -456,7 +456,7 @@ questionList = [{
 {
   prompt: "Lots of luck and _____ in the New Year.",
   response: "",
-  image: "http://i.imgur.com/XWfeMxV.jpg",
+  image: "http://i.imgur.com/RAazO5b.jpg",
   theme: "Happy Lunar New Year 2017!",
   count: 4
 },
@@ -464,7 +464,7 @@ questionList = [{
 {
   prompt: "My New Year's wish for you is _____.",
   response: "",
-  image: "http://uschina.usc.edu/Files/images/2013-01/Chinese%20new%20year%20signs-Chun.jpg",
+  image: "http://i.imgur.com/OIaxdtL.jpg",
   theme: "Happy Lunar New Year 2017!",
   count: 5
 },
@@ -802,7 +802,7 @@ questionList = [{
 {
   prompt: "Sometimes we just need a little distraction. Something like _____.",
   response: "",
-  image: "http://i.imgur.com/zNoTO8p.jpg",
+  image: "http://i.imgur.com/ThBsZSb.jpg",
   theme: "Happy Wednesday!",
   count: 2
 },
@@ -932,7 +932,7 @@ questionList = [{
 {
   prompt: "After work, we can reward ourselves with a walk to _____.",
   response: "",
-  image: "http://i.imgur.com/yu9JM7L.jpg",
+  image: "http://i.imgur.com/atqICRf.jpg",
   theme: "Happy Walk To Work Day!",
   count: 3
 },
@@ -940,7 +940,7 @@ questionList = [{
 {
   prompt: "You can walk the walk, but can you _____?",
   response: "",
-  image: "http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/walkhed.png",
+  image: "http://i.imgur.com/V6cUPwB.png",
   theme: "Happy Walk To Work Day!",
   count: 4
 },
@@ -966,7 +966,7 @@ questionList = [{
 {
   prompt: "Instead of Easter Eggs, we should hunt for _____.",
   response: "",
-  image: "http://cdn.history.com/sites/2/2015/03/hungry-history-easter-foods-from-lamb-to-eggs-E.jpeg",
+  image: "http://i.imgur.com/U5nPDAi.jpg",
   theme: "Happy Easter!",
   count: 2
 },
@@ -1008,7 +1008,7 @@ questionList = [{
 {
   prompt: "I find your lack of _____ disturbing.",
   response: "",
-  image: "http://i.imgur.com/JWUq84h.jpg",
+  image: "http://i.imgur.com/BKoneN8.jpg",
   theme: "May the Fourth Be With You",
   count: 2
 },
