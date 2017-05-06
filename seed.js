@@ -916,7 +916,7 @@ questionList = [{
 {
   prompt: "I'm walking on sunshine! Whoa! And don't it feel _____?",
   response: "",
-  image: "http://imgur.com/a/P8AgG",
+  image: "http://i.imgur.com/gE1quJQ.jpg",
   theme: "Happy Walk To Work Day!",
   count: 1
 },
