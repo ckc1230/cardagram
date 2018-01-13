@@ -9,7 +9,7 @@ var eCardList = [];
 /* Birthday Questions */
 
 questionList = [{
-  prompt: "You're Awesome because _____.",
+  prompt: "You're awesome because _____.",
   response: "",
   image: "http://i.imgur.com/GoNC0TS.jpg",
   theme: "Happy Birthday!",
@@ -237,7 +237,7 @@ questionList = [{
 {
   prompt: "Thinking of you on Thanksgiving because _____.",
   response: "",
-  image: "http://www.travelpaso.com/sites/pr/files/Thanksgiving-Wine_0.jpg",
+  image: "https://i.imgur.com/9dUXEpG.jpg",
   theme: "Happy Thanksgiving!",
   count: 3
 },
@@ -658,7 +658,7 @@ questionList = [{
 {
   prompt: "This calls for _____!",
   response: "",
-  image: "http://static.ddmcdn.com/gif/blogs/dnews-files-2013-05-drinking-champagne-improves-memory-660-jpg.jpg",
+  image: "https://i.imgur.com/ZiPlce4.jpg",
   theme: "Congratulations!",
   count: 4
 },
@@ -906,7 +906,7 @@ questionList = [{
 {
   prompt: "Friday FRYdays! Getting my fry on. Nothing like golden-brown, beer-battered _____.",
   response: "",
-  image: "http://www.healthcastle.com/sites/default/files/imagecache/article-lead-image-570x200/fried_foods_570.jpg",
+  image: "https://i.imgur.com/t9rX4tt.jpg",
   theme: "Happy Friday!",
   count: 5
 },
