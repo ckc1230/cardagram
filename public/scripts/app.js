@@ -1,4 +1,4 @@
-console.log("Hello!");
+console.log("Welcome to Cardagram! 🎈🎊");
 
 angular
   .module('eCardsApp', ['ngRoute','angularCSS'])
