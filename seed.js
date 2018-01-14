@@ -433,7 +433,7 @@ questionList = [{
   prompt: "Yesterday is a memory, today is a gift, tomorrow is _____.",
   response: "",
   image: "http://i.imgur.com/BA1i4M1.jpg",
-  theme: "Happy Lunar New Year 2017!",
+  theme: "Happy Lunar New Year 2018!",
   count: 1
 },
 
@@ -441,15 +441,15 @@ questionList = [{
   prompt: "May the New Year be vibrant with _____!",
   response: "",
   image: "http://i.imgur.com/AJlGY3p.jpg",
-  theme: "Happy Lunar New Year 2017!",
+  theme: "Happy Lunar New Year 2018!",
   count: 2
 },
 
 {
-  prompt: "I hope that the year of Rooster brings with it _____.",
+  prompt: "I hope that the Year of the Dog fetches you _____.",
   response: "",
-  image: "http://media.istockphoto.com/vectors/year-of-the-rooster-papercut-vector-id599123888?s=235x235",
-  theme: "Happy Lunar New Year 2017!",
+  image: "http://i.imgur.com/7Bbr5o8.png",
+  theme: "Happy Lunar New Year 2018!",
   count: 3
 },
 
@@ -457,7 +457,7 @@ questionList = [{
   prompt: "Lots of luck and _____ in the New Year.",
   response: "",
   image: "http://i.imgur.com/RAazO5b.jpg",
-  theme: "Happy Lunar New Year 2017!",
+  theme: "Happy Lunar New Year 2018!",
   count: 4
 },
 
@@ -465,7 +465,7 @@ questionList = [{
   prompt: "My New Year's wish for you is _____.",
   response: "",
   image: "http://i.imgur.com/OIaxdtL.jpg",
-  theme: "Happy Lunar New Year 2017!",
+  theme: "Happy Lunar New Year 2018!",
   count: 5
 },
 
@@ -1130,10 +1130,10 @@ themeList = [{
 },
 
 {
-  title: "Happy Lunar New Year 2017!",
+  title: "Happy Lunar New Year 2018!",
   image: "http://i.imgur.com/EJ9yrUX.jpg",
   mobileImage: "http://i.imgur.com/bmwgVUS.jpg",
-  thumbnailImage: "http://i.imgur.com/ZnjE0tl.jpg",
+  thumbnailImage: "https://i.imgur.com/DVMmERA.jpg",
   category: "holiday",
   date: "0128000000"
 },
